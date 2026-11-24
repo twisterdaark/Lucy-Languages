@@ -173,11 +173,11 @@ const SYNC_KEYS = ['done', 'xp', 'streak', 'srs', 'stats', 'custom', 'goalMin', 
 const Sync = { ref: null, state: 'local', at: store.get('savedAt', 0), timer: null,
   snapshot() { const o = {}; SYNC_KEYS.forEach(k => o[k] = S[k]); return o; },
   touch() { this.at = Date.now(); try { localStorage.setItem('lucy-savedAt', JSON.stringify(this.at)); } catch (_) {} if (this.ref) { clearTimeout(this.timer); this.timer = setTimeout(() => this.push(), 2500); } },
-  async push() { if (!this.ref) return; try { await this.ref.set({ blob: JSON.stringify(this.snapshot()), at: this.at, v: 1 }); this.state = 'synced'; } catch (e) { this.state = 'error'; } },
+  async push() { if (!this.ref) return; try { await this.ref.set({ blob: JSON.stringify(this.snapshot()), at: this.at, v: 1 }); this.state = 'synced'; } catch (e) { this.state = 'error'; this.err = e?.code || e?.message; } },
   async connect(ref) { this.ref = ref; this.state = 'syncing'; let pulled = false;
     try { const snap = await Promise.race([ref.get(), sleep(10000).then(() => null)]); const r = snap?.exists ? snap.data() : null;
       if (r && r.at > this.at) { this.apply(JSON.parse(r.blob)); this.at = r.at; try { localStorage.setItem('lucy-savedAt', JSON.stringify(r.at)); } catch (_) {} this.state = 'synced'; pulled = true; }
-      else await this.push(); } catch (_) { this.state = 'error'; }
+      else await this.push(); } catch (e) { this.state = 'error'; this.err = e?.code || e?.message; }
     return pulled; },
   apply(o) { SYNC_KEYS.forEach(k => { if (o[k] !== undefined) { S[k] = o[k]; try { localStorage.setItem('lucy-' + k, JSON.stringify(o[k])); } catch (_) {} } }); applyName(S.name); },
 };

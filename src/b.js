@@ -212,7 +212,8 @@ function confetti() {
 }
 const h = (html) => { const d = document.createElement('div'); d.innerHTML = html; return d; };
 const variantLabel = () => S.variant === 'pt-PT' ? 'PT-PT' : 'PT-BR';
-const VOICE_NAMES = ['airy', 'glassy', 'buttery', 'rounded'];
+// voice choices per row: Claude voices inside claude.ai, Gemini voices in the web/APK build (VOICE_SET is replaced there)
+let VOICE_SET = { f: ['airy', 'glassy', 'buttery', 'rounded'], m: ['airy', 'glassy', 'buttery', 'rounded'], you: ['airy', 'glassy', 'buttery', 'rounded'] };
 const VOICE_ROWS = [['f', 'Lucy & women', 'Oi, eu sou a Lucy. Cadê meu sachê?'], ['m', 'Men', 'E aí, mano! Bora pro boteco?'], ['you', 'Your own lines', 'Meu nome é ' + 'NAME' + '. Prazer!']];
 let syncLine = function () { return Sync.ref ? (Sync.state === 'error' ? 'Couldn’t reach your Claude account just now. Saved on this device; it retries on the next change.' : 'Saved to your Claude account. Open this app signed in on any device and your progress follows you.') : 'Saved on this device only. Open the app inside claude.ai, signed in, to keep it in your account on every device.'; };
 function settingsSheet() {
@@ -220,7 +221,7 @@ function settingsSheet() {
     <p class="lbl">Your name</p><div class="maker-in" style="margin:0"><input id="nm" maxlength="24" value="${esc(S.name)}" autocomplete="off" placeholder="What should Lucy call you?"><button class="btn sm" id="nm-save">Save</button></div>
     <p class="lbl">Sync</p><p class="fine" id="sync" style="margin:0">${syncLine()}</p>
     <p class="lbl">Language</p><div class="langs">${COURSES.map(c => `<button data-course="${c.id}" ${c.ready ? '' : 'disabled'}><b>${esc(c.name)}</b><small>${esc(c.sub)}</small></button>`).join('')}</div>
-    ${window.claude ? `<p class="lbl">Voices (tap to hear, pick one per row)</p>${VOICE_ROWS.map(([g, l]) => `<div class="vrow"><small>${l}</small><div class="seg four">${VOICE_NAMES.map(v => `<button data-vg="${g}" data-vn="${v}">${v}</button>`).join('')}</div></div>`).join('')}` : ''}
+    ${P.tts ? `<p class="lbl">Voices (tap to hear, pick one per row)</p>${VOICE_ROWS.map(([g, l]) => `<div class="vrow"><small>${l}</small><div class="seg four">${VOICE_SET[g].map(v => `<button data-vg="${g}" data-vn="${v}">${v}</button>`).join('')}</div></div>`).join('')}` : ''}
     ${P.tts ? '' : '<p class="lbl">Voices</p><p class="fine" style="margin:0">Lucy uses your phone’s own Portuguese voices here: a female one for Lucy and the women, a male one for the men.</p>'}
     <p class="lbl">Partner attitude</p><div class="seg"><button data-vibe="spicy">Spicy: jokes, sarcasm, cussing</button><button data-vibe="chill">Chill: friendly, clean</button></div>
     <p class="lbl">Daily goal</p><div class="seg four">${[10, 20, 30, 45].map(m => `<button data-goal="${m}">${m} min</button>`).join('')}</div>

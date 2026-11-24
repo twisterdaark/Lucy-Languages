@@ -6,6 +6,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     environment: { name: github-pages, url: '${{ steps.d.outputs.page_url }}' }
+    env: { FB_SA: '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}' }
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -14,6 +15,14 @@ jobs:
         env: { GEMINI_KEY: '${{ secrets.GEMINI_KEY }}' }
         run: node -e "require('fs').writeFileSync('ai-config.js','window.LUCY_GEMINI_KEY = '+JSON.stringify(process.env.GEMINI_KEY||'')+';')"
       - run: node tools/build.mjs && mkdir -p _site && cp index.html firebase-config.js ai-config.js manifest.webmanifest sw.js icon-192.png icon-512.png _site/
+      - name: Firebase Hosting (main address, where Google sign-in works on phones)
+        if: env.FB_SA != ''
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}'
+          projectId: lucy-languages-88943
+          channelId: live
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with: { path: _site }
