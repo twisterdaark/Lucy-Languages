@@ -1,0 +1,1014 @@
+{
+"/{0} mastered": {
+"ar": "/{0} متقن",
+"pt": "/{0} dominadas"
+},
+"AI partner key (free Gemini)": {
+"ar": "مفتاح شريك الـ AI (Gemini ببلاش)",
+"pt": "Chave do parceiro IA (Gemini grátis)"
+},
+"AM SAYED": {
+"ar": "عم سيد",
+"pt": "AM SAYED"
+},
+"Accent (lessons are Brazilian; Portugal changes the voice, mic and partner accent)": {
+"ar": "اللكنة (الدروس برازيلي؛ البرتغال بتغيّر الصوت والمايك ولكنة الشريك)",
+"pt": "Sotaque (as lições são em PT-BR; Portugal muda a voz, o mic e o sotaque do parceiro)"
+},
+"Accuracy": {
+"ar": "الدقة",
+"pt": "Precisão"
+},
+"Again": {
+"ar": "تاني",
+"pt": "De novo"
+},
+"Ahwa": {
+"ar": "أهوة",
+"pt": "Ahwa"
+},
+"Allow the microphone for Lucy in your phone settings.": {
+"ar": "افتح المايك لـ Lucy من إعدادات الموبايل.",
+"pt": "Libera o microfone pra Lucy nas configurações do celular."
+},
+"App language": {
+"ar": "لغة التطبيق",
+"pt": "Idioma do app"
+},
+"Ask Lucy to write a mission for you": {
+"ar": "اطلب من Lucy تكتبلك مهمة",
+"pt": "Pede pra Lucy criar uma missão pra você"
+},
+"At {0} min a day. ETA {1} Jun.": {
+"ar": "بـ {0} دقيقة/يوم. الوصول المتوقع {1} يونيو.",
+"pt": "Com {0} min/dia. Previsão: {1} de jun."
+},
+"At {0} min a day. ETA {1} Sept.": {
+"ar": "بـ {0} دقيقة/يوم. الوصول المتوقع {1} سبتمبر.",
+"pt": "Com {0} min/dia. Previsão: {1} de set."
+},
+"Average {0}+ over your last {1} attempts": {
+"ar": "متوسط {0}+ في آخر {1} محاولات",
+"pt": "Média de {0}+ nas suas últimas {1} tentativas"
+},
+"A{0} reached": {
+"ar": "وصلت لـ A{0}",
+"pt": "A{0} alcançado"
+},
+"BREAKTHROUGH": {
+"ar": "البداية",
+"pt": "INICIANTE"
+},
+"Back": {
+"ar": "رجوع",
+"pt": "Voltar"
+},
+"Bora! Back to Portuguese.": {
+"ar": "Bora! نرجع للبرتغالي.",
+"pt": "Bora! De volta pro português."
+},
+"Breakthrough": {
+"ar": "البداية",
+"pt": "Iniciante"
+},
+"Call": {
+"ar": "مكالمة",
+"pt": "Ligar"
+},
+"Cancel": {
+"ar": "إلغاء",
+"pt": "Cancelar"
+},
+"Chat": {
+"ar": "شات",
+"pt": "Chat"
+},
+"Check": {
+"ar": "تأكد",
+"pt": "Conferir"
+},
+"Chill: friendly, clean": {
+"ar": "رايق: لطيف ونظيف",
+"pt": "De boa: amigável e leve"
+},
+"Chunks": {
+"ar": "تراكيب",
+"pt": "Blocos"
+},
+"Clear speaker": {
+"ar": "صوته واضح",
+"pt": "Voz clara"
+},
+"Close": {
+"ar": "إغلاق",
+"pt": "Fechar"
+},
+"Completeness": {
+"ar": "الاكتمال",
+"pt": "Completude"
+},
+"Couldn’t start the mic. Tap again.": {
+"ar": "مش عارفين نشغل المايك. دوس تاني.",
+"pt": "Não deu pra ligar o mic. Toca de novo."
+},
+"DONA LÚCIA": {
+"ar": "DONA LÚCIA",
+"pt": "DONA LÚCIA"
+},
+"Daily goal": {
+"ar": "الهدف اليومي",
+"pt": "Meta diária"
+},
+"Day streak": {
+"ar": "ستريك الأيام",
+"pt": "Ofensiva"
+},
+"Done": {
+"ar": "تم",
+"pt": "Pronto"
+},
+"Each one: hear real locals, learn the chunks, shadow, recall, write, then use it in a role-play.": {
+"ar": "كل واحدة: اسمع أهل البلد، اتعلم التراكيب، قلد الصوت، افتكر، اكتب، وبعدين استخدمها في محاكاة.",
+"pt": "Em cada uma: ouça nativos reais, aprenda os chunks, faça shadowing, lembre, escreva e use num role-play."
+},
+"Egyptian Arabic": {
+"ar": "عربي مصري",
+"pt": "Árabe egípcio"
+},
+"End call": {
+"ar": "إنهاء المكالمة",
+"pt": "Desligar"
+},
+"Escreva aqui…": {
+"ar": "اكتب هنا…",
+"pt": "Escreva aqui…"
+},
+"Finish a mission and its phrases land here.": {
+"ar": "خلص مهمة وجملها هتنزل هنا.",
+"pt": "Termine uma missão e as frases vêm parar aqui."
+},
+"Finish a voice call": {
+"ar": "خلص مكالمة صوتية",
+"pt": "Conclua uma chamada de voz"
+},
+"Finish the Gírias mission": {
+"ar": "خلص مهمة الـ Gírias",
+"pt": "Termine a missão de Gírias"
+},
+"Finish the street-talk mission": {
+"ar": "خلص مهمة كلام الشارع",
+"pt": "Termine a missão de papo de rua"
+},
+"First call": {
+"ar": "أول مكالمة",
+"pt": "Primeira chamada"
+},
+"Fluency": {
+"ar": "الطلاقة",
+"pt": "Fluência"
+},
+"Go": {
+"ar": "يلا",
+"pt": "Bora"
+},
+"Good": {
+"ar": "حلو",
+"pt": "Bom"
+},
+"Got them: shadow it": {
+"ar": "لقطتها: قلد الصوت",
+"pt": "Entendeu: repita junto"
+},
+"Greet people, order food, ask prices and directions, text friends.": {
+"ar": "سلّم على الناس، اطلب أكل، اسأل عن الأسعار والاتجاهات، وراسل صحابك.",
+"pt": "Cumprimentar pessoas, pedir comida, perguntar preços e direções, mandar msg pros amigos."
+},
+"HEAVY": {
+"ar": "تقيل",
+"pt": "PESADO"
+},
+"Handle everyday errands, talk about plans, your day and the past.": {
+"ar": "خلص مشاويرك اليومية، اتكلم عن خططك، ويومك، واللي فات.",
+"pt": "Resolver perrengues do dia a dia, falar dos planos, do seu dia e do passado."
+},
+"Hard": {
+"ar": "صعب",
+"pt": "Difícil"
+},
+"Hard sounds": {
+"ar": "أصوات صعبة",
+"pt": "Sons difíceis"
+},
+"Have {0} phrases in your review deck": {
+"ar": "عندك {0} جملة في كروت المراجعة",
+"pt": "Ter {0} frases no seu baralho de revisão"
+},
+"Hear": {
+"ar": "اسمع",
+"pt": "Ouvir"
+},
+"Heard:": {
+"ar": "سمعت:",
+"pt": "Ouvido:"
+},
+"Hide English": {
+"ar": "خبي الترجمة",
+"pt": "Esconder tradução"
+},
+"Hint": {
+"ar": "تلميح",
+"pt": "Dica"
+},
+"Hit {0}% on A{1}": {
+"ar": "وصل لـ {0}% في A{1}",
+"pt": "Bater {0}% no A{1}"
+},
+"Home": {
+"ar": "الرئيسية",
+"pt": "Início"
+},
+"How the estimate works: each level needs practice hours (Cambridge’s guided-learning ranges), phrases you can produce from memory, and speaking accuracy. Your remaining hours are divided by your real minutes per day over the last two weeks, and shortened or stretched by your accuracy.": {
+"ar": "التقييم بيتحسب إزاي: كل مستوى محتاج ساعات تمرين (حسب مقاييس كامبريدج)، وجمل تقدر تقولها من ذاكرتك، ودقة كلامك. الساعات الفاضلة بتتقسم على دقايقك الحقيقية في اليوم خلال آخر أسبوعين، وبتزيد أو تقل حسب دقتك.",
+"pt": "Como funciona a estimativa: cada nível precisa de horas de prática (baseado na Cambridge), frases que você lembra de cabeça e precisão na fala. Suas horas restantes são divididas pelos seus minutos diários reais nas últimas duas semanas, ajustadas pela sua precisão."
+},
+"Keep a real conversation going, tell stories, deal with most travel situations.": {
+"ar": "افتح حوار حقيقي وكمل فيه، احكي حكايات، وتصرف في أغلب مواقف السفر.",
+"pt": "Manter um papo de verdade, contar histórias e se virar na maioria das viagens."
+},
+"Key removed": {
+"ar": "المفتاح اتمسح",
+"pt": "Chave removida"
+},
+"LEVEL A{0}": {
+"ar": "المستوى A{0}",
+"pt": "NÍVEL A{0}"
+},
+"Learn": {
+"ar": "اتعلم",
+"pt": "Aprender"
+},
+"Levels": {
+"ar": "المستويات",
+"pt": "Níveis"
+},
+"Line {0} of {1}. Say it right after it plays, copying the rhythm.": {
+"ar": "السطر {0} من {1}. قولها بعد ما تشتغل على طول وقلّد الرتم.",
+"pt": "Linha {0} de {1}. Fala logo depois de ouvir, copiando o ritmo."
+},
+"Listen": {
+"ar": "اسمع",
+"pt": "Ouvir"
+},
+"Listen first. Tap a line to replay it, tap any word for its meaning.": {
+"ar": "اسمع الأول. دوس على أي سطر عشان تعيده، ودوس على أي كلمة عشان تعرف معناها.",
+"pt": "Ouve primeiro. Toca numa linha pra repetir ou numa palavra pra ver o significado."
+},
+"Listen slowly": {
+"ar": "اسمع بالبطيء",
+"pt": "Ouvir devagar"
+},
+"Lucy & women": {
+"ar": "لوسي والستات",
+"pt": "Lucy e mulheres"
+},
+"Lucy’s brain is online.": {
+"ar": "مخ لوسي شغال أونلاين.",
+"pt": "O cérebro da Lucy tá online."
+},
+"Lucy’s voice is switched off for this page. Turn it on in the page’s Permissions menu.": {
+"ar": "صوت لوسي مقفول للصفحة دي. شغّله من قائمة أذونات الصفحة.",
+"pt": "A voz da Lucy tá desligada nesta página. Ative no menu de Permissões da página."
+},
+"Made by you": {
+"ar": "من عملك",
+"pt": "Feito por você"
+},
+"Meet Lucy": {
+"ar": "اتعرف على لوسي",
+"pt": "Conheça a Lucy"
+},
+"Men": {
+"ar": "الرجالة",
+"pt": "Homens"
+},
+"Mic blocked in this view. Tap the mic again to use your keyboard’s mic.": {
+"ar": "المايك مقفول هنا. دوس على المايك تاني عشان تستخدم مايك الكيبورد.",
+"pt": "Mic bloqueado aqui. Toca no mic de novo pra usar o do teclado."
+},
+"Milestones": {
+"ar": "إنجازات",
+"pt": "Conquistas"
+},
+"Mission:": {
+"ar": "المهمة:",
+"pt": "Missão:"
+},
+"Missions": {
+"ar": "مهمات",
+"pt": "Missões"
+},
+"New ones arrive after missions": {
+"ar": "حاجات جديدة بتنزل بعد المهمات",
+"pt": "Novas chegam depois das missões"
+},
+"Next phrase →": {
+"ar": "العبارة الجاية →",
+"pt": "Próxima frase →"
+},
+"Next →": {
+"ar": "اللي بعده →",
+"pt": "Próximo →"
+},
+"Next:": {
+"ar": "اللي بعده:",
+"pt": "Próximo:"
+},
+"Next: chunks": {
+"ar": "اللي بعده: مقاطع",
+"pt": "Próximo: blocos"
+},
+"No tricky words logged": {
+"ar": "مفيش كلمات صعبة متسجلة",
+"pt": "Nenhuma palavra difícil salva"
+},
+"Nothing to review yet": {
+"ar": "مفيش حاجة تراجعها لسة",
+"pt": "Nada pra revisar ainda"
+},
+"OM HASSAN": {
+"ar": "أم حسن",
+"pt": "OM HASSAN"
+},
+"OSTA ASHRAF": {
+"ar": "الأسطى أشرف",
+"pt": "OSTA ASHRAF"
+},
+"OSTA REDA": {
+"ar": "الأسطى رضا",
+"pt": "OSTA REDA"
+},
+"Open the pronunciation gym": {
+"ar": "افتح جيم النطق",
+"pt": "Abrir treino de pronúncia"
+},
+"PHRASES": {
+"ar": "عبارات",
+"pt": "FRASES"
+},
+"PRACTICE": {
+"ar": "تمرين",
+"pt": "TREINO"
+},
+"Partner attitude": {
+"ar": "شخصية الشريك",
+"pt": "Vibe do parceiro"
+},
+"Paste your Gemini API key": {
+"ar": "الزق الـ API key بتاع Gemini",
+"pt": "Cola sua chave de API do Gemini"
+},
+"Phrases": {
+"ar": "عبارات",
+"pt": "Frases"
+},
+"Practice script": {
+"ar": "سكربت التمرين",
+"pt": "Roteiro de treino"
+},
+"Practice time": {
+"ar": "وقت التمرين",
+"pt": "Hora de treinar"
+},
+"Practise {0} days in a row": {
+"ar": "اتمرن {0} أيام ورا بعض",
+"pt": "Treine {0} dias seguidos"
+},
+"Progress": {
+"ar": "التقدم",
+"pt": "Progresso"
+},
+"Progress loaded from your Google account": {
+"ar": "تم تحميل تقدمك من حساب Google بتاعك",
+"pt": "Progresso carregado da sua conta do Google"
+},
+"Progress reset": {
+"ar": "تم إعادة ضبط التقدم",
+"pt": "Progresso zerado"
+},
+"Pronunciation gym": {
+"ar": "جيم النطق",
+"pt": "Treino de pronúncia"
+},
+"RECOGNISE ONLY": {
+"ar": "تعرّف فقط",
+"pt": "SÓ RECONHECER"
+},
+"Real conversations by chat or call. Expect to get roasted.": {
+"ar": "محادثات بجد بالشات أو المكالمات. جهز نفسك للتريقة!",
+"pt": "Conversas reais por chat ou ligação. Prepara pra ser zoado."
+},
+"Recall": {
+"ar": "افتكر",
+"pt": "Lembrar"
+},
+"Recognise only. Lucy won’t say this one.": {
+"ar": "تعرّف بس. لوسي مش هتقول دي.",
+"pt": "Só reconhecer. A Lucy não vai falar essa."
+},
+"Repeat {0} native lines": {
+"ar": "كرر {0} جمل من أصحاب اللغة",
+"pt": "Repita {0} frases de nativos"
+},
+"Replay:": {
+"ar": "إعادة:",
+"pt": "Tocar de novo:"
+},
+"Reset my progress": {
+"ar": "صفّر تقدمي",
+"pt": "Zerar meu progresso"
+},
+"Review": {
+"ar": "مراجعة",
+"pt": "Revisar"
+},
+"Review is clear": {
+"ar": "المراجعة فاضية",
+"pt": "Tudo revisado"
+},
+"SAY IT": {
+"ar": "قولها",
+"pt": "FALA"
+},
+"SAY IT IN EGYPTIAN ARABIC": {
+"ar": "قولها بالمصري",
+"pt": "FALA EM ÁRABE EGÍPCIO"
+},
+"SAY IT IN PORTUGUESE": {
+"ar": "قولها بالبرتغالي",
+"pt": "FALA EM PORTUGUÊS"
+},
+"SEU ZÉ": {
+"ar": "SEU ZÉ",
+"pt": "SEU ZÉ"
+},
+"SLANG": {
+"ar": "عامية",
+"pt": "GÍRIA"
+},
+"SLUR": {
+"ar": "إهانة",
+"pt": "OFENSA"
+},
+"SPEAKING": {
+"ar": "محادثة",
+"pt": "FALA"
+},
+"SPICY": {
+"ar": "سبايسي",
+"pt": "PICANTE"
+},
+"Save": {
+"ar": "حفظ",
+"pt": "Salvar"
+},
+"Saved on this device. Google sign-in turns on once the Firebase config is added.": {
+"ar": "اتحفظ على الجهاز ده. تسجيل الدخول بـ Google هيشتغل أول ما تضيف إعدادات Firebase.",
+"pt": "Salvo neste dispositivo. O login do Google é ativado assim que a config do Firebase for adicionada."
+},
+"Send": {
+"ar": "ابعت",
+"pt": "Enviar"
+},
+"Send your first message to a partner": {
+"ar": "ابعت أول رسالة لشريكك",
+"pt": "Manda sua primeira mensagem pra um parceiro"
+},
+"Settings": {
+"ar": "الإعدادات",
+"pt": "Configurações"
+},
+"Shadow": {
+"ar": "قلّد",
+"pt": "Imitar"
+},
+"Shadow {0} lines": {
+"ar": "شادو {0} جمل",
+"pt": "Repetir {0} falas"
+},
+"She’s sarcastic. You’ve been warned.": {
+"ar": "بتتريق على أي حاجة. اعتبر نفسك اتحذرت.",
+"pt": "Ela é sarcástica. Tá avisado."
+},
+"Show answer": {
+"ar": "وريني الإجابة",
+"pt": "Mostrar resposta"
+},
+"Skip line": {
+"ar": "عدّي السطر",
+"pt": "Pular fala"
+},
+"Slow": {
+"ar": "بطيء",
+"pt": "Devagar"
+},
+"Slower": {
+"ar": "أبطأ",
+"pt": "Mais devagar"
+},
+"Spaced repetition: each phrase comes back right before you’d forget it.": {
+"ar": "التكرار المتباعد: كل جملة بترجعلك قبل ما تنساها على طول.",
+"pt": "Repetição espaçada: cada frase volta bem na hora que você ia esquecer."
+},
+"Speak": {
+"ar": "اتكلم",
+"pt": "Falar"
+},
+"Speaking accuracy": {
+"ar": "دقة الكلام",
+"pt": "Precisão da fala"
+},
+"Spicy: jokes, sarcasm, cussing": {
+"ar": "سبايسي: هزار، تريقة، وشتايم",
+"pt": "Picante: piadas, sarcasmo, palavrões"
+},
+"Start a mission": {
+"ar": "ابدأ مهمة",
+"pt": "Começar missão"
+},
+"Street talk": {
+"ar": "كلام الشارع",
+"pt": "Papo de rua"
+},
+"Survived the ahwa": {
+"ar": "عديت من القهوة",
+"pt": "Sobreviveu ao ahwa"
+},
+"Survived the boteco": {
+"ar": "عديت من البوتيكو",
+"pt": "Sobreviveu ao boteco"
+},
+"Sync": {
+"ar": "مزامنة",
+"pt": "Sincronizar"
+},
+"Talk": {
+"ar": "اتكلم",
+"pt": "Conversar"
+},
+"Talk with locals at normal speed, joke, argue, follow TV.": {
+"ar": "اتكلم مع أهل البلد بالسرعة العادية، اهزر، اتخانق، واتفرج على التلفزيون.",
+"pt": "Falar com nativos na velocidade normal, fazer piada, discutir, entender a TV."
+},
+"Tap & speak": {
+"ar": "دوس واتكلم",
+"pt": "Toca e fala"
+},
+"Tap the mic on your keyboard and speak. Lucy stops when you get it right or go quiet.": {
+"ar": "دوس على المايك اللي في الكيبورد واتكلم. Lucy هتقف أول ما تقولها صح أو تسكت.",
+"pt": "Toca no mic do seu teclado e fala. A Lucy para quando você acertar ou ficar em silêncio."
+},
+"Tap to talk": {
+"ar": "دوس عشان تتكلم",
+"pt": "Toca pra falar"
+},
+"Tell Lucy a situation and she writes a mission for you.": {
+"ar": "احكي لـ Lucy موقف وهتفصلك عليه مهمة.",
+"pt": "Conta uma situação pra Lucy e ela cria uma missão pra você."
+},
+"Ten hours of real practice": {
+"ar": "10 ساعات ممارسة بجد",
+"pt": "Dez horas de prática real"
+},
+"The mic stops by itself when you nail it.": {
+"ar": "المايك بيقفل لوحده أول ما تظبطها.",
+"pt": "O mic para sozinho quando você manda bem."
+},
+"The page mic is blocked here, so use your keyboard’s mic instead.": {
+"ar": "مايك الصفحة مقفول هنا، فاستخدم مايك الكيبورد بداله.",
+"pt": "O microfone da página tá bloqueado aqui, então usa o mic do seu teclado."
+},
+"The real one. Grey, peach and white, judges you from the keyboard. She runs this app now.": {
+"ar": "الحقيقية. رمادي في خوخي في أبيض، وبتحكم عليك من الكيبورد. هي اللي ممشية الأبلكيشن ده دلوقتي.",
+"pt": "A original. Cinza, pêssego e branca, te julgando do teclado. Ela que manda nesse app agora."
+},
+"This week": {
+"ar": "الأسبوع ده",
+"pt": "Essa semana"
+},
+"Threshold": {
+"ar": "على العتبة",
+"pt": "Intermediário"
+},
+"Today": {
+"ar": "النهاردة",
+"pt": "Hoje"
+},
+"Tricky words": {
+"ar": "كلمات بتلخبط",
+"pt": "Palavras complicadas"
+},
+"Try:": {
+"ar": "جرب:",
+"pt": "Tenta:"
+},
+"Type it in Arabic or Franco (ezzayak)…": {
+"ar": "اكتب بالعربي أو الفرانكو (ezzayak)...",
+"pt": "Digita em árabe ou Franco (ezzayak)…"
+},
+"Vantage": {
+"ar": "متمكن",
+"pt": "Avançado"
+},
+"Voice call": {
+"ar": "مكالمة صوتية",
+"pt": "Chamada de voz"
+},
+"Voice is busy for a second. Tap again.": {
+"ar": "الصوت مشغول ثانية. دوس تاني.",
+"pt": "A voz tá ocupada por um segundo. Toca de novo."
+},
+"Voices (tap to hear, pick one per row)": {
+"ar": "الأصوات (دوس عشان تسمع، واختار صوت لكل صف)",
+"pt": "Vozes (toca pra ouvir, escolha uma por linha)"
+},
+"Want something specific?": {
+"ar": "عايز حاجة معينة؟",
+"pt": "Quer algo específico?"
+},
+"Waystage": {
+"ar": "نص السكة",
+"pt": "Básico"
+},
+"What should Lucy call you?": {
+"ar": "تحب Lucy تندهلك بإيه؟",
+"pt": "Como a Lucy deve te chamar?"
+},
+"Where you are, what’s left, and when you’ll get there at your current pace.": {
+"ar": "أنت فين دلوقتي، فاضلك إيه، وهتوصل إمتى بمعدلك الحالي.",
+"pt": "Onde você tá, quanto falta e quando vai chegar lá no seu ritmo atual."
+},
+"Whole phrases stick better than single words. Tap to hear.": {
+"ar": "الجمل على بعضها بتثبت أسهل من الكلمات المنفصلة. دوس عشان تسمع.",
+"pt": "Frases inteiras grudam melhor do que palavras soltas. Toca pra ouvir."
+},
+"Without a key, partners use practice scripts. The key stays on this device.": {
+"ar": "من غير مفتاح، الشركاء بيستخدموا سيناريوهات تدريب. المفتاح بيفضل على الجهاز ده.",
+"pt": "Sem uma chave, os parceiros usam roteiros de treino. A chave fica só neste dispositivo."
+},
+"Words you miss when speaking show up here.": {
+"ar": "الكلمات اللي تقع منك وأنت بتتكلم هتظهر هنا.",
+"pt": "As palavras que você errar ao falar vão aparecer aqui."
+},
+"Write": {
+"ar": "اكتب",
+"pt": "Escrever"
+},
+"Write in Arabic or Franco…": {
+"ar": "اكتب بالعربي أو الفرانكو...",
+"pt": "Escreve em árabe ou Franco…"
+},
+"Write it": {
+"ar": "اكتبها",
+"pt": "Escreve aí"
+},
+"Write your own above, more coming": {
+"ar": "اكتب جملك فوق، وفيه أكتر جاي في السكة",
+"pt": "Escreve a sua acima, vem mais por aí"
+},
+"Yalla! Egyptian Arabic it is.": {
+"ar": "يلا! يبقى عربي مصري.",
+"pt": "Yalla! Árabe egípcio, então."
+},
+"Your name": {
+"ar": "اسمك",
+"pt": "Seu nome"
+},
+"Your own lines": {
+"ar": "جملك أنت",
+"pt": "Suas próprias falas"
+},
+"Your words appear here…": {
+"ar": "كلامك هيظهر هنا...",
+"pt": "Suas palavras aparecem aqui…"
+},
+"accuracy ≥{0}%": {
+"ar": "الدقة ≥{0}%",
+"pt": "precisão ≥{0}%"
+},
+"add your free Gemini key in settings for the live AI partner": {
+"ar": "ضيف مفتاح Gemini المجاني بتاعك من الإعدادات عشان تفعل شريك الـ AI اللايف",
+"pt": "adiciona sua chave grátis do Gemini nas configurações pro parceiro de IA ao vivo"
+},
+"coming later": {
+"ar": "جاي قريب",
+"pt": "chegando em breve"
+},
+"e.g. at the gym, dating app, barber…": {
+"ar": "مثلاً: في الجيم، ابلكيشن تعارف، عند الحلاق...",
+"pt": "ex.: na academia, num app de namoro, no barbeiro…"
+},
+"goal {0} min/day": {
+"ar": "الهدف {0} دقيقة/يوم",
+"pt": "meta {0} min/dia"
+},
+"will roast you": {
+"ar": "هتسف عليك",
+"pt": "vai te zoar"
+},
+"{0} / {1} min": {
+"ar": "{0} / {1} دقيقة",
+"pt": "{0} / {1} min"
+},
+"{0} day": {
+"ar": "{0} يوم",
+"pt": "{0} dia"
+},
+"{0} due": {
+"ar": "{0} مستنيينك",
+"pt": "{0} pra revisar"
+},
+"{0} hours": {
+"ar": "{0} ساعات",
+"pt": "{0} horas"
+},
+"{0} mastered": {
+"ar": "{0} إتقنتهم",
+"pt": "{0} dominadas"
+},
+"{0} min": {
+"ar": "{0} د",
+"pt": "{0} min"
+},
+"{0} minutes with Lucy": {
+"ar": "{0} دقايق مع لوسي",
+"pt": "{0} minutos com a Lucy"
+},
+"{0} of {1}. Listen and type it. Dictation trains your ear and your spelling at once.": {
+"ar": "{0} من {1}. اسمع واكتب. الإملاء بيدرب ودنك وإملائك في نفس الوقت.",
+"pt": "{0} de {1}. Ouve e digita. O ditado treina seu ouvido e sua escrita ao mesmo tempo."
+},
+"{0} of {1}. Pulling it out of memory is what makes it stick.": {
+"ar": "{0} من {1}. لما تعصر دماغك وتفتكرها هي اللي بتثبتها.",
+"pt": "{0} de {1}. Tirar da memória é o que faz gravar de verdade."
+},
+"{0} phrases": {
+"ar": "{0} جمل",
+"pt": "{0} frases"
+},
+"{0} phrases at {1}+ day intervals": {
+"ar": "{0} جمل كل {1}+ يوم",
+"pt": "{0} frases com intervalos de {1}+ dias"
+},
+"{0} phrases left": {
+"ar": "فاضل {0} جمل",
+"pt": "{0} frases restantes"
+},
+"{0}-day streak": {
+"ar": "{0} يوم متواصل",
+"pt": "Sequência de {0} dias"
+},
+"{0}/{1} done": {
+"ar": "{0}/{1} خلصوا",
+"pt": "{0}/{1} pronto"
+},
+"~{0} h": {
+"ar": "~{0} س",
+"pt": "~{0} h"
+},
+"~{0} min": {
+"ar": "~{0} د",
+"pt": "~{0} min"
+},
+"~{0} months": {
+"ar": "~{0} شهور",
+"pt": "~{0} meses"
+},
+"~{0} months to go": {
+"ar": "فاضل ~{0} شهور",
+"pt": "faltam ~{0} meses"
+},
+"‹ Progress": {
+"ar": "‹ التقدم",
+"pt": "‹ Progresso"
+},
+"▶ Play": {
+"ar": "▶ شغل",
+"pt": "▶ Play"
+},
+"▶ Play all": {
+"ar": "▶ شغل الكل",
+"pt": "▶ Tocar tudo"
+},
+"WAYSTAGE": {
+"ar": "نص السكة",
+"pt": "BÁSICO"
+},
+"THRESHOLD": {
+"ar": "على العتبة",
+"pt": "INTERMEDIÁRIO"
+},
+"VANTAGE": {
+"ar": "متمكن",
+"pt": "AVANÇADO"
+},
+"LEVEL": {
+"ar": "المستوى",
+"pt": "NÍVEL"
+},
+"Español": {
+"ar": "Español",
+"pt": "Español"
+},
+"Français": {
+"ar": "Français",
+"pt": "Français"
+},
+"Italiano": {
+"ar": "Italiano",
+"pt": "Italiano"
+},
+"日本語": {
+"ar": "日本語",
+"pt": "日本語"
+},
+"Lucy wrote “{0}”": {
+"ar": "لوسي كتبت “{0}”",
+"pt": "A Lucy escreveu “{0}”"
+},
+"Thinking…": {
+"ar": "بتفكر…",
+"pt": "Pensando…"
+},
+"Lucy is busy, try later": {
+"ar": "لوسي مشغولة، جرب تاني بعدين",
+"pt": "A Lucy tá ocupada, tenta mais tarde"
+},
+"Ask Lucy for more": {
+"ar": "اسأل لوسي عن أكتر",
+"pt": "Pede mais pra Lucy"
+},
+"One thing: ": {
+"ar": "حاجة واحدة بس: ",
+"pt": "Só uma coisa: "
+},
+"Sounded natural.": {
+"ar": "طالعة طبيعية.",
+"pt": "Ficou bem natural."
+},
+"Try again, slower.": {
+"ar": "جرب تاني، أبطأ شوية.",
+"pt": "Tenta de novo, mais devagar."
+},
+"Clear and natural. Next one.": {
+"ar": "واضحة وطبيعية. يلا اللي بعده.",
+"pt": "Claro e natural. Próxima."
+},
+"Writing…": {
+"ar": "بتكتب…",
+"pt": "Escrevendo…"
+},
+"Lucy got distracted by a bird. Try again.": {
+"ar": "لوسي اتسحلت مع عصفورة. جرب تاني.",
+"pt": "A Lucy se distraiu com um passarinho. Tenta de novo."
+},
+"Add your free Gemini key in settings first": {
+"ar": "ضيف مفتاح Gemini المجاني بتاعك في الإعدادات الأول",
+"pt": "Adiciona sua chave gratuita do Gemini nas configurações primeiro"
+},
+"Live AI partner · answers anything you say": {
+"ar": "شريك ذكاء اصطناعي مباشر · بيرد على أي حاجة تقولها",
+"pt": "Parceiro de IA ao vivo · responde tudo o que você falar"
+},
+"Saved. Gemini didn’t answer yet, try a chat.": {
+"ar": "اتحفظت. Gemini لسه ماردش، جرب تدردش معاه.",
+"pt": "Salvo. O Gemini ainda não respondeu, tenta mandar um chat."
+},
+"That key didn’t work. Check it and try again.": {
+"ar": "المفتاح ده مانفعش. تأكد منه وجرب تاني.",
+"pt": "Essa chave não funcionou. Dá uma conferida e tenta de novo."
+},
+"Saved on this device only.": {
+"ar": "اتحفظت على الجهاز ده بس.",
+"pt": "Salvo só neste dispositivo."
+},
+"Sign in with Google": {
+"ar": "سجل دخول بـ Google",
+"pt": "Entrar com o Google"
+},
+"Sign out": {
+"ar": "تسجيل خروج",
+"pt": "Sair"
+},
+"Progress follows you to every device.": {
+"ar": "تقدمك معاك على أي جهاز.",
+"pt": "Seu progresso te acompanha em qualquer dispositivo."
+},
+"Couldn’t reach the cloud just now; it retries on the next change.": {
+"ar": "مش عارفين نوصل للكلاود دلوقتي؛ هيحاول تاني مع أول تغيير.",
+"pt": "Não deu pra conectar com a nuvem agora; tenta de novo na próxima alteração."
+},
+"Signed in as": {
+"ar": "مسجل دخول بـ",
+"pt": "Conectado como"
+},
+"Normal speed": {
+"ar": "السرعة العادية",
+"pt": "Velocidade normal"
+},
+"will speak slowly": {
+"ar": "هتتكلم بالراحة",
+"pt": "vai falar devagar"
+},
+"Practise 8 anyway": {
+"ar": "اتمرن على 8 برضه",
+"pt": "Praticar 8 mesmo assim"
+},
+"All caught up. Lucy’s napping.": {
+"ar": "خلصت كله. لوسي بتاخد تعسيلة.",
+"pt": "Tudo em dia! A Lucy tá tirando um cochilo."
+},
+"Practise them in the gym": {
+"ar": "اتمرن عليهم في الجيم",
+"pt": "Treine na academia"
+},
+"Reached": {
+"ar": "وصلت",
+"pt": "Alcançado"
+},
+"Reached!": {
+"ar": "وصلت!",
+"pt": "Alcançado!"
+},
+"Lucy will call you {0} now. Reluctantly.": {
+"ar": "لوسي هتناديلك {0} دلوقتي. من غير نفس بقى.",
+"pt": "A Lucy vai te chamar de {0} agora. A contragosto."
+},
+"Tap again to erase everything": {
+"ar": "دوس تاني عشان تمسح كل حاجة",
+"pt": "Toca de novo pra apagar tudo"
+},
+"Gym": {
+"ar": "الجيم",
+"pt": "Academia"
+},
+"Lucy": {
+"ar": "لوسي",
+"pt": "Lucy"
+},
+"Show English": {
+"ar": "اظهر الترجمة",
+"pt": "Mostrar tradução"
+},
+"Brazil": {
+"ar": "البرازيل",
+"pt": "Brasil"
+},
+"Good morning, {n}.": {
+"ar": "صباح الخير يا {n}.",
+"pt": "Bom dia, {n}."
+},
+"Good afternoon. Where’s my snack?": {
+"ar": "مساء الخير. فين السناك بتاعي؟",
+"pt": "Boa tarde. Cadê meu lanche?"
+},
+"Good evening, {n}. Shall we study?": {
+"ar": "مساء الخير يا {n}. نذاكر؟",
+"pt": "Boa noite, {n}. Bora estudar?"
+},
+"Hi. Where’s my food?": {
+"ar": "أهلاً. فين أكلي؟",
+"pt": "Oi. Cadê minha comida?"
+},
+"Lucy will call you {n} now. Reluctantly.": {
+"ar": "لوسي هتناديك {n} من دلوقتي. غصب عنها.",
+"pt": "A Lucy vai te chamar de {n} agora. Contra a vontade dela."
+},
+"ETA": {
+"ar": "هتوصل",
+"pt": "Previsão"
+},
+"phrases": {
+"ar": "جمل",
+"pt": "frases"
+},
+"time": {
+"ar": "وقت",
+"pt": "tempo"
+},
+"At {0} min a day.": {
+"ar": "على {0} دقيقة في اليوم.",
+"pt": "Com {0} min por dia."
+},
+"At {0} min a day and {1}% speaking accuracy.": {
+"ar": "على {0} دقيقة في اليوم و{1}% دقة في الكلام.",
+"pt": "Com {0} min por dia e {1}% de precisão na fala."
+},
+"Awel kalam": {
+"ar": "أول كلام",
+"pt": "Awel kalam"
+},
+"Primeira conversa": {
+"ar": "أول كلام",
+"pt": "Primeira conversa"
+}
+}

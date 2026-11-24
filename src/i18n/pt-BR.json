@@ -1,0 +1,1394 @@
+{
+"Greetings": {
+"ar": "التحيات"
+},
+"Greet Lucas, ask how he is, and say bye.": {
+"ar": "سَلِّم على Lucas، واسأله عن أخباره، وقول له سلام."
+},
+"and": {
+"ar": "و"
+},
+"there (here: “hey”)": {
+"ar": "هناك (هنا بمعنى: «أهلاً»)"
+},
+"everything": {
+"ar": "كل حاجة"
+},
+"well": {
+"ar": "تمام"
+},
+"you": {
+"ar": "إنت"
+},
+"calm, chill": {
+"ar": "رايق، هادي"
+},
+"good": {
+"ar": "حلو"
+},
+"to see": {
+"ar": "إنك تشوف"
+},
+"too": {
+"ar": "كمان"
+},
+"until": {
+"ar": "لحد"
+},
+"more (até mais = see you)": {
+"ar": "أكتر (até mais = أشوفك بعدين)"
+},
+"Hey, all good?": {
+"ar": "أهلاً، كله تمام؟"
+},
+"All good! And you?": {
+"ar": "كله تمام! وإنت؟"
+},
+"All chill. Good to see you!": {
+"ar": "كله رايق. اتبسطت إني شفتك!"
+},
+"Good to see you too. See you!": {
+"ar": "أنا كمان اتبسطت إني شفتك. أشوفك بعدين!"
+},
+"what’s up? / hey": {
+"ar": "إيه الأخبار؟ / أهلاً"
+},
+"The everyday “hey”. “Oi” works too.": {
+"ar": "«أهلاً» العادية بتاعة كل يوم. و«Oi» تنفع برضه."
+},
+"all good?": {
+"ar": "كله تمام؟"
+},
+"Answer with the same words: “Tudo bem!”": {
+"ar": "جاوب بنفس الكلمات: «Tudo bem!»"
+},
+"all chill": {
+"ar": "كله رايق"
+},
+"good to see you!": {
+"ar": "مبسوط إني شفتك!"
+},
+"see you later!": {
+"ar": "أشوفك بعدين!"
+},
+"thanks! / cheers!": {
+"ar": "شكراً! / تسلم!"
+},
+"Casual thanks. “Obrigado” (men) / “obrigada” (women) is the polite one.": {
+"ar": "شكراً من غير رسميات. «Obrigado» (للرجالة) / «obrigada» (للسيدات) هي الطريقة المؤدبة."
+},
+"good evening / good night": {
+"ar": "مساء الخير / تصبح على خير"
+},
+"“Bom dia” until lunch, “boa tarde” until dark.": {
+"ar": "«Bom dia» لحد الغدا، و«boa tarde» لحد ما تظلم."
+},
+"Introduce yourself": {
+"ar": "عرّف نفسك"
+},
+"Tell Júlia your name and where you’re from, and ask about her.": {
+"ar": "قول لـ Júlia اسمك ومنين، واسألها عن نفسها."
+},
+"which/what": {
+"ar": "إيه"
+},
+"is": {
+"ar": "يكون"
+},
+"the": {
+"ar": "الـ"
+},
+"your": {
+"ar": "بتاعك"
+},
+"name": {
+"ar": "اسم"
+},
+"my": {
+"ar": "بتاعي"
+},
+"of/from": {
+"ar": "من"
+},
+"where": {
+"ar": "فين"
+},
+"I": {
+"ar": "أنا"
+},
+"am": {
+"ar": "أكون"
+},
+"from the": {
+"ar": "من الـ"
+},
+"Egypt": {
+"ar": "مصر"
+},
+"how/what": {
+"ar": "إزاي / إيه"
+},
+"cool": {
+"ar": "جامد"
+},
+"speak(s)": {
+"ar": "بيتكلم"
+},
+"Portuguese": {
+"ar": "بورتغالي"
+},
+"only": {
+"ar": "بس"
+},
+"a": {
+"ar": "ـ"
+},
+"tiny bit": {
+"ar": "حبة صغيرين"
+},
+"Hi! What’s your name?": {
+"ar": "أهلاً! اسمك إيه؟"
+},
+"My name is Twister. And yours?": {
+"ar": "اسمي Twister. وإنت؟"
+},
+"Júlia. Where are you from?": {
+"ar": "Júlia. إنت منين؟"
+},
+"I’m from Egypt, from Cairo.": {
+"ar": "أنا من مصر، من القاهرة."
+},
+"How cool! Do you speak Portuguese?": {
+"ar": "يا جامد! بتتكلم بورتغالي؟"
+},
+"Just a tiny bit!": {
+"ar": "حبة صغيرين بس!"
+},
+"what’s your name?": {
+"ar": "اسمك إيه؟"
+},
+"my name is…": {
+"ar": "اسمي…"
+},
+"and yours?": {
+"ar": "وإنت؟"
+},
+"where are you from?": {
+"ar": "إنت منين؟"
+},
+"I’m from Egypt": {
+"ar": "أنا من مصر"
+},
+"“Eu sou” = I am, for things that define you.": {
+"ar": "“Eu sou” = أنا، للحاجات اللي بتعرّفك."
+},
+"how cool!": {
+"ar": "جامد أوي!"
+},
+"just a tiny bit": {
+"ar": "حبة صغيرين خالص"
+},
+"“-inho” makes anything small and cute: pouco → pouquinho.": {
+"ar": "“-inho” بتخلي أي حاجة صغيرة ومسمسمة: pouco → pouquinho."
+},
+"Order a coffee": {
+"ar": "اطلب قهوة"
+},
+"Order a coffee with milk and a pão de queijo, ask the price and pay by card.": {
+"ar": "اطلب قهوة بلبن و pão de queijo، واسأل على السعر وادفع بالكارت."
+},
+"the/what": {
+"ar": "الـ/إيه"
+},
+"what": {
+"ar": "إيه"
+},
+"will/goes": {
+"ar": "هـ/بيروح"
+},
+"be": {
+"ar": "يكون"
+},
+"today": {
+"ar": "النهاردة"
+},
+"me": {
+"ar": "أنا"
+},
+"see (me vê = get me)": {
+"ar": "يشوف (me vê = هاتلي)"
+},
+"coffee": {
+"ar": "قهوة"
+},
+"with": {
+"ar": "بـ"
+},
+"milk": {
+"ar": "لبن"
+},
+"of course": {
+"ar": "أكيد"
+},
+"bread": {
+"ar": "عيش"
+},
+"of": {
+"ar": "من"
+},
+"cheese": {
+"ar": "جبنة"
+},
+"let’s go": {
+"ar": "يلا بينا"
+},
+"two": {
+"ar": "اتنين"
+},
+"how much": {
+"ar": "بكام"
+},
+"came to": {
+"ar": "عملت"
+},
+"twelve": {
+"ar": "اتناشر"
+},
+"reais (money)": {
+"ar": "reais (فلوس)"
+},
+"can": {
+"ar": "ينفع"
+},
+"on the": {
+"ar": "على"
+},
+"card": {
+"ar": "كارت"
+},
+"Hi! What’ll it be today?": {
+"ar": "أهلاً! هتاخد إيه النهاردة؟"
+},
+"Can I get a coffee with milk?": {
+"ar": "ممكن آخد قهوة بلبن؟"
+},
+"Sure! Cheese bread too?": {
+"ar": "أكيد! وعيش بالجبنة كمان؟"
+},
+"Let’s go, two! How much is it?": {
+"ar": "يلا بينا، اتنين! تعمل كام كده؟"
+},
+"That’s twelve reais.": {
+"ar": "كده اتناشر reais."
+},
+"Can I pay by card?": {
+"ar": "ينفع أدفع بالكارت؟"
+},
+"can I get a…?": {
+"ar": "ممكن آخد...؟"
+},
+"What locals say instead of “eu quero” (I want).": {
+"ar": "اللي أهل البلد بيقولوه بدل “eu quero” (أنا عايز)."
+},
+"coffee with milk": {
+"ar": "قهوة بلبن"
+},
+"“sem leite” = without milk": {
+"ar": "“sem leite” = من غير لبن"
+},
+"cheese bread": {
+"ar": "عيش بالجبنة"
+},
+"The national snack. Order it.": {
+"ar": "السنك القومي بتاعهم. اطلبه."
+},
+"how much is it (in total)?": {
+"ar": "بكام كده (في التوتال)؟"
+},
+"it came to twelve reais": {
+"ar": "عملت اتناشر reais"
+},
+"can it be by card?": {
+"ar": "ينفع بالكارت؟"
+},
+"“No Pix?” is the other way everyone pays.": {
+"ar": "“No Pix?” دي الطريقة التانية اللي الكل بيدفع بيها."
+},
+"that’s all": {
+"ar": "بس كده"
+},
+"Numbers & haggling": {
+"ar": "الأرقام والفصال"
+},
+"Ask Dona Lúcia for prices and haggle for a discount.": {
+"ar": "اسأل Dona Lúcia على الأسعار وفَاصِل معاها عشان تعملك خصم."
+},
+"look": {
+"ar": "بص"
+},
+"mango": {
+"ar": "مانجة"
+},
+"nice and sweet": {
+"ar": "مسكرة وزي العسل"
+},
+"three": {
+"ar": "تلاتة"
+},
+"for": {
+"ar": "بـ"
+},
+"ten": {
+"ar": "عشرة"
+},
+"reais": {
+"ar": "reais"
+},
+"wow": {
+"ar": "واو"
+},
+"it’s": {
+"ar": "ده"
+},
+"expensive": {
+"ar": "غالي"
+},
+"do/make": {
+"ar": "اعمل"
+},
+"four": {
+"ar": "أربعة"
+},
+"deal": {
+"ar": "اتفقنا"
+},
+"Look at the sweet mangoes!": {
+"ar": "بص على المانجو الحلوة دي!"
+},
+"How much is the mango?": {
+"ar": "بكام المانجو؟"
+},
+"Three for ten reais.": {
+"ar": "تلاتة بعشرة reais."
+},
+"Wow, that’s expensive! Give me a discount?": {
+"ar": "واو، دي غالية أوي! تعملي خصم؟"
+},
+"Okay, four for ten for you.": {
+"ar": "خلاص، أربعة بعشرة عشانك."
+},
+"Deal!": {
+"ar": "اتفقنا!"
+},
+"how much is…?": {
+"ar": "بكام...؟"
+},
+"one, two, three, four, five": {
+"ar": "واحد، اتنين، تلاتة، أربعة، خمسة"
+},
+"“seis” (6) is “meia” when people read out phone numbers.": {
+"ar": "“seis” (6) بتكون “meia” لما الناس بتقرا أرقام التليفونات."
+},
+"three for ten reais": {
+"ar": "تلاتة بعشرة reais"
+},
+"that’s expensive!": {
+"ar": "دي غالية أوي!"
+},
+"“Tá barato” = it’s cheap.": {
+"ar": "“Tá barato” = ده رخيص."
+},
+"give me a discount?": {
+"ar": "تعملي خصم؟"
+},
+"deal!": {
+"ar": "اتفقنا!"
+},
+"Literally “it closed”.": {
+"ar": "حرفياً “قفلت”."
+},
+"wow!": {
+"ar": "واو!"
+},
+"Short for “Nossa Senhora” (Our Lady). Used constantly.": {
+"ar": "اختصار لـ “Nossa Senhora” (العذراء مريم). بتستعمل على طول."
+},
+"Ask directions": {
+"ar": "اسأل على الطريق"
+},
+"Find out from Rafa how to get to the beach and if it’s far.": {
+"ar": "اعرف من Rafa إزاي تروح الشاطئ وهل هو بعيد ولا لأ."
+},
+"permission": {
+"ar": "استئذان"
+},
+"is (located)": {
+"ar": "موجود"
+},
+"beach": {
+"ar": "الشاطئ"
+},
+"keep going": {
+"ar": "افضل ماشي"
+},
+"straight": {
+"ar": "على طول"
+},
+"turn": {
+"ar": "احود"
+},
+"to the": {
+"ar": "على"
+},
+"right": {
+"ar": "اليمين"
+},
+"far": {
+"ar": "بعيد"
+},
+"no": {
+"ar": "لأ"
+},
+"really close": {
+"ar": "قريب أوي"
+},
+"about": {
+"ar": "حوالي"
+},
+"five": {
+"ar": "خمسة"
+},
+"minutes": {
+"ar": "دقايق"
+},
+"thanks": {
+"ar": "شكراً"
+},
+"bro": {
+"ar": "يا صاحبي"
+},
+"Excuse me, where’s the beach?": {
+"ar": "لو سمحت، فين الشاطئ؟"
+},
+"Go straight and turn right.": {
+"ar": "امشي على طول واحود يمين."
+},
+"Is it far?": {
+"ar": "هو بعيد؟"
+},
+"No, it’s super close! About five minutes.": {
+"ar": "لأ، ده قريب أوي! حوالي خمس دقايق."
+},
+"Thanks, bro!": {
+"ar": "شكراً يا صاحبي!"
+},
+"excuse me": {
+"ar": "لو سمحت"
+},
+"where is…? (places)": {
+"ar": "فين...؟ (أماكن)"
+},
+"go straight": {
+"ar": "امشي على طول"
+},
+"turn right / left": {
+"ar": "احود يمين / شمال"
+},
+"is it far?": {
+"ar": "هو بعيد؟"
+},
+"it’s really close": {
+"ar": "ده قريب أوي"
+},
+"pertinho = perto (near) + -inho.": {
+"ar": "pertinho = perto (قريب) + -inho."
+},
+"Ride & small talk": {
+"ar": "التوصيلة والرغي"
+},
+"Get Seu Zé to take you to Copacabana and survive his football talk.": {
+"ar": "خلي Seu Zé يوصلك لـ Copacabana واطلع عايش من كلامه عن الكورة."
+},
+"night/evening": {
+"ar": "ليل / مسا"
+},
+"are": {
+"ar": "يكون"
+},
+"go": {
+"ar": "يروح"
+},
+"to": {
+"ar": "لـ"
+},
+"air (AC)": {
+"ar": "التكييف"
+},
+"great": {
+"ar": "عظيم"
+},
+"support (a team)": {
+"ar": "يشجع (فريق)"
+},
+"which": {
+"ar": "أنهي"
+},
+"team": {
+"ar": "فريق"
+},
+"Good evening! Are you Twister?": {
+"ar": "مساء الخير! هو أنت Twister؟"
+},
+"That’s me! Can you go to Copacabana?": {
+"ar": "أيوة ده أنا! تقدر تروح Copacabana؟"
+},
+"Let’s go! Is the AC okay?": {
+"ar": "يلا بينا! التكييف تمام؟"
+},
+"It’s great, thanks.": {
+"ar": "زي الفل، شكراً."
+},
+"Which team do you support?": {
+"ar": "بتشجع فريق إيه؟"
+},
+"Flamengo, of course!": {
+"ar": "Flamengo أكيد!"
+},
+"that’s me!": {
+"ar": "أيوة ده أنا!"
+},
+"can you go to…?": {
+"ar": "تقدر تروح…؟"
+},
+"“pra” is the spoken form of “para” (to/for).": {
+"ar": "“pra” هي الشكل العامي لـ “para” (لـ/عشان)."
+},
+"it’s great": {
+"ar": "زي الفل"
+},
+"you can stop here": {
+"ar": "ممكن تقف هنا"
+},
+"there’s a lot of traffic": {
+"ar": "فيه زحمة أوي"
+},
+"which team do you support?": {
+"ar": "بتشجع فريق إيه؟"
+},
+"Football is small talk number one. Pick a team before you land.": {
+"ar": "الكورة هي موضوع الكلام رقم واحد. اختار فريق قبل ما تنزل."
+},
+"Texting like a Brazilian": {
+"ar": "الشات زي البرازيليين"
+},
+"Text Gabi, make plans for tonight and use at least two abbreviations.": {
+"ar": "ابعت مسج لـ Gabi، واعملوا خطط للنهاردة بالليل واستخدم اختصارين على الأقل."
+},
+"hi": {
+"ar": "هاي"
+},
+"stranger (vanished one)": {
+"ar": "يا مختفي (يا غايب)"
+},
+"tudo": {
+"ar": "tudo"
+},
+"haha": {
+"ar": "هههه"
+},
+"yes": {
+"ar": "أيوة"
+},
+"você": {
+"ar": "você"
+},
+"meu Deus (OMG)": {
+"ar": "meu Deus (يا لهوي)"
+},
+"I am": {
+"ar": "أنا"
+},
+"dead": {
+"ar": "ميت"
+},
+"tired": {
+"ar": "تعبان"
+},
+"let’s": {
+"ar": "يلا"
+},
+"go out": {
+"ar": "نخرج"
+},
+"hoje (today)": {
+"ar": "hoje (النهاردة)"
+},
+"time": {
+"ar": "الوقت"
+},
+"at": {
+"ar": "الساعة"
+},
+"eight": {
+"ar": "تمانية"
+},
+"beleza (ok)": {
+"ar": "beleza (قشطة)"
+},
+"Hey stranger! All good? haha": {
+"ar": "إيه يا مختفي! كلو تمام؟ هههه"
+},
+"OMG, I’m dead tired": {
+"ar": "يا لهوي، أنا ميت من التعب"
+},
+"Wanna go out today?": {
+"ar": "تحب نخرج النهاردة؟"
+},
+"Let’s go! What time?": {
+"ar": "يلا بينا! الساعة كام؟"
+},
+"At eight, okay?": {
+"ar": "الساعة تمانية، قشطة؟"
+},
+"hahaha": {
+"ar": "هههههه"
+},
+"Brazilians laugh in k’s. More k’s = funnier.": {
+"ar": "البرازيليين بيضحكوا بحرف الـ k. كل ما كترت الـ k كل ما كانت أضحك."
+},
+"everything / all": {
+"ar": "كل حاجة / كلو"
+},
+"cool / okay": {
+"ar": "جامد / قشطة"
+},
+"Say it out loud too: “Beleza!”": {
+"ar": "قولها بصوت عالي برضه: “Beleza!”"
+},
+"OMG": {
+"ar": "يا لهوي"
+},
+"hey stranger!": {
+"ar": "إيه يا مختفي!"
+},
+"For someone who vanished. “Sumida” for a woman.": {
+"ar": "لحد اختفى. “Sumida” للستات."
+},
+"I’m dead tired": {
+"ar": "أنا ميت من التعب"
+},
+"“Tô” = “estou” (I am), always shortened when speaking.": {
+"ar": "“Tô” = “estou” (أنا)، دايماً بتختصر في الكلام."
+},
+"Street talk & cusses": {
+"ar": "كلام الشارع والشتائم"
+},
+"Banter with Léo at the boteco: apologise for being late, insult him back and order a beer.": {
+"ar": "هزر مع Léo في الـ boteco: اعتذر له إنك اتأخرت، ورد عليه الشتيمة واطلب بيرة."
+},
+"damn/fuck": {
+"ar": "أحا/احيه"
+},
+"arrived": {
+"ar": "وصلت"
+},
+"late": {
+"ar": "متأخر"
+},
+"new (de novo = again)": {
+"ar": "جديد (de novo = تاني)"
+},
+"was": {
+"ar": "كان"
+},
+"bad": {
+"ar": "وحش"
+},
+"dude": {
+"ar": "يا سطى"
+},
+"traffic": {
+"ar": "زحمة"
+},
+"shit": {
+"ar": "خرا"
+},
+"fuck": {
+"ar": "أحا"
+},
+"there is": {
+"ar": "فيه"
+},
+"game": {
+"ar": "ماتش"
+},
+"Thief ref! Cuckold!": {
+"ar": "يا حكم يا حرامي! يا معرّص!"
+},
+"What the hell was that play?": {
+"ar": "إيه اللعبة الخرا دي؟"
+},
+"That defender is a jerk, dude.": {
+"ar": "المدافع ده بضان قوي يا صاحبي."
+},
+"Holy shit, what a howler from the keeper!": {
+"ar": "أحا، إيه الفضيحة اللي عملها الجون دي!"
+},
+"Up yours, ref!": {
+"ar": "كسمك يا حكم!"
+},
+"Easy, bro! There’s still a game on.": {
+"ar": "اهدا يا زميلي! لسه الماتش شغال."
+},
+"howler (keeper’s blunder)": {
+"ar": "فضيحة (غلطة حارس كارثية)"
+},
+"Literally “chicken”. Pure football slang.": {
+"ar": "حرفياً “chicken”. مصطلح كورة بحت."
+},
+"thief ref!": {
+"ar": "يا حكم يا حرامي!"
+},
+"Every stadium, every Sunday.": {
+"ar": "في كل إستاد، كل حد."
+},
+"jerk, idiot": {
+"ar": "بضان، حمار"
+},
+"sucker, idiot": {
+"ar": "مغفل، عبيط"
+},
+"crap, shit": {
+"ar": "خرا، زفت"
+},
+"“Que bosta!” = what crap!": {
+"ar": "“Que bosta!” = يا لهوي على الخرا!"
+},
+"damn!": {
+"ar": "أحا!"
+},
+"Softer than “caralho”.": {
+"ar": "أخف من “caralho”."
+},
+"damn it! (lit. disgrace)": {
+"ar": "يلعن كدة! (حرفياً: نكبة / مصيبة)"
+},
+"Also “desgraçado” = bastard.": {
+"ar": "برضه “desgraçado” = ابن وسخة."
+},
+"holy shit!": {
+"ar": "يا دين أمي!"
+},
+"son of a bitch": {
+"ar": "ابن شرموطة"
+},
+"Insult, but also amazement: “filho da puta, que golaço!”": {
+"ar": "شتيمة، بس برضه للإبهار: “filho da puta, que golaço!”"
+},
+"asshole": {
+"ar": "معرص"
+},
+"asshole (very rude)": {
+"ar": "ابن متناكة (وقحة جداً)"
+},
+"São Paulo favourite.": {
+"ar": "الكلمة المفضلة في São Paulo."
+},
+"up yours / fuck off": {
+"ar": "في طيزك / كسمك / غور في داهية"
+},
+"Often shortened to “vtnc” in texts.": {
+"ar": "غالباً بتختصر لـ “vtnc” في الشات."
+},
+"a cuckold who’s fine with it": {
+"ar": "ديوث عادي عنده / معرص ومبسوط"
+},
+"Joke insult in banter.": {
+"ar": "شتيمة هزار في وسط القفشات."
+},
+"homophobic slur": {
+"ar": "لفظ مهين للمثليين"
+},
+"Some friends throw it around jokingly, but it’s a slur and offensive to many. Recognise it; don’t use it.": {
+"ar": "صحاب بيحدفوها لبعض هزار، بس هي لفظ مهين ومشين لناس كتير. اعرفها، بس متستخدمهاش."
+},
+"racist slur": {
+"ar": "شتيمة عنصرية"
+},
+"Racist. Recognise it; never use it.": {
+"ar": "عنصرية. اعرفها، وإياك تستخدمها."
+},
+"slur for lesbians": {
+"ar": "لفظ مهين للمثليات"
+},
+"Reclaimed by some lesbians themselves; offensive from outsiders. Recognise it only.": {
+"ar": "بعض المثليات بيستخدموها لنفسهم، بس مهينة لو طلعت من حد براهم. اعرفها وبس."
+},
+"Order a full meal": {
+"ar": "اطلب وجبة كاملة"
+},
+"Ask Tião for a recommendation, order food and a drink, and ask for the bill.": {
+"ar": "اطلب ترشيح من Tião، واطلب أكل ومشروب، واطلب الشيك."
+},
+"already": {
+"ar": "خلاص"
+},
+"chose": {
+"ar": "اختار"
+},
+"not": {
+"ar": "مش"
+},
+"recommend": {
+"ar": "يرشح"
+},
+"bean & pork stew": {
+"ar": "يخنة فاصوليا ولحمة خنزير"
+},
+"delight": {
+"ar": "عظمة / حاجة تجنن"
+},
+"then": {
+"ar": "ساعتها / خلاص"
+},
+"I will": {
+"ar": "أنا هـ"
+},
+"want": {
+"ar": "عايز"
+},
+"guaraná soda": {
+"ar": "صودا guaraná"
+},
+"cold": {
+"ar": "ساقعة"
+},
+"or": {
+"ar": "ولا"
+},
+"room temperature": {
+"ar": "بحرارة الأوضة / عادية"
+},
+"very": {
+"ar": "جداً / قوي"
+},
+"bring": {
+"ar": "هات"
+},
+"bill": {
+"ar": "الحساب"
+},
+"after": {
+"ar": "بعد"
+},
+"favour": {
+"ar": "جميل / معروف"
+},
+"Have you chosen yet?": {
+"ar": "اخترت ولا لسه؟"
+},
+"Not yet. What do you recommend?": {
+"ar": "لسه. بترشح إيه؟"
+},
+"The feijoada is delicious today.": {
+"ar": "الـ feijoada عظمة النهاردة."
+},
+"Then I’ll have a feijoada and a guaraná.": {
+"ar": "خلاص هاخد feijoada وواحدة guaraná."
+},
+"Cold or room temperature?": {
+"ar": "ساقعة ولا عادية؟"
+},
+"Nice and cold. And bring the bill after, please.": {
+"ar": "ساقعة وحلوة كده. وهات الحساب بعدها، لو سمحت."
+},
+"have you (all) chosen?": {
+"ar": "اخترتوا؟"
+},
+"what do you recommend?": {
+"ar": "ترشح إيه؟"
+},
+"it’s delicious": {
+"ar": "طعمه تحفة"
+},
+"I’ll have…": {
+"ar": "أنا هاخد..."
+},
+"“vou” + verb is the easy future: vou comer, vou pagar.": {
+"ar": "“vou” + الفعل ده المستقبل السهل: vou comer، vou pagar."
+},
+"nice and cold": {
+"ar": "ساقعة وحلوة كده"
+},
+"“bem” before an adjective = very.": {
+"ar": "“bem” قبل الصفة = جداً / أوي."
+},
+"bring the bill": {
+"ar": "هات الحساب"
+},
+"I’m full": {
+"ar": "أنا شبعت"
+},
+"“Tô cheia” for a woman.": {
+"ar": "“Tô cheia” للست."
+},
+"Make plans": {
+"ar": "ظبّط خروج"
+},
+"Make weekend plans with Júlia: where, when and where to meet.": {
+"ar": "ظبّط خطط الويك إند مع Júlia: فين، وإمتى، ونتقابل فين."
+},
+"will": {
+"ar": "هـ"
+},
+"do": {
+"ar": "يعمل"
+},
+"end": {
+"ar": "نهاية"
+},
+"week": {
+"ar": "أسبوع"
+},
+"I go/will": {
+"ar": "أنا رايح / هـ"
+},
+"Saturday": {
+"ar": "السبت"
+},
+"to a": {
+"ar": "لـ"
+},
+"concert": {
+"ar": "حفلة"
+},
+"Sunday": {
+"ar": "الحد"
+},
+"to go": {
+"ar": "يروح"
+},
+"I want": {
+"ar": "عايز"
+},
+"starts": {
+"ar": "يبدأ"
+},
+"nine": {
+"ar": "تسعة"
+},
+"people (a gente = we)": {
+"ar": "ناس (a gente = إحنا)"
+},
+"each other": {
+"ar": "بعض"
+},
+"meet": {
+"ar": "يتقابل"
+},
+"there": {
+"ar": "هناك"
+},
+"What are you doing this weekend?": {
+"ar": "هتعمل إيه في الويك إند ده؟"
+},
+"I’m going to the beach on Saturday. And you?": {
+"ar": "أنا رايح البحر يوم السبت. وإنت؟"
+},
+"I’m going to a concert on Sunday. Wanna come?": {
+"ar": "أنا رايح حفلة يوم الحد. تحب تيجي؟"
+},
+"Yes! What time does it start?": {
+"ar": "ياريت! هتبدأ الساعة كام؟"
+},
+"At nine. Shall we meet there?": {
+"ar": "الساعة تسعة. نتقابل هناك؟"
+},
+"Deal! See you Sunday.": {
+"ar": "تمام اتفقنا! أشوفك الحد."
+},
+"what are you going to do…?": {
+"ar": "هتعمل إيه...؟"
+},
+"I’m going to the beach": {
+"ar": "أنا رايح البحر"
+},
+"on Saturday / on Sunday": {
+"ar": "يوم السبت / يوم الحد"
+},
+"wanna go?": {
+"ar": "تحب تروح؟"
+},
+"what time does it start?": {
+"ar": "هتبدأ الساعة كام؟"
+},
+"shall we meet there?": {
+"ar": "نتقابل هناك؟"
+},
+"“A gente” = we, in everyday speech (instead of “nós”).": {
+"ar": "“A gente” = إحنا، في الكلام اليومي (بدل “nós”)."
+},
+"Chat with Lucy herself": {
+"ar": "اتكلم مع Lucy بنفسها"
+},
+"Oh, finally. Where’s my food, human?": {
+"ar": "أخيراً ياخي. فين أكلي يا بن آدم؟"
+},
+"Lies. I’m starving. Look at this face.": {
+"ar": "كدب. أنا واقع من الجوع. بص لوشي ده كده."
+},
+"I know I’m cute. Now get off the keyboard, it’s mine.": {
+"ar": "عارف إني قمر. قوم بقى من على الكيبورد، ده بتاعي."
+},
+"Good night. I’m sleeping here. Don’t wake me.": {
+"ar": "تصبح على خير. أنا هنام هنا. إياك تصحيني."
+},
+"Beers & banter with a friend": {
+"ar": "بيرة ورغي وهزار مع صاحبك"
+},
+"Damn, finally! I thought you’d died, bro.": {
+"ar": "يخرب بيتك أخيراً! افتكرتك موت يا صاحبي."
+},
+"Yeah yeah. Beer or caipirinha, you screw-up?": {
+"ar": "أيوه أيوه. بيرة ولا caipirinha يا فاشل؟"
+},
+"Fuck, look at that price! It’s crazy expensive.": {
+"ar": "أحا، بص على السعر ده! ده غالي فشخ."
+},
+"Cool, the round is on you then, cuckold. Cheers!": {
+"ar": "قشطة، الدور عليك إنت بقى يا معرص. بصحتك!"
+},
+"Curse the ref with a fan": {
+"ar": "اشتم الحكم مع واحد من المشجعين"
+},
+"Thief ref! Did you see that, bro?!": {
+"ar": "حكم حرامي! شفت دي يا صاحبي؟!"
+},
+"Clear penalty! This ref is a son of a bitch.": {
+"ar": "ضربة جزاء واضحة! الحكم ده ابن متناكة."
+},
+"And the keeper? What a howler, fuck!": {
+"ar": "والحارس؟ إيه الفضيحة دي، أحا!"
+},
+"Goooal! Fuck, what a goal! Love you, bro!": {
+"ar": "جوووول! أحا، إيه الجول ده! بحبك يا صاحبي!"
+},
+"Order coffee & pão de queijo": {
+"ar": "اطلب قهوة وpão de queijo"
+},
+"discount": {
+"ar": "خصم"
+},
+"always": {
+"ar": "دايماً"
+},
+"same": {
+"ar": "نفس"
+},
+"excuse": {
+"ar": "حجة"
+},
+"huh": {
+"ar": "ها"
+},
+"stop": {
+"ar": "بطل"
+},
+"complaining": {
+"ar": "نكودة"
+},
+"order": {
+"ar": "اطلب"
+},
+"beer": {
+"ar": "بيرة"
+},
+"you (insult intensifier)": {
+"ar": "يا"
+},
+"cuckold": {
+"ar": "قرني"
+},
+"this": {
+"ar": "ده"
+},
+"round": {
+"ar": "دور"
+},
+"yours": {
+"ar": "عليك"
+},
+"screw-up": {
+"ar": "عكاك"
+},
+"Damn, bro, you’re late again!": {
+"ar": "أحا يا صاحبي، اتأخرت تاني!"
+},
+"My bad, dude! Traffic was shit.": {
+"ar": "حقك عليا يا زميلي! الطريق كان خرى."
+},
+"Fuck, always the same excuse, huh!": {
+"ar": "أحا، دايماً نفس الحجة، ها!"
+},
+"Stop whining and order a beer, you cuckold.": {
+"ar": "بطل زن واطلب بيرة يا قرني."
+},
+"You’re the cuckold! This round’s on you, screw-up.": {
+"ar": "أنت اللي قرني! الدور ده عليك يا عكاك."
+},
+"dude / bro": {
+"ar": "يا زميلي / يا صاحبي"
+},
+"“Mano” is more São Paulo, “cara” is everywhere.": {
+"ar": "كلمة “Mano” بتتقال أكتر في São Paulo، إنما “cara” في كل حتة."
+},
+"you know? / get it?": {
+"ar": "فاهم؟ / واخد بالك؟"
+},
+"my bad": {
+"ar": "حقك عليا"
+},
+"let’s go!": {
+"ar": "يلا بينا!"
+},
+"what a drag!": {
+"ar": "حاجة بضان!"
+},
+"Fine with friends, rude in public.": {
+"ar": "عادي بين الصحاب، بس قلة ذوق قدام الناس."
+},
+"damn! / fuck!": {
+"ar": "أحا! / كسم كدة!"
+},
+"The comma of Brazilian Portuguese: surprise, anger, emphasis. Friends only, never your boss.": {
+"ar": "فاصلة البرتغالي البرازيلي: تفاجؤ، غضب، توكيد. مع الصحاب بس، أوعى تقولها لمديرك."
+},
+"screw-up, flake": {
+"ar": "عكاك، ملوش كلمة"
+},
+"Teasing. Call a friend this when they mess up.": {
+"ar": "تريقة. قولها لصاحبك لما يعك."
+},
+"The classic insult and football chant: “Juiz corno!” (the ref’s a cuckold). Banter between friends; a real insult if you mean it.": {
+"ar": "الشتيمة وهتاف الملاعب الكلاسيكي: “Juiz corno!” (الحكم قرني). هزار بين الصحاب؛ بس شتيمة بجد لو قاصدها."
+},
+"fuck! (shock or joy)": {
+"ar": "أحا! (صدمة أو فرحة)"
+},
+"“Pra caralho” = a fuckton: “caro pra caralho”.": {
+"ar": "“Pra caralho” = فشخ: “caro pra caralho” (غالي فشخ)."
+},
+"holy shit! (PQP)": {
+"ar": "أحا فشخ! (PQP)"
+},
+"Often typed as “pqp”.": {
+"ar": "بتتكتب كتير كـ “pqp”."
+},
+"fuck it / screw it": {
+"ar": "فكك / كسمها"
+},
+"go fuck yourself": {
+"ar": "روح اتناك"
+},
+"Real insult. Laugh it off only between close friends.": {
+"ar": "شتيمة بجد. متعديهاش بهزار إلا بين الصحاب القريبين أوي."
+},
+"monkey": {
+"ar": "قرد"
+},
+"The animal is just “macaco”. Aimed at a person it’s a racist insult, and in Brazil that’s a crime (injúria racial). Recognise it; never call anyone this.": {
+"ar": "الحيوان عادي اسمه “macaco”. لو لشخص بتبقى إهانة عنصرية، وفي البرازيل دي جريمة (injúria racial). اعرفها؛ بس أوعى تقولها لحد."
+},
+"“black monkey”": {
+"ar": "“قرد أسود”"
+},
+"A racist slur. Know it so you can recognise it, never say it to anyone.": {
+"ar": "شتيمة عنصرية. اعرفها عشان تاخد بالك منها، إياك تقولها لحد."
+},
+"Insults, comebacks & slurs to recognise": {
+"ar": "شتايم وقصف جبهات وإهانات عنصرية عشان تاخد بالك منها"
+},
+"Watch the game with Caio: curse the ref, react to the keeper’s blunder and calm him down.": {
+"ar": "اتفرج على الماتش مع Caio: اشتم الحكم، اتفاعل مع غلطة الجون الكارثية وهدّيه."
+},
+"referee": {
+"ar": "حكم"
+},
+"thief": {
+"ar": "حرامي"
+},
+"play/move": {
+"ar": "لعبة"
+},
+"that": {
+"ar": "دي"
+},
+"damn": {
+"ar": "يلعن"
+},
+"defender": {
+"ar": "مدافع"
+},
+"jerk": {
+"ar": "واطي"
+},
+"whore (puta merda = holy shit)": {
+"ar": "شرموطة (puta merda = أحا فشخ)"
+},
+"howler (lit. chicken)": {
+"ar": "فضيحة (حرفياً: فرخة)"
+},
+"of the": {
+"ar": "بتاع"
+},
+"goalkeeper": {
+"ar": "جون"
+},
+"take": {
+"ar": "خد"
+},
+"in the": {
+"ar": "في الـ"
+},
+"ass": {
+"ar": "طيز"
+},
+"calm": {
+"ar": "اهدى"
+},
+"still": {
+"ar": "لسه"
+},
+"Hi! Good morning! What’ll it be today?": {
+"ar": "أهلاً! صباح الفل! هتطلب إيه النهاردة؟"
+},
+"With or without milk? Think fast, the line is huge.": {
+"ar": "بلبن ولا من غير؟ فكر بسرعة الطابور زحمة أوي."
+},
+"Great! Anything else?": {
+"ar": "تمام! أي حاجة تانية؟"
+},
+"That’s twelve reais. Card or Pix?": {
+"ar": "كده اثناشر reais. كارت ولا Pix؟"
+},
+"All paid! Come back tomorrow, okay?": {
+"ar": "كله تمام وادفع! تيجي بكرة بقى، قشطة؟"
+},
+"Prices & haggling": {
+"ar": "الأسعار والفصال"
+},
+"Look at the sweet mangoes! What will it be, dear?": {
+"ar": "بص على المانجة المسكرة! هتأخد إيه يا غالي؟"
+},
+"Three mangoes for ten reais!": {
+"ar": "تلاتة مانجة بعشرة reais!"
+},
+"Oh, you’re killing me… Four for ten, just for you.": {
+"ar": "يا عم أنت كده بتخرب بيتي... أربعة بعشرة عشان خاطرك أنت بس."
+},
+"That’s ten reais. Come back anytime!": {
+"ar": "كده عشرة reais. تنور في أي وقت!"
+},
+"Ride & football talk": {
+"ar": "كلام في السكة والكورة"
+},
+"Let’s go. Ugh, look at this traffic, what a drag.": {
+"ar": "يلا بينا. يوووه، بص على الزحمة دي، خنقة أوي."
+},
+"Flamengo?! You can get out right here. Kidding!": {
+"ar": "Flamengo؟! انزل هنا بقى. بهزر معاك!"
+},
+"Text a friend": {
+"ar": "ابعت مسدج لصاحبك"
+},
+"hey stranger!! all good? haha": {
+"ar": "يا قاطع!! كله تمام؟ هههه"
+},
+"omg I’m dead tired": {
+"ar": "يا لهوي أنا ميت من التعب"
+},
+"let’s go! what time?": {
+"ar": "يلا بينا! الساعة كام؟"
+},
+"deal!! see you": {
+"ar": "قشطة اتفقنا!! أشوفك بعدين"
+},
+"The feijoada is delicious. If you don’t like it, that’s on you.": {
+"ar": "الـ feijoada تحفة. لو معجبتكش يبقى العيب في ذوقك."
+},
+"And to drink?": {
+"ar": "وتشرب إيه؟"
+},
+"Here you go. When you want the bill, just shout.": {
+"ar": "اتفضل. لما تعوز الحساب ناديني بس."
+},
+"Small talk at a party": {
+"ar": "دردشة في حفلة"
+},
+"Hi! I don’t think we’ve met. I’m Júlia!": {
+"ar": "هاي! متهيألي متقابلناش قبل كده. أنا Júlia!"
+},
+"Nice to meet you! Where are you from?": {
+"ar": "فرصة سعيدة! أنت منين؟"
+},
+"How cool! Do you speak Portuguese or just pretend?": {
+"ar": "جامد أوي! أنت بتتكلم Portuguese بجد ولا بتشتغلنا؟"
+},
+"Haha, I like you! Come, I’ll introduce you to everyone!": {
+"ar": "هههه دمك خفيف وعاجبني! تعالى أعرفك على الناس كلها!"
+},
+"“Onde fica a praia?”": {
+"ar": "“Onde fica a praia?”"
+},
+"Hey, lost, gringo?": {
+"ar": "إيه، تايه يا gringo؟"
+},
+"The beach? It’s super close! Go straight and turn right.": {
+"ar": "البحر؟ ده قريب فشخ! امشِ طوالي وادخل يمين."
+},
+"About five minutes. Even you can make it.": {
+"ar": "حوالي خمس دقايق. ده حتى أنت هتعرف توصله."
+},
+"You’re welcome! Watch out for the sun, huh!": {
+"ar": "العفو! خلي بالك من الشمس بقى ها!"
+},
+"Damn, that’s expensive!": {
+"ar": "أحا، ده غالي فشخ!"
+},
+"My bad, dude!": {
+"ar": "حقك عليا يا اسطا!"
+},
+"You know?": {
+"ar": "فاهم؟"
+},
+"Holy shit!": {
+"ar": "يا نهار أسود!"
+},
+"You’re the cuckold!": {
+"ar": "أنت اللي قرني!"
+},
+"Good to see you!": {
+"ar": "مبسوط إني شفتك!"
+},
+"Good night!": {
+"ar": "تصبح على خير!"
+},
+"Can I get a cheese bread?": {
+"ar": "ممكن عيش بالجبنة؟"
+},
+"Coffee with milk, please.": {
+"ar": "قهوة بلبن، لو سمحت."
+},
+"No, thank you.": {
+"ar": "لا، شكراً."
+},
+"I work a lot.": {
+"ar": "أنا بشتغل كتير."
+},
+"Rio de Janeiro is beautiful.": {
+"ar": "Rio de Janeiro جميلة أوي."
+},
+"Lucy sleeps on the keyboard.": {
+"ar": "Lucy بتنام على الكيبورد."
+}
+}

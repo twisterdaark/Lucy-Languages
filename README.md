@@ -32,9 +32,23 @@ Sources live in `src/` (`a.js` content and progress model, `b.js` voice, mic, sc
 3. Deploy `firestore.rules` (each person only reads and writes `users/<their uid>/…`).
 4. In the Firebase console: Authentication → Google → Enable, and add `twisterdaark.github.io` to Authorized domains.
 
-## More languages
+## Courses and menu languages
 
-`COURSES` in `src/a.js` lists the languages. Portuguese is live; a new language adds its own units, scenes, phrases and
-levels next to the Portuguese ones.
+Two courses are live, each with its own progress (missions, review deck, stats); XP, streak and settings are shared:
+- **Brazilian Portuguese**: `src/pt.js`
+- **Egyptian Arabic** (Cairo, ʿāmmiyya): `src/ar.js`. Arabic script with Franco (Arabizi) under every line. The mic
+  accepts Arabic or Franco, so you can also type `ezzayak`. `node tools/check-ar.mjs` checks that every Franco line has
+  as many words as its Arabic line (the mic scores word by word).
+
+A new course is one more file with the same shape, added to `COURSE_DATA` and `COURSES` in `src/a.js`.
+
+Menus come in English, Arabic (right-to-left) or Portuguese (`src/i18n.js`, tables in `src/i18n/`). The Portuguese
+course's meanings are translated into Arabic, and the Arabic course's meanings into Portuguese and Arabic.
+
+## Voices
+
+Every fixed lesson and scene line gets a pre-made neural voice file when the site deploys (`tools/lines.mjs` lists them,
+`tools/voices.py` makes them with edge-tts, cached between runs): Francisca and Antonio for Portuguese, Salma and Shakir
+for Egyptian Arabic. Live AI chat lines use Gemini's voice (about 10 free lines a day per model), then the phone's own.
 
 Icons: game-icons.net (CC BY 3.0, Lorc, Delapouite and others).

@@ -9,7 +9,8 @@ const lid = cx => `<g class="lid"><ellipse cx="${cx}" cy="110" rx="19" ry="19" f
 inner = inner.replace(/(<path d="M93 128)/, lid(70) + lid(130) + '$1');
 const sym = `<svg width="0" height="0" style="position:absolute" aria-hidden="true">${defs}</svg>`;
 const photo = 'data:image/jpeg;base64,' + fs.readFileSync(path.join(root, 'src', 'lucy-photo.jpg')).toString('base64');
-const core = ['a.js', 'b.js', 'c.js'].map(src).join('\n').replace('/*ICONS*/{}', src('icons.json').trim()).replace("/*LUCYART*/''", JSON.stringify(inner));
+const i18n = { ui: {}, 'pt-BR': {}, 'ar-EG': {} }; for (const k of Object.keys(i18n)) { const f = path.join(root, 'src', 'i18n', k + '.json'); if (fs.existsSync(f)) i18n[k] = JSON.parse(fs.readFileSync(f, 'utf8')); }
+const core = ['pt.js', 'ar.js', 'a.js', 'b.js', 'i18n.js', 'c.js'].map(src).join('\n').replace("/*I18N*/{ ui: {}, 'pt-BR': {}, 'ar-EG': {} }", () => JSON.stringify(i18n)).replace('/*ICONS*/{}', src('icons.json').trim()).replace("/*LUCYART*/''", JSON.stringify(inner));
 const dock = [['home', 'house', 'Home'], ['missions', 'path-distance', 'Missions'], ['review', 'brain', 'Review'], ['talk', 'chat-bubble', 'Talk'], ['progress', 'histogram', 'Progress']]
   .map(([t, i, l]) => `<button data-tab="${t}" aria-label="${l}"><svg class="ico" aria-hidden="true"><use href="#i-${i}"/></svg><span>${l}</span></button>`).join('');
 const page = (web) => {
@@ -20,7 +21,7 @@ const page = (web) => {
 <title>Lucy</title><meta name="description" content="Lucy, a sarcastic cat who teaches you Brazilian Portuguese"><meta name="theme-color" content="#15171f">
 ${web ? '<link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon-192.png"><link rel="apple-touch-icon" href="icon-192.png">' : ''}
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Figtree:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Figtree:wght@400;600;700;800&family=Cairo:wght@500;600;700;800&display=swap" rel="stylesheet">
 <style>${src('style.css')}</style>
 ${web ? `<script src="${FB}firebase-app-compat.js"></script><script src="${FB}firebase-auth-compat.js"></script><script src="${FB}firebase-firestore-compat.js"></script><script src="firebase-config.js"></script><script src="ai-config.js"></script>` : ''}
 </head><body>

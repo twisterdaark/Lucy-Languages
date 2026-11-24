@@ -12,6 +12,12 @@ jobs:
       - name: AI key from repo secret
         env: { GEMINI_KEY: '${{ secrets.GEMINI_KEY }}' }
         run: node -e "require('fs').writeFileSync('ai-config.js','window.LUCY_GEMINI_KEY = '+JSON.stringify(process.env.GEMINI_KEY||'')+';')"
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - name: Pre-made voices for every lesson line (cached, only new lines are made)
+        uses: actions/cache@v4
+        with: { path: voice, key: 'voice-${{ hashFiles(''src/pt.js'', ''src/ar.js'') }}', restore-keys: 'voice-' }
+      - run: pip install -q edge-tts && node tools/lines.mjs > lines.json && python tools/voices.py lines.json voice
       - name: Web build
         run: node tools/build.mjs && node tools/www.mjs
       - name: Capacitor + native mic and voice plugins

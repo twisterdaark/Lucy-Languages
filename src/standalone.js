@@ -79,6 +79,19 @@
     stop() { playing = null; try { player.pause(); } catch (_) {} },
   };
   P.tts = geminiVoice;
+
+  // --- pre-made voices: every fixed lesson and scene line has a neural voice file made when the site is built
+  // (Francisca / Antonio for Portuguese, Salma / Shakir for Egyptian Arabic). Live chat lines still use Gemini.
+  const EDGE = { 'pt-BR': { f: 'pt-BR-FranciscaNeural', m: 'pt-BR-AntonioNeural' }, 'ar-EG': { f: 'ar-EG-SalmaNeural', m: 'ar-EG-ShakirNeural' } };
+  const fnv = s => { let h = 0x811c9dc5; for (const c of new TextEncoder().encode(s)) { h ^= c; h = Math.imul(h, 0x01000193) >>> 0; } return h.toString(36); };
+  let VOICED = new Set(); fetch('voice/index.json').then(r => r.ok ? r.json() : []).then(a => VOICED = new Set(a)).catch(() => {});
+  const fileFor = (text, who) => { const V = EDGE[LANG()]; if (!V) return null; const g = genderOf(who); const id = fnv(V[g === 'f' ? 'f' : 'm'] + '|' + String(text).trim()); return VOICED.has(id) ? 'voice/' + id + '.mp3' : null; };
+  const liveSay = say;
+  say = async function (text, slow, who = 'Lucy') {
+    const f = fileFor(text, who); if (!f) return liveSay(text, slow, who);
+    const id = {}; playing = id; player.src = f; player.preservesPitch = true; player.playbackRate = slow ? .75 : 1;
+    await new Promise(res => { player.onended = player.onerror = player.onpause = res; player.play().catch(res); });
+  };
   P.ready.then(() => { P.tts = geminiVoice; });
 
   // --- Google sign-in + Firestore sync ---

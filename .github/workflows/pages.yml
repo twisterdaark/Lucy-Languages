@@ -14,7 +14,13 @@ jobs:
       - name: AI key from repo secret
         env: { GEMINI_KEY: '${{ secrets.GEMINI_KEY }}' }
         run: node -e "require('fs').writeFileSync('ai-config.js','window.LUCY_GEMINI_KEY = '+JSON.stringify(process.env.GEMINI_KEY||'')+';')"
-      - run: node tools/build.mjs && mkdir -p _site && cp index.html firebase-config.js ai-config.js manifest.webmanifest sw.js icon-192.png icon-512.png _site/
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - name: Pre-made voices for every lesson line (cached, only new lines are made)
+        uses: actions/cache@v4
+        with: { path: voice, key: 'voice-${{ hashFiles(''src/pt.js'', ''src/ar.js'') }}', restore-keys: 'voice-' }
+      - run: pip install -q edge-tts && node tools/lines.mjs > lines.json && python tools/voices.py lines.json voice
+      - run: node tools/build.mjs && mkdir -p _site && cp index.html firebase-config.js ai-config.js manifest.webmanifest sw.js icon-192.png icon-512.png _site/ && cp -r voice _site/
       - name: Firebase Hosting (main address, where Google sign-in works on phones)
         if: env.FB_SA != ''
         uses: FirebaseExtended/action-hosting-deploy@v0

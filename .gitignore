@@ -2,3 +2,5 @@ node_modules/
 www/
 android/
 ai-config.js
+voice/
+lines.json
