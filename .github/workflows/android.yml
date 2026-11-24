@@ -1,0 +1,30 @@
+name: Android APK
+on: { push: { branches: [main] }, workflow_dispatch: {} }
+jobs:
+  apk:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - uses: actions/setup-java@v4
+        with: { distribution: temurin, java-version: 21 }
+      - name: AI key from repo secret
+        env: { GEMINI_KEY: '${{ secrets.GEMINI_KEY }}' }
+        run: node -e "require('fs').writeFileSync('ai-config.js','window.LUCY_GEMINI_KEY = '+JSON.stringify(process.env.GEMINI_KEY||'')+';')"
+      - name: Web build
+        run: node tools/build.mjs && node tools/www.mjs
+      - name: Capacitor + native mic and voice plugins
+        run: |
+          npm i --no-save --legacy-peer-deps @capacitor/core@8 @capacitor/cli@8 @capacitor/android@8 @capacitor-community/speech-recognition@7.0.1 @capacitor-community/text-to-speech@8
+          npx cap add android
+          npx cap sync android
+      - name: Mic permission and speech service query
+        run: |
+          M=android/app/src/main/AndroidManifest.xml
+          grep -q RECORD_AUDIO $M || sed -i 's#<application#<uses-permission android:name="android.permission.RECORD_AUDIO" />\n    <application#' $M
+          grep -q RecognitionService $M || sed -i 's#</manifest>#    <queries><intent><action android:name="android.speech.RecognitionService" /></intent><intent><action android:name="android.intent.action.TTS_SERVICE" /></intent></queries>\n</manifest>#' $M
+      - name: Build debug APK
+        run: cd android && chmod +x gradlew && ./gradlew assembleDebug --no-daemon
+      - uses: actions/upload-artifact@v4
+        with: { name: Lucy-apk, path: android/app/build/outputs/apk/debug/app-debug.apk }

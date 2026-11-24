@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="400" height="400">
+  <defs>
+    <radialGradient id="iris" cx="50%" cy="45%" r="55%"><stop offset="0" stop-color="#e3dc7a"/><stop offset=".7" stop-color="#b9b04a"/><stop offset="1" stop-color="#7c7a2e"/></radialGradient>
+    <linearGradient id="fur" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fffaf3"/><stop offset="1" stop-color="#f1e7da"/></linearGradient>
+    <linearGradient id="gray" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#b3bbc8"/><stop offset="1" stop-color="#8d96a6"/></linearGradient>
+    <clipPath id="headclip"><path d="M100 46 C140 46 172 70 176 108 C180 146 146 172 100 172 C54 172 20 146 24 108 C28 70 60 46 100 46Z"/></clipPath>
+  </defs>
+  <!-- ears -->
+  <path id="earL" d="M38 84 C34 58 36 34 44 20 C60 30 74 44 82 56 Z" fill="url(#gray)"/>
+  <path d="M46 72 C44 56 46 42 50 32 C60 40 68 50 72 58 Z" fill="#f2b8b5"/>
+  <path id="earR" d="M162 84 C166 58 164 34 156 20 C140 30 126 44 118 56 Z" fill="url(#gray)"/>
+  <path d="M154 72 C156 56 154 42 150 32 C140 40 132 50 128 58 Z" fill="#f4c2b4"/>
+  <!-- head -->
+  <path d="M100 46 C140 46 172 70 176 108 C180 146 146 172 100 172 C54 172 20 146 24 108 C28 70 60 46 100 46Z" fill="url(#fur)"/>
+  <g clip-path="url(#headclip)">
+    <!-- gray cap, left -->
+    <path d="M10 60 L100.6 40 C99 64 97 86 92 102 C80 118 60 126 40 128 L10 132Z" fill="url(#gray)"/>
+    <!-- gray cap, right -->
+    <path d="M99.4 40 L192 60 L192 132 C170 126 150 120 108 102 C103 86 101 64 99.4 40Z" fill="url(#gray)"/>
+    <!-- peach patch on forehead (left) -->
+    <path d="M66 50 C78 44 90 44 96 48 C94 62 88 72 80 78 C72 70 66 60 66 50Z" fill="#f2c39c"/>
+    <!-- small peach spot right -->
+    <path d="M140 66 C148 66 154 72 152 80 C146 82 138 78 136 72Z" fill="#efc3a2" opacity=".9"/>
+    <!-- tabby marks -->
+    <g stroke="#7b8494" stroke-width="3.2" stroke-linecap="round" fill="none" opacity=".75">
+      <path d="M40 92 C50 90 58 92 64 96"/><path d="M34 104 C44 102 54 104 62 108"/>
+      <path d="M160 92 C150 90 142 92 136 96"/><path d="M166 104 C156 102 146 104 138 108"/>
+      <path d="M112 54 C114 62 114 68 112 74"/><path d="M122 56 C126 64 126 70 124 76"/>
+    </g>
+    <!-- white blaze -->
+    <path d="M97 52 C99 50 101 50 103 52 C104 74 106 94 112 106 C124 116 140 124 150 140 L150 180 L50 180 L50 140 C60 124 76 116 88 106 C94 94 96 74 97 52Z" fill="url(#fur)"/>
+  </g>
+  <!-- cheeks / muzzle -->
+  <ellipse cx="86" cy="138" rx="20" ry="15" fill="#fffaf3"/>
+  <ellipse cx="114" cy="138" rx="20" ry="15" fill="#fffaf3"/>
+  <!-- eyes -->
+  <g id="eyes">
+    <g class="eye"><ellipse cx="70" cy="110" rx="17" ry="17.5" fill="#4a4a22"/><circle cx="70" cy="111" r="15.5" fill="url(#iris)"/><ellipse cx="70" cy="111" rx="7.5" ry="10" fill="#1d1a14"/><circle cx="64" cy="104" r="4.5" fill="#fff"/><circle cx="75" cy="117" r="2" fill="#fff" opacity=".8"/></g>
+    <g class="eye"><ellipse cx="130" cy="110" rx="17" ry="17.5" fill="#4a4a22"/><circle cx="130" cy="111" r="15.5" fill="url(#iris)"/><ellipse cx="130" cy="111" rx="7.5" ry="10" fill="#1d1a14"/><circle cx="124" cy="104" r="4.5" fill="#fff"/><circle cx="135" cy="117" r="2" fill="#fff" opacity=".8"/></g>
+  </g>
+  <!-- nose + mouth -->
+  <path d="M93 128 C96 125 104 125 107 128 C106 132 103 135 100 136 C97 135 94 132 93 128Z" fill="#ef9ea6"/>
+  <path d="M100 136 L100 141 M100 141 C97 145 92 145 90 142 M100 141 C103 145 108 145 110 142" stroke="#c98a8f" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <!-- whiskers -->
+  <g stroke="#ffffff" stroke-width="1.4" stroke-linecap="round" opacity=".9">
+    <path d="M74 136 L36 130"/><path d="M74 140 L34 142"/><path d="M76 144 L40 154"/>
+    <path d="M126 136 L164 130"/><path d="M126 140 L166 142"/><path d="M124 144 L160 154"/>
+  </g>
+</svg>
