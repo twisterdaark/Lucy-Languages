@@ -158,7 +158,7 @@ function allScenes() { return [...SCENES, ...S.custom.map(c => c.scene)]; }
 function allUnits() { return [...UNITS, ...S.custom.map(c => c.unit)]; }
 function vibeText(sc) {
   const base = S.vibe === 'spicy'
-    ? `Personality: hilarious, sarcastic and a bit of a troublemaker, ${T.ai.vibe}. Roast their mistakes playfully, never cruelly. ${/boteco|estadio|mido|match/.test(sc.id) ? 'You swear in almost every line.' : 'Swear when it fits the moment.'}`
+    ? `Personality: hilarious, sarcastic and a bit of a troublemaker, ${T.ai.vibe}. Roast their mistakes playfully, never cruelly. ${/boteco|estadio/.test(sc.id) ? 'You swear in almost every line.' : 'Swear when it fits the moment.'}`
     : 'Personality: warm, patient, a little playful. No swearing.';
   return base + ` Never use racial, homophobic or other slurs (${T.ai.slurs}) at anyone.`;
 }

@@ -773,9 +773,6 @@
 "was": {
 "pt": "tava"
 },
-"tar (= shit)": {
-"pt": "piche (= merda)"
-},
 "donkey": {
 "pt": "burro"
 },
@@ -812,9 +809,6 @@
 "Where are you, you son of a dog? You’re an hour late!": {
 "pt": "Cadê você, seu filho de um cachorro? Tá uma hora atrasado!"
 },
-"Sorry man, the traffic was shit.": {
-"pt": "Foi mal, mano, o trânsito tava uma merda."
-},
 "Fine, donkey. You playing backgammon or just watching?": {
 "pt": "Beleza, seu burro. Vai jogar gamão ou só ficar olhando?"
 },
@@ -833,11 +827,8 @@
 "The classic. Between friends it’s almost affection.": {
 "pt": "O clássico. Entre amigos é quase carinho."
 },
-"crap / shit (lit. tar)": {
-"pt": "merda / bosta (lit. piche)"
-},
 "“El-donya zeft” = everything sucks.": {
-"pt": "“El-donya zeft” = tá tudo uma merda."
+"pt": "“El-donya zeft” = tá tudo um lixo."
 },
 "you donkey / idiot": {
 "pt": "seu burro / idiota"
@@ -937,9 +928,6 @@
 },
 "you filthy scumbag": {
 "pt": "seu escroto imundo"
-},
-"fuck you (lit. about your mother)": {
-"pt": "vai se foder (lit. sobre a sua mãe)"
 },
 "The heaviest everyday cuss. Never near family.": {
 "pt": "O xingamento mais pesado do dia a dia. Nunca use perto da família."
@@ -1181,9 +1169,6 @@
 "Yeah yeah. Tea or shisha, you loser?": {
 "pt": "É, é. Chá ou shisha, seu otário?"
 },
-"Oh hell, tea is twenty pounds now! That’s robbery.": {
-"pt": "Puta que pariu, o chá tá vinte libras agora! Isso é um roubo."
-},
 "Fine, then backgammon’s on you, donkey. Come on, play!": {
 "pt": "Beleza, então o gamão fica por sua conta, seu burro. Bora, joga!"
 },
@@ -1230,7 +1215,7 @@
 "pt": "Carona & papo sobre futebol"
 },
 "Let’s go. Good grief, this traffic!": {
-"pt": "Bora. Puta merda, olha esse trânsito!"
+"pt": "Bora. Nossa, olha esse trânsito!"
 },
 "Ahly?! Get out right here then. Kidding!": {
 "pt": "Ahly?! Então desce do carro agora. Brincadeira!"
@@ -1298,11 +1283,8 @@
 "You get me?": {
 "pt": "Sacou?"
 },
-"Oh hell! (lit. what a black day)": {
-"pt": "Puta merda! (lit. que dia preto)"
-},
 "Everything sucks.": {
-"pt": "Tá tudo uma merda."
+"pt": "Tá tudo um lixo."
 },
 "How are you? How’s it going?": {
 "pt": "Como você tá? Como vão as coisas?"
@@ -1352,12 +1334,6 @@
 "Adam (bani adam = human)": {
 "pt": "Adão (bani adam = ser humano)"
 },
-"Oh hell! This ref is blind!": {
-"pt": "Puta merda! Esse juiz é cego!"
-},
-"oh hell! (lit. what a black day)": {
-"pt": "puta merda! (lit. que dia negro)"
-},
 "The go-to reaction to any disaster on the pitch.": {
 "pt": "A reação padrão pra qualquer desastre em campo."
 },
@@ -1387,5 +1363,32 @@
 },
 "Oh come on, human!": {
 "pt": "Ah, qual é, criatura!"
+},
+"Sorry man, the traffic was awful.": {
+"pt": "Foi mal, mano, o trânsito tava horrível."
+},
+"awful / rubbish (lit. tar)": {
+"pt": "horrível / um lixo (lit. piche)"
+},
+"tar (= awful)": {
+"pt": "piche (= horrível)"
+},
+"Street talk & teasing": {
+"pt": "Gírias e zoeira"
+},
+"Banter & comebacks": {
+"pt": "Zoeira e respostas"
+},
+"Oh no! (lit. what a black day)": {
+"pt": "Ai, que desgraça! (lit. que dia preto)"
+},
+"Oh no! This ref is blind!": {
+"pt": "Nossa! Esse juiz é cego!"
+},
+"oh no! (lit. what a black day)": {
+"pt": "ai, que desgraça! (lit. que dia preto)"
+},
+"Oh no, tea is twenty pounds now! That’s robbery.": {
+"pt": "Nossa, o chá tá vinte libras agora! Isso é um roubo."
 }
 }
