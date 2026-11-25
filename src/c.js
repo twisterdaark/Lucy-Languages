@@ -272,7 +272,7 @@ VIEWS.chat = () => {
   hist.forEach(add); if (hist.sugg) setSugg(hist.sugg);
   if (!hist.length) setTimeout(botTurn, 250);
   el.querySelector('#send').onclick = () => send(inp.value); inp.onkeydown = e => { if (e.key === 'Enter') send(inp.value); };
-  el.querySelector('#mic').onclick = () => listen({ onState: on => el.querySelector('#mic').classList.toggle('live', on), onPartial: t => inp.value = t, onDone: t => { if (t) send(t); } });
+  el.querySelector('#mic').onclick = () => listen({ onState: on => el.querySelector('#mic').classList.toggle('live', on), onPartial: t => inp.value = t, onDone: t => { if (t) send(t); else toast('Didn’t catch that. Tap the mic and try again.'); } });
   el.querySelector('#call').onclick = () => render('call');
   el.querySelector('#back').onclick = () => render('talk');
   return el;
@@ -293,14 +293,15 @@ VIEWS.call = () => {
   async function bot() { if (!alive) return; cap(sc.who.toUpperCase(), '…', '');
     const r = await partnerReply(sc.id, hist, S.mission, 'call'); if (!alive) return; hist.push({ who: 'bot', pt: r.pt, en: r.en }); lastSugg = r.sugg;
     cap(sc.who.toUpperCase(), r.pt, r.en); el.querySelector('#ow').classList.add('talk'); el.querySelector('#wave').classList.add('on');
-    await say(r.pt, slow, sc.who); if (!alive) return; el.querySelector('#ow').classList.remove('talk'); el.querySelector('#wave').classList.remove('on');
-    el.querySelector('#talk').classList.add('ready'); }
+    await say(r.pt, slow, sc.who); if (!alive) return; el.querySelector('#ow').classList.remove('talk');
+    if (!listening) { el.querySelector('#wave').classList.remove('on'); el.querySelector('#talk').classList.add('ready'); } }
   setTimeout(bot, 500);
   el.querySelector('#slow').onclick = () => { slow = !slow; toast(slow ? `${sc.who} will speak slowly` : 'Normal speed'); const l = hist.filter(m => m.who === 'bot').pop(); if (l) say(l.pt, slow, sc.who); };
   el.querySelector('#hint').onclick = () => toast(lastSugg.length ? 'Try: ' + lastSugg.join(' · ') : T.hint);
   el.querySelector('#talk').onclick = () => { stopVoice(); el.querySelector('#talk').classList.remove('ready'); listen({ silenceMs: 1600,
     onState: on => { el.querySelector('#talk').classList.toggle('live', on); el.querySelector('#wave').classList.toggle('on', on); },
-    onPartial: t => cap('YOU', t, ''), onDone: async t => { if (!t) return; cap('YOU', t, ''); hist.push({ who: 'me', pt: t }); addXP(3); await sleep(300); bot(); } }); };
+    onPartial: t => cap('YOU', t, ''), onDone: async t => { if (!alive) return;
+      if (!t) { el.querySelector('#talk').classList.add('ready'); toast('Didn’t catch that. Tap and say it again.'); return; } cap('YOU', t, ''); hist.push({ who: 'me', pt: t }); addXP(3); await sleep(300); bot(); } }); };
   el.querySelector('#end').onclick = () => { alive = false; stopVoice(); render('talk'); };
   return el;
 };

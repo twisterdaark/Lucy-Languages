@@ -39,59 +39,123 @@ let NV = null; async function nativeVoice(g) { try { if (!NV) NV = (await window
 function stopVoice() { try { window.Capacitor?.Plugins?.TextToSpeech?.stop(); } catch (_) {} try { P.tts?.stop?.(); } catch (_) {} if ('speechSynthesis' in window) speechSynthesis.cancel(); }
 
 // ---------- listening with auto-stop ----------
-// 1) Claude dictation (Chrome tabs, Claude desktop). 2) Browser speech recognition. 3) On phones where neither is allowed:
-// a text box opens with the keyboard, and the keyboard's own mic key does the listening. Same auto-stop rules everywhere.
+// 1) Claude dictation (Chrome tabs, Claude desktop). 2) The APK's native recogniser. 3) Browser speech recognition.
+// 4) On phones where none is allowed: a text box opens with the keyboard, and the keyboard's own mic key does the listening.
+// Phone recognisers end a pass on their own (after a pause, a "no speech", a busy service) and sometimes start deaf.
+// So one tap = one "turn": passes are restarted until the turn is really over (silence after you spoke, nothing said, a tap),
+// and a pass that never opens the mic is thrown away and started fresh. Same auto-stop rules everywhere.
 let listening = null;
+const IS_ANDROID = /Android/i.test(navigator.userAgent);
 function listen(o) {
-  const { onPartial, onDone, onState, target, silenceMs = 1900, waitMs = 7000 } = o;
+  const { onPartial, onDone, onState, target, silenceMs = 1900, waitMs = 7000, maxMs = 60000 } = o;
   if (listening) { listening.stop(); return null; }
-  const t0 = performance.now(); let finalText = '', live = '', firstWord = 0, lastChange = t0, stopped = false, timer = null;
-  const current = () => (finalText + ' ' + live).trim();
+  stopVoice();                                                 // never listen over our own voice
+  const t0 = performance.now(); let said = '', pass = '', firstWord = 0, lastChange = t0, armedAt = 0, stopped = false, done = false, timer = null, safety = null;
+  const current = () => (said + ' ' + pass).replace(/\s+/g, ' ').trim();
   const changed = () => { const now = performance.now(); if (!firstWord) firstWord = now; lastChange = now; const txt = current(); onPartial?.(txt);
     if (target && txt) { const r = scoreSpeech(target, txt, 0); if (r.completeness === 100 && r.accuracy >= 88) stopNow(); } };
-  const stopNow = () => { if (stopped) return; stopped = true; clearInterval(timer); ctl.halt(); };
-  const finish = () => { clearInterval(timer); listening = null; onState?.(false); const txt = current(); onDone(txt, firstWord ? Math.max(.6, (lastChange - firstWord) / 1000 + .4) : 0); };
-  const ctl = {};
-  const startTimer = (wait) => { timer = setInterval(() => { const now = performance.now(); if (firstWord ? now - lastChange > silenceMs : now - t0 > wait) stopNow(); }, 200); };
+  let lastChunk = '', lastAt = 0;
+  const commit = () => { const c = pass.trim(); if (c) { said = (said + ' ' + c).trim(); lastChunk = c; lastAt = performance.now(); } pass = ''; };
+  const ctl = { halt() {}, cleanup() {} };
+  const me = {};
+  const finish = (quiet) => { if (done) return; done = stopped = true; clearInterval(timer); clearTimeout(safety); try { ctl.cleanup(); } catch (_) {}
+    if (listening === me) listening = null; onState?.(false); if (quiet) return; commit(); const txt = said;
+    onDone(txt, firstWord ? Math.max(.6, (lastChange - firstWord) / 1000 + .4) : 0); };
+  // first tap stops and keeps what was heard; if the engine never reports back, finish anyway so the mic can't hang open
+  const stopNow = () => { if (done) return; if (stopped) return finish(); stopped = true; clearInterval(timer); try { ctl.halt(); } catch (_) {} safety = setTimeout(finish, 1500); };
+  me.stop = stopNow; me.cancel = () => finish(true);
+  // the "nothing said yet" clock starts when the mic is really open, not when you tapped
+  const startTimer = (wait) => { timer = setInterval(() => { const now = performance.now();
+    if (now - t0 > maxMs) return stopNow();
+    if (firstWord) { if (now - lastChange > silenceMs) stopNow(); }
+    else if (armedAt ? now - armedAt > wait : now - t0 > wait + 4000) stopNow(); }, 200); };
+  const arm = () => { if (!armedAt) armedAt = performance.now(); };
+
   if (P.dict) {
-    startTimer(waitMs);
+    startTimer(waitMs); arm();
     const d = P.dict; const offs = [];
-    offs.push(d.onPartial(({ text }) => { live = text || ''; if (text) changed(); }));
-    offs.push(d.onFinal(({ text }) => { finalText += ' ' + text; live = ''; changed(); }));
-    offs.push(d.onState(({ state, reason }) => { if (state === 'idle') { offs.forEach(f => f()); if (reason === 'unavailable') { P.dict = null; } finish(); } }));
-    ctl.halt = () => d.stop(); onState?.(true);
-    d.start({ language: LANG() }).catch(e => { clearInterval(timer); offs.forEach(f => f()); onState?.(false); listening = null;
-      if (e.code === 'not_granted' || e.code === 'unavailable') { P.dict = null; toast('The page mic is blocked here, so use your keyboard’s mic instead.'); }
-      else if (e.code !== 'stopped') toast('Couldn’t start the mic. Tap again.'); });
-    listening = { stop: stopNow }; return listening;
+    offs.push(d.onPartial(({ text }) => { pass = text || ''; if (text) changed(); }));
+    offs.push(d.onFinal(({ text }) => { pass = text || ''; commit(); changed(); }));
+    offs.push(d.onState(({ state, reason }) => { if (state === 'idle') { if (reason === 'unavailable') P.dict = null; finish(); } }));
+    ctl.halt = () => d.stop(); ctl.cleanup = () => offs.forEach(f => f()); onState?.(true);
+    listening = me;
+    d.start({ language: LANG() }).catch(e => { if (e.code === 'not_granted' || e.code === 'unavailable') { P.dict = null; toast('The page mic is blocked here, so use your keyboard’s mic instead.'); }
+      else if (e.code !== 'stopped') toast('Couldn’t start the mic. Tap again.'); finish(true); });
+    return me;
   }
+
   const NSR = window.Capacitor?.Plugins?.SpeechRecognition;
   if (NSR) {
-    startTimer(waitMs); let h;
-    ctl.halt = async () => { try { await NSR.stop(); } catch (_) {} h?.remove?.(); finish(); };
-    (async () => { try { const perm = await NSR.requestPermissions(); if (perm?.speechRecognition && perm.speechRecognition !== 'granted') throw new Error('denied');
-      h = await NSR.addListener('partialResults', d => { live = (d.matches || [])[0] || ''; if (live) changed(); });
-      await NSR.start({ language: LANG(), partialResults: true, popup: false }); } catch (_) { clearInterval(timer); listening = null; onState?.(false); toast('Allow the microphone for Lucy in your phone settings.'); } })();
-    onState?.(true); listening = { stop: stopNow }; return listening;
+    // Android's recogniser stops after every pause and on errors without telling the page, so we also poll isListening.
+    startTimer(waitMs); let hs = [], poll = null, fails = 0, passes = 0, between = false, starting = false;
+    const next = () => { if (between || starting) return; between = true; setTimeout(() => { commit(); between = false; if (!stopped) run(); else finish(); }, 450); };   // give the last words a moment to arrive
+    const run = async () => {
+      if (stopped || done) return; passes++;
+      if (passes > 40) return stopNow();
+      starting = true;
+      try {
+        if (!listen.nsrOk) { const perm = await NSR.requestPermissions(); if (perm?.speechRecognition && perm.speechRecognition !== 'granted') throw { denied: true }; listen.nsrOk = true; }
+        await NSR.start({ language: LANG(), partialResults: true, popup: false, maxResults: 1 }); fails = 0; arm();
+      } catch (e) {
+        if (e?.denied) { toast('Allow the microphone for Lucy in your phone settings.'); return finish(true); }
+        if (++fails > 4) { toast('The mic isn’t answering. Tap it again.'); return finish(); }
+        if (!stopped) setTimeout(run, 400);
+      } finally { starting = false; }
+    };
+    ctl.halt = async () => { try { await NSR.stop(); } catch (_) {} if (!between) setTimeout(finish, 450); };
+    ctl.cleanup = () => { clearInterval(poll); hs.forEach(x => x?.remove?.()); hs = []; NSR.stop().catch(() => {}); };
+    onState?.(true); listening = me;
+    (async () => {
+      try { await NSR.removeAllListeners?.(); } catch (_) {}
+      hs.push(await NSR.addListener('partialResults', d => { const m = ((d.matches || [])[0] || '').trim(); if (!m || done) return;
+        // the final words of a finished pass can land after the next pass began: fold them into what was already kept
+        if (!pass && lastChunk && performance.now() - lastAt < 3000) { const a = m.toLowerCase(), b = lastChunk.toLowerCase();
+          if (a === b || b.startsWith(a)) return; if (a.startsWith(b)) { said = said.slice(0, said.length - lastChunk.length) + m; lastChunk = m; changed(); return; } }
+        pass = m; changed(); }));
+      hs.push(await NSR.addListener('listeningState', d => { if (d.status === 'stopped' && !between && !done) next(); }));
+      poll = setInterval(async () => { if (between || starting || done || stopped) return; try { const r = await NSR.isListening(); if (r && r.listening === false && !between && !done && !stopped) next(); } catch (_) {} }, 800);
+      run();
+    })();
+    return me;
   }
+
   const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
-  if (SR && !listen.srBlocked) { try {
-    startTimer(waitMs);
-    const r = new SR(); r.lang = LANG(); r.interimResults = true; r.continuous = true;
-    r.onresult = e => { let f = '', p = ''; for (const res of e.results) (res.isFinal ? (f += res[0].transcript + ' ') : (p += res[0].transcript)); finalText = f; live = p; changed(); };
-    r.onerror = e => { if (/not-allowed|service-not-allowed|audio-capture/.test(e.error)) { listen.srBlocked = true; toast('Mic blocked in this view. Tap the mic again to use your keyboard’s mic.'); } };
-    r.onend = finish; ctl.halt = () => r.stop(); r.start(); onState?.(true);
-    listening = { stop: stopNow }; return listening;
-  } catch (_) { listen.srBlocked = true; } }
+  if (SR && !listen.srBlocked) {
+    startTimer(waitMs); let r = null, dead = 0, passes = 0, watchdog = null, blocked = false;
+    const run = () => {
+      if (stopped || done) return finish(); passes++;
+      if (passes > 40) return stopNow();
+      let alive = false;
+      const live = () => { if (!alive) { alive = true; dead = 0; arm(); } };
+      try { r = new SR(); } catch (_) { listen.srBlocked = true; toast('Tap the mic again to use your keyboard’s mic.'); return finish(true); }
+      r.lang = LANG(); r.interimResults = true; r.maxAlternatives = 1;
+      r.continuous = !IS_ANDROID;                                // Android's continuous mode repeats itself and then goes quiet
+      r.onaudiostart = r.onsoundstart = r.onspeechstart = live;
+      r.onresult = e => { live(); const parts = []; for (let i = 0; i < e.results.length; i++) { const tx = e.results[i][0].transcript.trim(); if (!tx) continue;
+          const last = parts[parts.length - 1]; if (last && tx.toLowerCase().startsWith(last.toLowerCase())) parts[parts.length - 1] = tx; else parts.push(tx); }   // drop Android's repeated finals
+        pass = parts.join(' '); changed(); };
+      r.onerror = e => { if (/not-allowed|service-not-allowed/.test(e.error)) blocked = true; };
+      r.onend = () => { clearTimeout(watchdog); commit(); if (blocked) { listen.srBlocked = true; toast('Mic blocked in this view. Tap the mic again to use your keyboard’s mic.'); return finish(); }
+        if (stopped || done) return finish();
+        if (!alive && ++dead > 4) { toast('The mic isn’t answering. Tap it again.'); return finish(); }
+        setTimeout(run, alive ? 80 : 350); };                     // the pass ended but the turn didn't: keep listening
+      // a pass that never opens the mic (phones, right after audio played) is thrown away and started fresh
+      if (IS_ANDROID) watchdog = setTimeout(() => { if (!alive && !stopped) try { r.abort(); } catch (_) {} }, 2500);
+      try { r.start(); } catch (_) { clearTimeout(watchdog); if (++dead > 4) { listen.srBlocked = true; return finish(true); } setTimeout(run, 350); }
+    };
+    ctl.halt = () => { try { r?.stop(); } catch (_) { finish(); } };
+    ctl.cleanup = () => { clearTimeout(watchdog); if (r) { const x = r; r = null; x.onend = x.onresult = x.onerror = null; try { x.abort(); } catch (_) {} } };
+    onState?.(true); listening = me; run(); return me;
+  }
   // keyboard-mic fallback (opened inside the tap, so the phone shows the keyboard)
   $('#vk').hidden = false; const ta = $('#vk-in'); ta.value = ''; ta.focus();
   $('#vk-target').textContent = target ? target : 'Say your reply';
-  startTimer(30000);
-  ta.oninput = () => { finalText = ta.value; live = ''; changed(); };
-  const close = () => { $('#vk').hidden = true; ta.blur(); finish(); };
-  ctl.halt = close; $('#vk-done').onclick = stopNow; $('#vk-x').onclick = () => { finalText = ''; stopNow(); };
+  clearInterval(timer); stopped = done = false; startTimer(30000); arm();
+  ta.oninput = () => { said = ta.value; pass = ''; changed(); };
+  ctl.halt = () => finish(); ctl.cleanup = () => { $('#vk').hidden = true; ta.blur(); };
+  $('#vk-done').onclick = stopNow; $('#vk-x').onclick = () => { said = ''; pass = ''; stopNow(); };
   onState?.(true);
-  listening = { stop: stopNow }; return listening;
+  listening = me; return me;
 }
 
 // ---------- pronunciation scoring ----------
@@ -220,7 +284,7 @@ let cur = 'home';
 const TABS = ['home', 'missions', 'review', 'talk', 'progress'], TAB_OF = { chat: 'talk', speak: 'progress', call: null, lesson: null };
 function setTab(t) { const tt = t in TAB_OF ? TAB_OF[t] : t; const i = TABS.indexOf(tt); $('#dock').hidden = i < 0; document.querySelectorAll('#dock button').forEach((b, k) => b.classList.toggle('on', k === i)); }
 function render(name, animate = true, arg) {
-  if (listening) listening.stop();
+  if (listening) listening.cancel();
   cur = name; const v = $('#view'); v.innerHTML = '';
   const el = VIEWS[name](arg); el.classList.add('screen'); if (animate) el.classList.add('enter'); v.appendChild(el); setTab(name); v.scrollTop = 0;
 }
@@ -274,7 +338,7 @@ function micButton(root, { target, onDone, onPartial }) {
   const mw = root.querySelector('.mic-wrap'), ml = root.querySelector('.mic-label');
   root.querySelector('.mic').onclick = () => listen({ target,
     onState: on => { mw.classList.toggle('live', on); if (ml) ml.textContent = on ? 'Listening… stops by itself' : 'Tap & speak'; },
-    onPartial, onDone });
+    onPartial, onDone: (t, secs) => { if (!t) toast('Didn’t catch that. Tap the mic and try again.'); onDone(t, secs); } });
 }
 const wordsHTML = (pt) => pt.split(' ').map(w => `<span data-w="${esc(w.toLowerCase().replace(PUNCT, ''))}">${esc(w)}</span>`).join(' ');
 function bindGloss(root, gloss) { root.querySelectorAll('[data-w]').forEach(s => s.onclick = e => { e.stopPropagation(); const g = gloss?.[s.dataset.w]; if (g) toast(`${s.dataset.w} = ${t(g)}`); }); }
