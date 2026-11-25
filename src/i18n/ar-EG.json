@@ -1,762 +1,1015 @@
 {
 "Greetings": {
-"pt": "Saudações"
+"pt": "Saudações",
+"ar": "التحيات"
 },
 "Greet Karim, ask how he is, and say bye.": {
-"pt": "Cumprimente o Karim, pergunte como ele tá e se despeça."
+"pt": "Cumprimente o Karim, pergunte como ele tá e se despeça.",
+"ar": "سلّم على كريم، واسأله عن أخباره، وقول له سلام."
 },
 "hello": {
-"pt": "oi"
+"pt": "oi",
+"ar": "أهلاً"
 },
 "how are you": {
-"pt": "como você tá"
+"pt": "como você tá",
+"ar": "ازيك"
 },
 "the praise": {
-"pt": "o louvor"
+"pt": "o louvor",
+"ar": "الحمد"
 },
 "to God": {
-"pt": "a Deus"
+"pt": "a Deus",
+"ar": "لله"
 },
 "good": {
-"pt": "bem"
+"pt": "bem",
+"ar": "كويس"
 },
 "and you": {
-"pt": "e você"
+"pt": "e você",
+"ar": "وانت"
 },
 "fine, perfect": {
-"pt": "tudo bem, perfeito"
+"pt": "tudo bem, perfeito",
+"ar": "تمام"
 },
 "all of it": {
-"pt": "tudo"
+"pt": "tudo",
+"ar": "كله"
 },
 "jasmine (= great)": {
-"pt": "jasmim (= ótimo)"
+"pt": "jasmim (= ótimo)",
+"ar": "فل"
 },
 "I missed you": {
-"pt": "senti sua falta"
+"pt": "senti sua falta",
+"ar": "وحشتني"
 },
 "hey (calling someone)": {
-"pt": "ei (chamando alguém)"
+"pt": "ei (chamando alguém)",
+"ar": "يا"
 },
 "man": {
-"pt": "cara"
+"pt": "cara",
+"ar": "يا صاحبي"
 },
 "too": {
-"pt": "também"
+"pt": "também",
+"ar": "برضه"
 },
 "peace (= bye)": {
-"pt": "paz (= tchau)"
+"pt": "paz (= tchau)",
+"ar": "سلام"
 },
 "I see you": {
-"pt": "te vejo"
+"pt": "te vejo",
+"ar": "أشوفك"
 },
 "later": {
-"pt": "mais tarde"
+"pt": "mais tarde",
+"ar": "بعدين"
 },
 "Hey! How are you?": {
-"pt": "E aí! Como você tá?"
+"pt": "E aí! Como você tá?",
+"ar": "هاي! عامل إيه؟"
 },
 "Thank God, good. And you?": {
-"pt": "Graças a Deus, bem. E você?"
+"pt": "Graças a Deus, bem. E você?",
+"ar": "الحمد لله، كويس. وانت؟"
 },
 "Great, all good. Missed you, man!": {
-"pt": "Ótimo, tudo certo. Senti sua falta, cara!"
+"pt": "Ótimo, tudo certo. Senti sua falta, cara!",
+"ar": "فل، كله تمام. وحشتني يا صاحبي!"
 },
 "You too. Bye, see you later!": {
-"pt": "Você também. Tchau, te vejo mais tarde!"
+"pt": "Você também. Tchau, te vejo mais tarde!",
+"ar": "وانت كمان. سلام، أشوفك بعدين!"
 },
 "how are you?": {
-"pt": "como você tá?"
+"pt": "como você tá?",
+"ar": "ازيك؟"
 },
 "The everyday “how are you”. To a woman: ezzayek.": {
-"pt": "O “como você tá” do dia a dia. Pra mulher: ezzayek."
+"pt": "O “como você tá” do dia a dia. Pra mulher: ezzayek.",
+"ar": "كلمة \"ازيك\" العادية. للبنت: ezzayek."
 },
 "how’s it going?": {
-"pt": "como vão as coisas?"
+"pt": "como vão as coisas?",
+"ar": "عامل إيه؟"
 },
 "To a woman: 3amla eh.": {
-"pt": "Pra mulher: 3amla eh."
+"pt": "Pra mulher: 3amla eh.",
+"ar": "للبنت: 3amla eh."
 },
 "thank God (= I’m fine)": {
-"pt": "graças a Deus (= tô bem)"
+"pt": "graças a Deus (= tô bem)",
+"ar": "الحمد لله (= أنا كويس)"
 },
 "The default answer, even on a bad day.": {
-"pt": "A resposta padrão, mesmo num dia ruim."
+"pt": "A resposta padrão, mesmo num dia ruim.",
+"ar": "الرد الأساسي، حتى لو اليوم مش تمام."
 },
 "all good": {
-"pt": "tudo certo"
+"pt": "tudo certo",
+"ar": "كله تمام"
 },
 "“Fol” is jasmine: everything is jasmine.": {
-"pt": "“Fol” é jasmim: tá tudo um jasmim."
+"pt": "“Fol” é jasmim: tá tudo um jasmim.",
+"ar": "كلمة \"Fol\" يعني ياسمين: كل حاجة فل."
 },
 "I missed you!": {
-"pt": "Senti sua falta!"
+"pt": "Senti sua falta!",
+"ar": "وحشتني!"
 },
 "see you later": {
-"pt": "te vejo depois"
+"pt": "te vejo depois",
+"ar": "أشوفك بعدين"
 },
 "bye (also hi)": {
-"pt": "tchau (também oi)"
+"pt": "tchau (também oi)",
+"ar": "سلام"
 },
 "“Ma3a el-salama” is the polite bye.": {
-"pt": "“Ma3a el-salama” é o tchau educado."
+"pt": "“Ma3a el-salama” é o tchau educado.",
+"ar": "كلمة \"Ma3a el-salama\" هي باي المؤدبة."
 },
 "Introduce yourself": {
-"pt": "Se apresente"
+"pt": "Se apresente",
+"ar": "عرّف نفسك"
 },
 "Tell Salma your name and where you’re from, and ask about her.": {
-"pt": "Diga pra Salma seu nome e de onde você é, e pergunte sobre ela."
+"pt": "Diga pra Salma seu nome e de onde você é, e pergunte sobre ela.",
+"ar": "قول لسلمى اسمك ومنين، واسألها عن نفسها."
 },
 "your name": {
-"pt": "seu nome"
+"pt": "seu nome",
+"ar": "اسمك"
 },
 "what": {
-"pt": "qual"
+"pt": "qual",
+"ar": "إيه"
 },
 "my name": {
-"pt": "meu nome"
+"pt": "meu nome",
+"ar": "اسمي"
 },
 "and you (to a woman)": {
-"pt": "e você (pra mulher)"
+"pt": "e você (pra mulher)",
+"ar": "وانتي"
 },
 "Salma": {
-"pt": "Salma"
+"pt": "Salma",
+"ar": "سلمى"
 },
 "you": {
-"pt": "você"
+"pt": "você",
+"ar": "انت"
 },
 "from where": {
-"pt": "de onde"
+"pt": "de onde",
+"ar": "منين"
 },
 "I": {
-"pt": "eu"
+"pt": "eu",
+"ar": "أنا"
 },
 "from": {
-"pt": "de"
+"pt": "de",
+"ar": "من"
 },
 "Brazil": {
-"pt": "Brasil"
+"pt": "Brasil",
+"ar": "البرازيل"
 },
 "but / only": {
-"pt": "mas / só"
+"pt": "mas / só",
+"ar": "بس"
 },
 "living": {
-"pt": "morando"
+"pt": "morando",
+"ar": "عايش"
 },
 "in": {
-"pt": "em"
+"pt": "em",
+"ar": "في"
 },
 "Cairo / Egypt": {
-"pt": "Cairo / Egito"
+"pt": "Cairo / Egito",
+"ar": "القاهرة / مصر"
 },
 "oh": {
-"pt": "ah"
+"pt": "ah",
+"ar": "يا سلام"
 },
 "peace (ya salam = wow)": {
-"pt": "paz (ya salam = uau)"
+"pt": "paz (ya salam = uau)",
+"ar": "سلام (يا سلام = واو)"
 },
 "you speak": {
-"pt": "você fala"
+"pt": "você fala",
+"ar": "بتتكلم"
 },
 "Arabic": {
-"pt": "árabe"
+"pt": "árabe",
+"ar": "عربي"
 },
 "a little": {
-"pt": "um pouco"
+"pt": "um pouco",
+"ar": "شوية"
 },
 "small ones": {
-"pt": "pequenos"
+"pt": "pequenos",
+"ar": "صغيرين"
 },
 "Hi! What’s your name?": {
-"pt": "Oi! Qual é o seu nome?"
+"pt": "Oi! Qual é o seu nome?",
+"ar": "هاي! اسمك إيه؟"
 },
 "My name is Twister. And you?": {
-"pt": "Meu nome é Twister. E você?"
+"pt": "Meu nome é Twister. E você?",
+"ar": "اسمي Twister. وانتي؟"
 },
 "Salma. Where are you from?": {
-"pt": "Salma. De onde você é?"
+"pt": "Salma. De onde você é?",
+"ar": "سلمى. انت منين؟"
 },
 "I’m from Brazil, but I live in Cairo.": {
-"pt": "Sou do Brasil, mas moro no Cairo."
+"pt": "Sou do Brasil, mas moro no Cairo.",
+"ar": "أنا من البرازيل، بس عايش في القاهرة."
 },
 "Wow! You speak Arabic?": {
-"pt": "Nossa! Você fala árabe?"
+"pt": "Nossa! Você fala árabe?",
+"ar": "واو! انت بتتكلم عربي؟"
 },
 "Just a tiny bit!": {
-"pt": "Só um tiquinho!"
+"pt": "Só um tiquinho!",
+"ar": "شوية صغيرين خالص!"
 },
 "what’s your name?": {
-"pt": "qual é o seu nome?"
+"pt": "qual é o seu nome?",
+"ar": "اسمك إيه؟"
 },
 "To a woman: esmek eh.": {
-"pt": "Para uma mulher: esmek eh."
+"pt": "Para uma mulher: esmek eh.",
+"ar": "للست: esmek eh."
 },
 "my name is…": {
-"pt": "meu nome é…"
+"pt": "meu nome é…",
+"ar": "اسمي…"
 },
 "where are you from?": {
-"pt": "de onde você é?"
+"pt": "de onde você é?",
+"ar": "انت منين؟"
 },
 "To a woman: enti menein.": {
-"pt": "Para uma mulher: enti menein."
+"pt": "Para uma mulher: enti menein.",
+"ar": "للست: enti menein."
 },
 "I’m from…": {
-"pt": "Eu sou de…"
+"pt": "Eu sou de…",
+"ar": "أنا من…"
 },
 "I live in Cairo": {
-"pt": "Eu moro no Cairo"
+"pt": "Eu moro no Cairo",
+"ar": "أنا عايش في القاهرة"
 },
 "Cairenes call their city “Masr”, like the country. Women: 3aysha.": {
-"pt": "Quem é do Cairo chama a cidade de “Masr”, igual ao país. Mulheres: 3aysha."
+"pt": "Quem é do Cairo chama a cidade de “Masr”, igual ao país. Mulheres: 3aysha.",
+"ar": "أهل القاهرة بيسموا مدينتهم \"مصر\"، زي البلد. للستات: 3aysha."
 },
 "wow! / how nice!": {
-"pt": "nossa! / que legal!"
+"pt": "nossa! / que legal!",
+"ar": "واو! / يا سلام!"
 },
 "a tiny bit": {
-"pt": "um tiquinho"
+"pt": "um tiquinho",
+"ar": "شوية صغيرين"
 },
 "Order tea at the ahwa": {
-"pt": "Pedir chá na ahwa"
+"pt": "Pedir chá na ahwa",
+"ar": "اطلب شاي على القهوة"
 },
 "Order tea and coffee from Am Sayed, say how much sugar, and ask for the bill.": {
-"pt": "Peça chá e café pro Am Sayed, diga quanto açúcar quer e peça a conta."
+"pt": "Peça chá e café pro Am Sayed, diga quanto açúcar quer e peça a conta.",
+"ar": "اطلب شاي وقهوة من عم سيد، وقول قد إيه سكر، واطلب الحساب."
 },
 "welcome": {
-"pt": "bem-vindo"
+"pt": "bem-vindo",
+"ar": "أهلاً وسهلاً"
 },
 "pasha (= boss)": {
-"pt": "pasha (= chefe)"
+"pt": "pasha (= chefe)",
+"ar": "باشا (= الريس)"
 },
 "you drink": {
-"pt": "você bebe"
+"pt": "você bebe",
+"ar": "بتشرب"
 },
 "one": {
-"pt": "um"
+"pt": "um",
+"ar": "واحد"
 },
 "tea": {
-"pt": "chá"
+"pt": "chá",
+"ar": "شاي"
 },
 "with mint": {
-"pt": "com hortelã"
+"pt": "com hortelã",
+"ar": "بالنعناع"
 },
 "if": {
-"pt": "se"
+"pt": "se",
+"ar": "لو"
 },
 "you allow (= please)": {
-"pt": "você permite (= por favor)"
+"pt": "você permite (= por favor)",
+"ar": "سمحت (= من فضلك)"
 },
 "sugar": {
-"pt": "açúcar"
+"pt": "açúcar",
+"ar": "سكر"
 },
 "just right": {
-"pt": "no ponto"
+"pt": "no ponto",
+"ar": "مظبوط"
 },
 "and coffee": {
-"pt": "e café"
+"pt": "e café",
+"ar": "وقهوة"
 },
 "my eyes (= gladly)": {
-"pt": "meus olhos (= com prazer)"
+"pt": "meus olhos (= com prazer)",
+"ar": "عنيا (= من عنيا)"
 },
 "thing": {
-"pt": "coisa"
+"pt": "coisa",
+"ar": "حاجة"
 },
 "other": {
-"pt": "outra"
+"pt": "outra",
+"ar": "تانية"
 },
 "no": {
-"pt": "não"
+"pt": "não",
+"ar": "لا"
 },
 "thanks": {
-"pt": "valeu"
+"pt": "valeu",
+"ar": "شكراً"
 },
 "the bill": {
-"pt": "a conta"
+"pt": "a conta",
+"ar": "الحساب"
 },
 "how much": {
-"pt": "quanto"
+"pt": "quanto",
+"ar": "بكام"
 },
 "Welcome, boss! What’ll you drink?": {
-"pt": "Bem-vindo, chefe! Vai beber o quê?"
+"pt": "Bem-vindo, chefe! Vai beber o quê?",
+"ar": "منور يا باشا! تشرب إيه؟"
 },
 "One tea with mint, please.": {
-"pt": "Um chá com hortelã, por favor."
+"pt": "Um chá com hortelã, por favor.",
+"ar": "واحد شاي بالنعناع، لو سمحت."
 },
 "How much sugar?": {
-"pt": "Quanto açúcar?"
+"pt": "Quanto açúcar?",
+"ar": "سكره إيه؟"
 },
 "Medium. And a medium coffee too.": {
-"pt": "No ponto. E um café no ponto também."
+"pt": "No ponto. E um café no ponto também.",
+"ar": "مظبوط. وقهوة مظبوط كمان."
 },
 "My pleasure. Anything else?": {
-"pt": "Com prazer. Mais alguma coisa?"
+"pt": "Com prazer. Mais alguma coisa?",
+"ar": "من عنيا. حاجة تانية؟"
 },
 "No, thanks. How much is the bill?": {
-"pt": "Não, valeu. Quanto deu a conta?"
+"pt": "Não, valeu. Quanto deu a conta?",
+"ar": "لا، شكراً. الحساب كام؟"
 },
 "what’ll you drink?": {
-"pt": "vai beber o quê?"
+"pt": "vai beber o quê?",
+"ar": "تشرب إيه؟"
 },
 "one tea": {
-"pt": "um chá"
+"pt": "um chá",
+"ar": "واحد شاي"
 },
 "Order by number: “wa7ed shay, etnein 2ahwa”.": {
-"pt": "Peça pelo número: “wa7ed shay, etnein 2ahwa”."
+"pt": "Peça pelo número: “wa7ed shay, etnein 2ahwa”.",
+"ar": "اطلب بالرقم: “wa7ed shay, etnein 2ahwa”."
 },
 "please (to a man)": {
-"pt": "por favor (para um homem)"
+"pt": "por favor (para um homem)",
+"ar": "لو سمحت (للراجل)"
 },
 "To a woman: law sama7ti.": {
-"pt": "Para uma mulher: law sama7ti."
+"pt": "Para uma mulher: law sama7ti.",
+"ar": "للست: law sama7ti."
 },
 "how much sugar?": {
-"pt": "quanto açúcar?"
+"pt": "quanto açúcar?",
+"ar": "سكره إيه؟"
 },
 "Answers: sada (none), mazboot (medium), zeyada (lots).": {
-"pt": "Respostas: sada (sem), mazboot (no ponto), zeyada (muito)."
+"pt": "Respostas: sada (sem), mazboot (no ponto), zeyada (muito).",
+"ar": "الإجابات: sada (من غير سكر)، mazboot (مظبوط)، zeyada (زيادة)."
 },
 "just right / medium sweet": {
-"pt": "no ponto / meio doce"
+"pt": "no ponto / meio doce",
+"ar": "مظبوط"
 },
 "with pleasure (lit. my eyes)": {
-"pt": "com prazer (lit. meus olhos)"
+"pt": "com prazer (lit. meus olhos)",
+"ar": "من عنيا (حرفياً: عنيا)"
 },
 "how much is the bill?": {
-"pt": "quanto deu a conta?"
+"pt": "quanto deu a conta?",
+"ar": "الحساب كام؟"
 },
 "Numbers & haggling": {
-"pt": "Números e pechincha"
+"pt": "Números e pechincha",
+"ar": "الأرقام والفصال"
 },
 "Ask Om Hassan for prices and haggle the mangoes down.": {
-"pt": "Pergunte os preços pra Om Hassan e pechinche as mangas."
+"pt": "Pergunte os preços pra Om Hassan e pechinche as mangas.",
+"ar": "اسأل أم حسن عن الأسعار وفصل معاها في المانجا."
 },
 "come closer": {
-"pt": "chega mais"
+"pt": "chega mais",
+"ar": "قرب"
 },
 "the mangoes": {
-"pt": "as mangas"
+"pt": "as mangas",
+"ar": "المانجا"
 },
 "like": {
-"pt": "igual a"
+"pt": "igual a",
+"ar": "زي"
 },
 "the honey": {
-"pt": "o mel"
+"pt": "o mel",
+"ar": "العسل"
 },
 "for how much": {
-"pt": "por quanto"
+"pt": "por quanto",
+"ar": "بكام"
 },
 "for fifty": {
-"pt": "por cinquenta"
+"pt": "por cinquenta",
+"ar": "بخمسين"
 },
 "pound": {
-"pt": "libra"
+"pt": "libra",
+"ar": "جنيه"
 },
 "only": {
-"pt": "só"
+"pt": "só",
+"ar": "بس"
 },
 "fifty": {
-"pt": "cinquenta"
+"pt": "cinquenta",
+"ar": "خمسين"
 },
 "this": {
-"pt": "isso"
+"pt": "isso",
+"ar": "ده"
 },
 "expensive": {
-"pt": "caro"
+"pt": "caro",
+"ar": "غالي"
 },
 "very": {
-"pt": "muito"
+"pt": "muito",
+"ar": "أوي"
 },
 "for forty": {
-"pt": "por quarenta"
+"pt": "por quarenta",
+"ar": "بأربعين"
 },
 "okay": {
-"pt": "beleza"
+"pt": "beleza",
+"ar": "ماشي"
 },
 "five": {
-"pt": "cinco"
+"pt": "cinco",
+"ar": "خمسة"
 },
 "and forty": {
-"pt": "e quarenta"
+"pt": "e quarenta",
+"ar": "وأربعين"
 },
 "for": {
-"pt": "por"
+"pt": "por",
+"ar": "عشان"
 },
 "your sake": {
-"pt": "sua causa"
+"pt": "sua causa",
+"ar": "خاطرك"
 },
 "we agreed": {
-"pt": "fechado"
+"pt": "fechado",
+"ar": "اتفقنا"
 },
 "Come closer! The mangoes are like honey!": {
-"pt": "Chega mais! As mangas tão que nem mel!"
+"pt": "Chega mais! As mangas tão que nem mel!",
+"ar": "قرب! المانجة زي العسل!"
 },
 "How much is a kilo?": {
-"pt": "Quanto tá o quilo?"
+"pt": "Quanto tá o quilo?",
+"ar": "بكام الكيلو؟"
 },
 "Just fifty pounds.": {
-"pt": "Só cinquenta libras."
+"pt": "Só cinquenta libras.",
+"ar": "بخمسين جنيه بس."
 },
 "Fifty?! That’s way too much! For forty?": {
-"pt": "Cinquenta?! Tá caro demais! Por quarenta?"
+"pt": "Cinquenta?! Tá caro demais! Por quarenta?",
+"ar": "خمسين؟! ده غالي أوي! بأربعين؟"
 },
 "Fine, forty-five just for you.": {
-"pt": "Tá bom, quarenta e cinco só por você."
+"pt": "Tá bom, quarenta e cinco só por você.",
+"ar": "خلاص، بخمسة وأربعين عشان خاطرك."
 },
 "Deal!": {
-"pt": "Fechado!"
+"pt": "Fechado!",
+"ar": "اتفقنا!"
 },
 "how much is this?": {
-"pt": "quanto custa isso?"
+"pt": "quanto custa isso?",
+"ar": "بكام ده؟"
 },
 "very expensive": {
-"pt": "muito caro"
+"pt": "muito caro",
+"ar": "غالي أوي"
 },
 "“Awi” = very. Say it with a pained face.": {
-"pt": "“Awi” = muito. Fala com cara de sofrimento."
+"pt": "“Awi” = muito. Fala com cara de sofrimento.",
+"ar": "“Awi” = very. قولها ووشك متألم."
 },
 "fifty pounds": {
-"pt": "cinquenta libras"
+"pt": "cinquenta libras",
+"ar": "خمسين جنيه"
 },
 "“Gneh” is the Egyptian pound.": {
-"pt": "“Gneh” é a libra egípcia."
+"pt": "“Gneh” é a libra egípcia.",
+"ar": "“Gneh” هو الجنيه المصري."
 },
 "for forty?": {
-"pt": "por quarenta?"
+"pt": "por quarenta?",
+"ar": "بأربعين؟"
 },
 "Counter-offer by just saying a lower number.": {
-"pt": "Faz uma contraproposta só dizendo um número menor."
+"pt": "Faz uma contraproposta só dizendo um número menor.",
+"ar": "اعمل عرض تاني بأنك تقول رقم أقل."
 },
 "just for you": {
-"pt": "só por você"
+"pt": "só por você",
+"ar": "عشان خاطرك"
 },
 "Lit. “for your sake”.": {
-"pt": "Lit. “por sua causa”."
+"pt": "Lit. “por sua causa”.",
+"ar": "حرفياً “for your sake”."
 },
 "The Egyptian “okay”. Literally “walking”.": {
-"pt": "O “tá bom” egípcio. Literalmente “andando”."
+"pt": "O “tá bom” egípcio. Literalmente “andando”.",
+"ar": "“okay” بالمصري. حرفياً “walking”."
 },
 "deal! / agreed": {
-"pt": "fechado! / combinado"
+"pt": "fechado! / combinado",
+"ar": "اتفقنا!"
 },
 "Ask directions": {
-"pt": "Pedir direções"
+"pt": "Pedir direções",
+"ar": "اسأل عن الاتجاهات"
 },
 "Ask Karim how to get to the metro and whether it’s far.": {
-"pt": "Pergunta pro Karim como chegar no metrô e se é longe."
+"pt": "Pergunta pro Karim como chegar no metrô e se é longe.",
+"ar": "اسأل كريم إزاي تروح المترو وهل هو بعيد ولا لأ."
 },
 "you allow": {
-"pt": "você permite"
+"pt": "você permite",
+"ar": "بعد إذنك"
 },
 "where": {
-"pt": "onde"
+"pt": "onde",
+"ar": "فين"
 },
 "the metro": {
-"pt": "o metrô"
+"pt": "o metrô",
+"ar": "المترو"
 },
 "close": {
-"pt": "perto"
+"pt": "perto",
+"ar": "قريب"
 },
 "walk": {
-"pt": "andar"
+"pt": "andar",
+"ar": "امشي"
 },
 "on": {
-"pt": "em"
+"pt": "em",
+"ar": "على"
 },
 "length (= straight)": {
-"pt": "comprimento (= reto)"
+"pt": "comprimento (= reto)",
+"ar": "طول (= طوالي)"
 },
 "and go in (= turn)": {
-"pt": "e entra (= vira)"
+"pt": "e entra (= vira)",
+"ar": "وخش (= احود)"
 },
 "right": {
-"pt": "direita"
+"pt": "direita",
+"ar": "يمين"
 },
 "far": {
-"pt": "longe"
+"pt": "longe",
+"ar": "بعيد"
 },
 "minutes": {
-"pt": "minutos"
+"pt": "minutos",
+"ar": "دقايق"
 },
 "walking": {
-"pt": "andando"
+"pt": "andando",
+"ar": "مشي"
 },
 "hey": {
-"pt": "ei"
+"pt": "ei",
+"ar": "يا"
 },
 "captain": {
-"pt": "capitão"
+"pt": "capitão",
+"ar": "كابتن"
 },
 "you’re welcome": {
-"pt": "de nada"
+"pt": "de nada",
+"ar": "العفو"
 },
 "keep": {
-"pt": "manter"
+"pt": "manter",
+"ar": "خلي"
 },
 "your mind": {
-"pt": "sua cabeça"
+"pt": "sua cabeça",
+"ar": "بالك"
 },
 "the tuk-tuks": {
-"pt": "os tuk-tuks"
+"pt": "os tuk-tuks",
+"ar": "التكاتك"
 },
 "Excuse me, where’s the metro?": {
-"pt": "Com licença, onde fica o metrô?"
+"pt": "Com licença, onde fica o metrô?",
+"ar": "بعد إذنك، فين المترو؟"
 },
 "The metro? It’s close. Go straight and turn right.": {
-"pt": "O metrô? É perto. Vai reto e vira à direita."
+"pt": "O metrô? É perto. Vai reto e vira à direita.",
+"ar": "المترو؟ ده قريب. امشي على طول وخش يمين."
 },
 "Is it far?": {
-"pt": "É longe?"
+"pt": "É longe?",
+"ar": "هو بعيد؟"
 },
 "No, five minutes on foot.": {
-"pt": "Não, cinco minutos a pé."
+"pt": "Não, cinco minutos a pé.",
+"ar": "لأ، خمس دقايق مشي."
 },
 "Thanks, man!": {
-"pt": "Valeu, cara!"
+"pt": "Valeu, cara!",
+"ar": "تسلم يا كابتن!"
 },
 "You’re welcome. Watch out for the tuk-tuks!": {
-"pt": "De nada. Cuidado com os tuk-tuks!"
+"pt": "De nada. Cuidado com os tuk-tuks!",
+"ar": "العفو. خلي بالك من التكاتك!"
 },
 "where is…?": {
-"pt": "onde fica…?"
+"pt": "onde fica…?",
+"ar": "فين...؟"
 },
 "straight ahead": {
-"pt": "siga reto"
+"pt": "siga reto",
+"ar": "على طول"
 },
 "Also “all the time”.": {
-"pt": "Também “o tempo todo”."
+"pt": "Também “o tempo todo”.",
+"ar": "كمان “all the time”."
 },
 "turn right": {
-"pt": "virar à direita"
+"pt": "virar à direita",
+"ar": "خش يمين"
 },
 "“Shmal” = left.": {
-"pt": "“Shmal” = esquerda."
+"pt": "“Shmal” = esquerda.",
+"ar": "“Shmal” = شمال."
 },
 "close by": {
-"pt": "aqui perto"
+"pt": "aqui perto",
+"ar": "قريب"
 },
 "“Be3eed” = far.": {
-"pt": "“Be3eed” = longe."
+"pt": "“Be3eed” = longe.",
+"ar": "“Be3eed” = بعيد."
 },
 "five minutes": {
-"pt": "cinco minutos"
+"pt": "cinco minutos",
+"ar": "خمس دقايق"
 },
 "hey man (to a stranger)": {
-"pt": "e aí, mano (pra um estranho)"
+"pt": "e aí, mano (pra um estranho)",
+"ar": "يا معلم (لحد ما تعرفوش)"
 },
 "How Cairenes address any guy. “Ya basha” works too.": {
-"pt": "Como a galera do Cairo chama qualquer cara. “Ya basha” também serve."
+"pt": "Como a galera do Cairo chama qualquer cara. “Ya basha” também serve.",
+"ar": "الطريقة اللي بتوع القاهرة بينادوا بيها أي حد. “Ya basha” تنفع برضه."
 },
 "watch out": {
-"pt": "cuidado"
+"pt": "cuidado",
+"ar": "خلي بالك"
 },
 "To a woman: khalli balek.": {
-"pt": "Pra mulher: khalli balek."
+"pt": "Pra mulher: khalli balek.",
+"ar": "للستات: khalli balek."
 },
 "Ride & small talk": {
-"pt": "Corrida e papo furado"
+"pt": "Corrida e papo furado",
+"ar": "التوصيلة والدردشة الخفيفة"
 },
 "Get Osta Ashraf to take you to Zamalek and survive his football talk.": {
-"pt": "Faça o Osta Ashraf te levar pra Zamalek e sobreviva ao papo de futebol dele."
+"pt": "Faça o Osta Ashraf te levar pra Zamalek e sobreviva ao papo de futebol dele.",
+"ar": "خلي الأسطى أشرف يوصلك الزمالك وعافر عشان تستحمل كلامه عن الكورة."
 },
 "to": {
-"pt": "pra"
+"pt": "pra",
+"ar": "على / لـ"
 },
 "boss": {
-"pt": "chefe"
+"pt": "chefe",
+"ar": "يا باشا"
 },
 "Zamalek": {
-"pt": "Zamalek"
+"pt": "Zamalek",
+"ar": "الزمالك"
 },
 "protector (= good grief)": {
-"pt": "protetor (= misericórdia)"
+"pt": "protetor (= misericórdia)",
+"ar": "يا ساتر (= good grief)"
 },
 "the traffic": {
-"pt": "o trânsito"
+"pt": "o trânsito",
+"ar": "الزحمة"
 },
 "today": {
-"pt": "hoje"
+"pt": "hoje",
+"ar": "النهاردة"
 },
 "hard": {
-"pt": "difícil"
+"pt": "difícil",
+"ar": "صعب"
 },
 "not": {
-"pt": "não"
+"pt": "não",
+"ar": "مش"
 },
 "problem": {
-"pt": "problema"
+"pt": "problema",
+"ar": "مشكلة"
 },
 "in a hurry": {
-"pt": "com pressa"
+"pt": "com pressa",
+"ar": "مستعجل"
 },
 "Ahly fan": {
-"pt": "torcedor do Ahly"
+"pt": "torcedor do Ahly",
+"ar": "أهلاوي"
 },
 "or": {
-"pt": "ou"
+"pt": "ou",
+"ar": "ولا"
 },
 "Zamalek fan": {
-"pt": "torcedor do Zamalek"
+"pt": "torcedor do Zamalek",
+"ar": "زملكاوي"
 },
 "of course": {
-"pt": "com certeza"
+"pt": "com certeza",
+"ar": "أكيد"
 },
 "Where to, boss?": {
-"pt": "Pra onde, chefe?"
+"pt": "Pra onde, chefe?",
+"ar": "على فين يا باشا؟"
 },
 "Zamalek, please.": {
-"pt": "Zamalek, por favor."
+"pt": "Zamalek, por favor.",
+"ar": "الزمالك، لو سمحت."
 },
 "Good grief! The traffic today is rough.": {
-"pt": "Misericórdia! O trânsito hoje tá osso."
+"pt": "Misericórdia! O trânsito hoje tá osso.",
+"ar": "يا ساتر! الزحمة النهاردة تقيلة."
 },
 "No problem, I’m not in a hurry.": {
-"pt": "Sem problemas, não tô com pressa."
+"pt": "Sem problemas, não tô com pressa.",
+"ar": "مفيش مشكلة، أنا مش مستعجل."
 },
 "Are you an Ahly or a Zamalek fan?": {
-"pt": "Você torce pro Ahly ou pro Zamalek?"
+"pt": "Você torce pro Ahly ou pro Zamalek?",
+"ar": "أنت أهلاوي ولا زملكاوي؟"
 },
 "Ahly, of course!": {
-"pt": "Ahly, com certeza!"
+"pt": "Ahly, com certeza!",
+"ar": "أهلاوي أكيد!"
 },
 "where to?": {
-"pt": "pra onde?"
+"pt": "pra onde?",
+"ar": "على فين؟"
 },
 "good grief!": {
-"pt": "misericórdia!"
+"pt": "misericórdia!",
+"ar": "يا ساتر!"
 },
 "For any disaster, including traffic.": {
-"pt": "Pra qualquer desastre, inclusive o trânsito."
+"pt": "Pra qualquer desastre, inclusive o trânsito.",
+"ar": "لأي مصيبة، بما فيها الزحمة."
 },
 "the traffic / the crowd": {
-"pt": "o trânsito / a muvuca"
+"pt": "o trânsito / a muvuca",
+"ar": "المرور / الزحمة"
 },
 "The most-used word in Cairo.": {
-"pt": "A palavra mais usada no Cairo."
+"pt": "A palavra mais usada no Cairo.",
+"ar": "أكتر كلمة مستخدمة في القاهرة."
 },
 "no problem": {
-"pt": "sem problema"
+"pt": "sem problema",
+"ar": "مفيش مشكلة"
 },
 "I’m not in a hurry": {
-"pt": "não tô com pressa"
+"pt": "não tô com pressa",
+"ar": "أنا مش مستعجل"
 },
 "Women: mesh mesta3gela.": {
-"pt": "Mulheres: mesh mesta3gela."
+"pt": "Mulheres: mesh mesta3gela.",
+"ar": "للستات: mesh mesta3gela."
 },
 "Ahly or Zamalek fan?": {
-"pt": "Torce pro Ahly ou pro Zamalek?"
+"pt": "Torce pro Ahly ou pro Zamalek?",
+"ar": "أهلاوي ولا زملكاوي؟"
 },
 "The only question that matters in Egypt.": {
-"pt": "A única pergunta que importa no Egito."
+"pt": "A única pergunta que importa no Egito.",
+"ar": "السؤال الوحيد اللي يفرق في مصر."
 },
 "here is good": {
-"pt": "aqui tá bom"
+"pt": "aqui tá bom",
+"ar": "عندك هنا كويس"
 },
 "Say it to stop the car.": {
-"pt": "Diga isso pra parar o carro."
+"pt": "Diga isso pra parar o carro.",
+"ar": "قولها عشان توقف العربية."
 },
 "Texting like an Egyptian": {
-"pt": "Trocando mensagem que nem um egípcio"
+"pt": "Trocando mensagem que nem um egípcio",
+"ar": "الشات زي المصريين"
 },
 "Text Nour, apologise for disappearing and make plans for tonight.": {
-"pt": "Manda mensagem pro Nour, pede desculpa pelo sumiço e combina de fazer algo hoje à noite."
+"pt": "Manda mensagem pro Nour, pede desculpa pelo sumiço e combina de fazer algo hoje à noite.",
+"ar": "ابعت لنور، واعتذر إنك اختفيت واتفقوا تخرجوا بالليل."
 },
 "traitor (playful)": {
-"pt": "traíra (na zoeira)"
+"pt": "traíra (na zoeira)",
+"ar": "يا خاين (بهزار)"
 },
 "vanished": {
-"pt": "sumiu"
+"pt": "sumiu",
+"ar": "اختفيت"
 },
 "why": {
-"pt": "por que"
+"pt": "por que",
+"ar": "ليه"
 },
 "sorry": {
-"pt": "desculpa"
+"pt": "desculpa",
+"ar": "معلش"
 },
 "I was": {
-"pt": "eu tava"
+"pt": "eu tava",
+"ar": "كنت"
 },
 "busy": {
-"pt": "ocupado"
+"pt": "ocupado",
+"ar": "مشغول"
 },
 "uncle (= dude)": {
-"pt": "tio (= mano)"
+"pt": "tio (= mano)",
+"ar": "يا عم (= dude)"
 },
 "we go out": {
-"pt": "a gente sai"
+"pt": "a gente sai",
+"ar": "نخرج"
 },
 "let’s go": {
-"pt": "bora"
+"pt": "bora",
+"ar": "يلا بينا"
 },
 "the hour": {
-"pt": "a hora"
+"pt": "a hora",
+"ar": "الساعة"
 },
 "how much / what": {
-"pt": "quanto / que"
+"pt": "quanto / que",
+"ar": "كام / إيه"
 },
 "nine": {
-"pt": "nove"
+"pt": "nove",
+"ar": "تسعة"
 },
 "don’t be late": {
-"pt": "não atrasa"
+"pt": "não atrasa",
+"ar": "متتأخرش"
 },
 "yes, sir": {
-"pt": "sim, senhor"
+"pt": "sim, senhor",
+"ar": "تمام يا باشا"
 },
 "sir / ma’am": {
-"pt": "senhor / senhora"
+"pt": "senhor / senhora",
+"ar": "يا باشا / يا فندم"
 },
 "Hey, traitor! Why have you vanished?": {
-"pt": "E aí, traíra! Por que você sumiu?"
+"pt": "E aí, traíra! Por que você sumiu?",
+"ar": "إيه يا خاين! اختفيت ليه؟"
 },
 "Sorry, I was super busy.": {
-"pt": "Mal aí, eu tava super ocupado."
+"pt": "Mal aí, eu tava super ocupado.",
+"ar": "معلش، كنت مشغول جداً."
 },
 "Sure, man. Shall we go out today?": {
-"pt": "Claro, mano. Bora sair hoje?"
+"pt": "Claro, mano. Bora sair hoje?",
+"ar": "أكيد يا صاحبي. ننزل النهاردة؟"
 },
 "Let’s go! What time?": {
-"pt": "Bora! Que horas?"
+"pt": "Bora! Que horas?",
+"ar": "يلا بينا! الساعة كام؟"
 },
 "Nine. Don’t be late!": {
-"pt": "Nove. Não atrasa!"
+"pt": "Nove. Não atrasa!",
+"ar": "الساعة تسعة. متتأخرش!"
 },
 "Yes, ma’am.": {
-"pt": "Sim, senhora."
+"pt": "Sim, senhora.",
+"ar": "حاضر يا فندم."
 },
 "why have you vanished?": {
-"pt": "por que você sumiu?"
+"pt": "por que você sumiu?",
+"ar": "اختفيت ليه؟"
 },
 "sorry / never mind": {
-"pt": "desculpa / deixa pra lá"
+"pt": "desculpa / deixa pra lá",
+"ar": "معلش / ولا يهمك"
 },
 "Egypt’s most useful word.": {
-"pt": "A palavra mais útil do Egito."
+"pt": "A palavra mais útil do Egito.",
+"ar": "أكتر كلمة مفيدة في مصر."
 },
 "dude (lit. uncle)": {
-"pt": "mano (lit. tio)"
+"pt": "mano (lit. tio)",
+"ar": "يا عم (حرفياً: عم)"
 },
 "shall we go out?": {
-"pt": "bora sair?"
+"pt": "bora sair?",
+"ar": "ننزل؟"
 },
 "let’s go!": {
-"pt": "bora!"
+"pt": "bora!",
+"ar": "يلا بينا!"
 },
 "don’t be late!": {
-"pt": "não atrasa!"
+"pt": "não atrasa!",
+"ar": "متتأخرش!"
 },
 "“Ma…sh” wrapped around a verb makes “don’t”.": {
-"pt": "“Ma…sh” em volta de um verbo vira “não”."
+"pt": "“Ma…sh” em volta de um verbo vira “não”.",
+"ar": "«ما...ش» حوالين الفعل بتعمل «لا»."
 },
 "okay / perfect": {
-"pt": "beleza / perfeito"
+"pt": "beleza / perfeito",
+"ar": "ماشي / تمام"
 },
 "In texts: tmm. Franco swaps letters for numbers: 2 = ء, 3 = ع, 5 = خ, 7 = ح.": {
-"pt": "Nas mensagens: tmm. O Franco troca letras por números: 2 = ء, 3 = ع, 5 = خ, 7 = ح."
+"pt": "Nas mensagens: tmm. O Franco troca letras por números: 2 = ء, 3 = ع, 5 = خ, 7 = ح.",
+"ar": "في الشات: tmm. الفرانكو بيبدل الحروف بأرقام: 2 = ء, 3 = ع, 5 = خ, 7 = ح."
 },
 "Street talk & cusses": {
-"pt": "Gírias e xingamentos"
+"pt": "Gírias e xingamentos",
+"ar": "كلام الشارع والشتائم"
 },
 "Banter with Mido at the ahwa: apologise for being late, insult him back and challenge him to backgammon.": {
-"pt": "Tirando onda com o Mido no ahwa: peça desculpas pelo atraso, xingue ele de volta e desafie pro gamão."
+"pt": "Tirando onda com o Mido no ahwa: peça desculpas pelo atraso, xingue ele de volta e desafie pro gamão.",
+"ar": "هزار مع ميدو على القهوة: اعتذر له إنك اتأخرت، ورّد عليه الشتيمة واتحداه في الطاولة."
 },
 "son": {
 "pt": "filho"
@@ -765,61 +1018,79 @@
 "pt": "o cachorro"
 },
 "you’re late": {
-"pt": "você tá atrasado"
+"pt": "você tá atrasado",
+"ar": "إنت اتأخرت"
 },
 "an hour": {
-"pt": "uma hora"
+"pt": "uma hora",
+"ar": "ساعة"
 },
 "was": {
-"pt": "tava"
+"pt": "tava",
+"ar": "كان"
 },
 "donkey": {
-"pt": "burro"
+"pt": "burro",
+"ar": "حمار"
 },
 "will you play": {
-"pt": "vai jogar"
+"pt": "vai jogar",
+"ar": "هتلعب"
 },
 "backgammon": {
-"pt": "gamão"
+"pt": "gamão",
+"ar": "طاولة"
 },
 "will you watch": {
-"pt": "vai assistir"
+"pt": "vai assistir",
+"ar": "هتتفرج"
 },
 "I’ll play": {
-"pt": "eu vou jogar"
+"pt": "eu vou jogar",
+"ar": "هلعب"
 },
 "and I’ll beat you": {
-"pt": "e vou te quebrar"
+"pt": "e vou te quebrar",
+"ar": "وهغلبك"
 },
 "hahaha": {
-"pt": "hahaha"
+"pt": "hahaha",
+"ar": "ههههه"
 },
 "go": {
-"pt": "vai"
+"pt": "vai",
+"ar": "إمشي"
 },
 "loser": {
-"pt": "perdedor"
+"pt": "perdedor",
+"ar": "فاشل"
 },
 "shut up": {
-"pt": "cala a boca"
+"pt": "cala a boca",
+"ar": "إسكت"
 },
 "Mido": {
-"pt": "Mido"
+"pt": "Mido",
+"ar": "ميدو"
 },
 "Where are you, you son of a dog? You’re an hour late!": {
 "pt": "Cadê você, seu filho de um cachorro? Tá uma hora atrasado!"
 },
 "Fine, donkey. You playing backgammon or just watching?": {
-"pt": "Beleza, seu burro. Vai jogar gamão ou só ficar olhando?"
+"pt": "Beleza, seu burro. Vai jogar gamão ou só ficar olhando?",
+"ar": "ماشي يا حمار. هتلعب طاولة ولا هتتفرج بس؟"
 },
 "I’ll play and beat you too!": {
-"pt": "Vou jogar e ainda vou te ganhar!"
+"pt": "Vou jogar e ainda vou te ganhar!",
+"ar": "هلعب وهغلبك كمان!"
 },
 "Hahaha, get lost, man. You’re hopeless!": {
-"pt": "Hahaha, vaza, mano. Você é um caso perdido!"
+"pt": "Hahaha, vaza, mano. Você é um caso perdido!",
+"ar": "ههههه، إمشي يا عم. إنت فاشل!"
 },
 "Shut up, Mido.": {
-"pt": "Cala a boca, Mido."
+"pt": "Cala a boca, Mido.",
+"ar": "إسكت يا ميدو."
 },
 "you son of a dog": {
 "pt": "seu filho de um cachorro"
@@ -828,97 +1099,125 @@
 "pt": "O clássico. Entre amigos é quase carinho."
 },
 "“El-donya zeft” = everything sucks.": {
-"pt": "“El-donya zeft” = tá tudo um lixo."
+"pt": "“El-donya zeft” = tá tudo um lixo.",
+"ar": "«الدنيا زفت» = كل حاجة زفت."
 },
 "you donkey / idiot": {
-"pt": "seu burro / idiota"
+"pt": "seu burro / idiota",
+"ar": "يا حمار / يا غبي"
 },
 "loser / hopeless": {
-"pt": "perdedor / caso perdido"
+"pt": "perdedor / caso perdido",
+"ar": "فاشل / مفيش منك أمل"
 },
 "get lost! (lit. go)": {
-"pt": "vaza! (lit. vai)"
+"pt": "vaza! (lit. vai)",
+"ar": "إمشي! (حرفياً: روح)"
 },
 "Rude. “Oskot” is softer.": {
-"pt": "Grosseiro. “Oskot” é mais suave."
+"pt": "Grosseiro. “Oskot” é mais suave.",
+"ar": "قليلة الذوق. «إسكت» ألطف."
 },
 "forget him / let it go": {
-"pt": "esquece ele / deixa pra lá"
+"pt": "esquece ele / deixa pra lá",
+"ar": "فكك منه / كبر مخك"
 },
 "Insults, comebacks & slurs to recognise": {
 "pt": "Xingamentos, respostas e ofensas pra reconhecer"
 },
 "Watch the derby with Hamada: curse the ref, react to the goal and calm him down.": {
-"pt": "Assista ao clássico com o Hamada: xingue o juiz, reaja ao gol e acalme ele."
+"pt": "Assista ao clássico com o Hamada: xingue o juiz, reaja ao gol e acalme ele.",
+"ar": "اتفرج على الديربي مع حمادة: اشتم الحكم، وتفاعل مع الجول وهدّيه."
 },
 "the referee": {
-"pt": "o juiz"
+"pt": "o juiz",
+"ar": "الحكم"
 },
 "thief": {
-"pt": "ladrão"
+"pt": "ladrão",
+"ar": "حرامي"
 },
 "did you see": {
-"pt": "você viu"
+"pt": "você viu",
+"ar": "شفت"
 },
 "dude": {
-"pt": "mano"
+"pt": "mano",
+"ar": "يا صاحبي"
 },
 "penalty": {
-"pt": "pênalti"
+"pt": "pênalti",
+"ar": "ضربة جزاء"
 },
 "clear": {
-"pt": "claro"
+"pt": "claro",
+"ar": "واضحة"
 },
 "the shoe": {
 "pt": "o sapato"
 },
 "blind": {
-"pt": "cego"
+"pt": "cego",
+"ar": "أعمى"
 },
 "calm down": {
-"pt": "calma"
+"pt": "calma",
+"ar": "إهدى"
 },
 "Hamada": {
-"pt": "Hamada"
+"pt": "Hamada",
+"ar": "حمادة"
 },
 "still": {
-"pt": "ainda"
+"pt": "ainda",
+"ar": "لسه"
 },
 "there is": {
-"pt": "tem"
+"pt": "tem",
+"ar": "في"
 },
 "time": {
-"pt": "tempo"
+"pt": "tempo",
+"ar": "وقت"
 },
 "goooal": {
-"pt": "gooool"
+"pt": "gooool",
+"ar": "جووول"
 },
 "sweetness": {
-"pt": "doçura"
+"pt": "doçura",
+"ar": "يا حلاوة"
 },
 "I love you": {
-"pt": "te amo"
+"pt": "te amo",
+"ar": "بحبك"
 },
 "my buddy": {
-"pt": "meu parceiro"
+"pt": "meu parceiro",
+"ar": "يا صاحبي"
 },
 "This ref is a thief! Did you see that, man?!": {
-"pt": "Esse juiz é um ladrão! Você viu isso, cara?!"
+"pt": "Esse juiz é um ladrão! Você viu isso, cara?!",
+"ar": "الحكم ده حرامي! شفت دي يا عم?!"
 },
 "That’s a clear penalty!": {
-"pt": "Isso foi pênalti claro!"
+"pt": "Isso foi pênalti claro!",
+"ar": "دي ضربة جزاء واضحة!"
 },
 "Son of a shoe! This ref is blind!": {
 "pt": "Filho de um sapato! Esse juiz é cego!"
 },
 "Calm down, Hamada, there’s still time.": {
-"pt": "Calma, Hamada, ainda tem tempo."
+"pt": "Calma, Hamada, ainda tem tempo.",
+"ar": "إهدى يا حمادة، لسه في وقت."
 },
 "Goooal! Beautiful! Love you, buddy!": {
-"pt": "Gooool! Coisa linda! Te amo, meu parceiro!"
+"pt": "Gooool! Coisa linda! Te amo, meu parceiro!",
+"ar": "جووول! يا حلاوة! بحبك يا صاحبي!"
 },
 "The ref is always one.": {
-"pt": "O juiz sempre é um."
+"pt": "O juiz sempre é um.",
+"ar": "الحكم دايماً واحد."
 },
 "son of a shoe": {
 "pt": "filho de um sapato"
@@ -927,7 +1226,8 @@
 "pt": "Sapatos são imundos, por isso estão em todo lugar nos xingamentos egípcios."
 },
 "you filthy scumbag": {
-"pt": "seu porco imundo"
+"pt": "seu porco imundo",
+"ar": "يا وسخ"
 },
 "The heaviest everyday cuss. Never near family.": {
 "pt": "O xingamento mais pesado do dia a dia. Nunca use perto da família."
@@ -945,433 +1245,573 @@
 "pt": "Apenas reconheça. Direcionado a pessoas negras. É uma ofensa real, não zoeira."
 },
 "Order a full meal": {
-"pt": "Peça uma refeição completa"
+"pt": "Peça uma refeição completa",
+"ar": "اطلب وجبة كاملة"
 },
 "Order a koshari your way from Osta Reda, add a drink and ask for the bill.": {
-"pt": "Peça um koshari do seu jeito pro Osta Reda, adicione uma bebida e peça a conta."
+"pt": "Peça um koshari do seu jeito pro Osta Reda, adicione uma bebida e peça a conta.",
+"ar": "اطلب كشري على مزاجك من أسطى رضا، وضيف مشروب واطلب الحساب."
 },
 "command (= at your service)": {
-"pt": "às ordens (= ao seu dispor)"
+"pt": "às ordens (= ao seu dispor)",
+"ar": "أؤمر"
 },
 "want": {
-"pt": "querer"
+"pt": "querer",
+"ar": "عايز"
 },
 "plate": {
-"pt": "prato"
+"pt": "prato",
+"ar": "طبق"
 },
 "koshari": {
-"pt": "koshari"
+"pt": "koshari",
+"ar": "كشري"
 },
 "big": {
-"pt": "grande"
+"pt": "grande",
+"ar": "كبير"
 },
 "with chilli": {
-"pt": "com pimenta"
+"pt": "com pimenta",
+"ar": "بالشطة"
 },
 "and garlic sauce": {
-"pt": "e molho de alho"
+"pt": "e molho de alho",
+"ar": "وبالدقة"
 },
 "yes": {
-"pt": "sim"
+"pt": "sim",
+"ar": "أيوه"
 },
 "and chilli": {
-"pt": "e pimenta"
+"pt": "e pimenta",
+"ar": "وشطة"
 },
 "extra": {
-"pt": "extra"
+"pt": "extra",
+"ar": "زيادة"
 },
 "drink": {
-"pt": "bebida"
+"pt": "bebida",
+"ar": "حاجة ساقعة"
 },
 "something": {
-"pt": "algo"
+"pt": "algo",
+"ar": "حاجة"
 },
 "Pepsi": {
-"pt": "Pepsi"
+"pt": "Pepsi",
+"ar": "بيبسي"
 },
 "cold": {
-"pt": "gelada"
+"pt": "gelada",
+"ar": "ساقعة"
 },
 "and bring": {
-"pt": "e traz"
+"pt": "e traz",
+"ar": "وهات"
 },
 "At your service, boss. What do you want?": {
-"pt": "Às ordens, chefe. O que você vai querer?"
+"pt": "Às ordens, chefe. O que você vai querer?",
+"ar": "أؤمر يا باشا. عايز إيه؟"
 },
 "I want a large plate of koshari.": {
-"pt": "Quero um prato grande de koshari."
+"pt": "Quero um prato grande de koshari.",
+"ar": "عايز طبق كشري كبير."
 },
 "With chilli and garlic sauce?": {
-"pt": "Com pimenta e molho de alho?"
+"pt": "Com pimenta e molho de alho?",
+"ar": "بالشطة والدقة؟"
 },
 "Yes, and extra chilli!": {
-"pt": "Sim, e pimenta extra!"
+"pt": "Sim, e pimenta extra!",
+"ar": "أيوه، وشطة زيادة!"
 },
 "Want something to drink?": {
-"pt": "Vai querer algo pra beber?"
+"pt": "Vai querer algo pra beber?",
+"ar": "عايز حاجة تشربها؟"
 },
 "A cold Pepsi. And bring the bill.": {
-"pt": "Uma Pepsi gelada. E traz a conta."
+"pt": "Uma Pepsi gelada. E traz a conta.",
+"ar": "بيبسي ساقعة. وهات الحساب."
 },
 "at your service / go ahead": {
-"pt": "às ordens / pode falar"
+"pt": "às ordens / pode falar",
+"ar": "أؤمر / اتفضل"
 },
 "How shops greet you.": {
-"pt": "Como os comerciantes te recebem."
+"pt": "Como os comerciantes te recebem.",
+"ar": "طريقة ترحيب المحلات بيك."
 },
 "I want…": {
-"pt": "Eu quero…"
+"pt": "Eu quero…",
+"ar": "عايز…"
 },
 "Women: 3ayza.": {
-"pt": "Mulheres: 3ayza."
+"pt": "Mulheres: 3ayza.",
+"ar": "للستات: 3ayza."
 },
 "a plate of koshari": {
-"pt": "um prato de koshari"
+"pt": "um prato de koshari",
+"ar": "طبق كشري"
 },
 "Rice, lentils, pasta, chickpeas and crispy onions.": {
-"pt": "Arroz, lentilha, macarrão, grão-de-bico e cebola crocante."
+"pt": "Arroz, lentilha, macarrão, grão-de-bico e cebola crocante.",
+"ar": "رز وعدس ومكرونة وحمص وبصل مقرمش."
 },
 "extra chilli": {
-"pt": "pimenta extra"
+"pt": "pimenta extra",
+"ar": "شطة زيادة"
 },
 "a cold drink": {
-"pt": "uma bebida gelada"
+"pt": "uma bebida gelada",
+"ar": "حاجة ساقعة"
 },
 "Lit. “a cold thing”.": {
-"pt": "Lit. “uma coisa gelada”."
+"pt": "Lit. “uma coisa gelada”.",
+"ar": "حرفياً \"حاجة ساقعة\"."
 },
 "bring the bill": {
-"pt": "trazer a conta"
+"pt": "trazer a conta",
+"ar": "هات الحساب"
 },
 "enjoy your meal": {
-"pt": "bom apetite"
+"pt": "bom apetite",
+"ar": "بالهنا والشفا"
 },
 "Answer: allah yehannik.": {
-"pt": "Resposta: allah yehannik."
+"pt": "Resposta: allah yehannik.",
+"ar": "الرد: allah yehannik."
 },
 "Make plans": {
-"pt": "Fazer planos"
+"pt": "Fazer planos",
+"ar": "ظبّط خطط"
 },
 "Make weekend plans with Salma: where, when and where to meet.": {
-"pt": "Combine os planos pro fim de semana com a Salma: onde, quando e onde se encontrar."
+"pt": "Combine os planos pro fim de semana com a Salma: onde, quando e onde se encontrar.",
+"ar": "ظبّط خطط الويك إند مع سلمى: فين، وإمتى، وهتتقابلوا فين."
 },
 "will you do": {
-"pt": "você vai fazer"
+"pt": "você vai fazer",
+"ar": "هتعمل"
 },
 "Friday": {
-"pt": "sexta-feira"
+"pt": "sexta-feira",
+"ar": "الجمعة"
 },
 "not even": {
-"pt": "nem"
+"pt": "nem",
+"ar": "ولا حتى"
 },
 "we’re going": {
-"pt": "a gente vai"
+"pt": "a gente vai",
+"ar": "رايحين"
 },
 "the (North) Coast": {
-"pt": "o Litoral (Norte)"
+"pt": "o Litoral (Norte)",
+"ar": "الساحل (الشمالي)"
 },
 "you come": {
-"pt": "você vem"
+"pt": "você vem",
+"ar": "تيجي"
 },
 "with us": {
-"pt": "com a gente"
+"pt": "com a gente",
+"ar": "معانا"
 },
 "sure": {
-"pt": "claro"
+"pt": "claro",
+"ar": "أكيد"
 },
 "we’ll meet": {
-"pt": "a gente se encontra"
+"pt": "a gente se encontra",
+"ar": "هنتقابل"
 },
 "at": {
-"pt": "em"
+"pt": "em",
+"ar": "في"
 },
 "the house": {
-"pt": "a casa"
+"pt": "a casa",
+"ar": "البيت"
 },
 "seven": {
-"pt": "sete"
+"pt": "sete",
+"ar": "سبعة"
 },
 "the morning": {
-"pt": "a manhã"
+"pt": "a manhã",
+"ar": "الصبح"
 },
 "day": {
-"pt": "dia"
+"pt": "dia",
+"ar": "يوم"
 },
 "white": {
-"pt": "branco"
+"pt": "branco",
+"ar": "أبيض"
 },
 "What are you doing on Friday?": {
-"pt": "O que você vai fazer na sexta?"
+"pt": "O que você vai fazer na sexta?",
+"ar": "هتعمل إيه يوم الجمعة؟"
 },
 "Nothing. You?": {
-"pt": "Nada. E você?"
+"pt": "Nada. E você?",
+"ar": "ولا حاجة. وانت؟"
 },
 "We’re going to the North Coast. Wanna come with us?": {
-"pt": "A gente vai pro Litoral Norte. Quer vir com a gente?"
+"pt": "A gente vai pro Litoral Norte. Quer vir com a gente?",
+"ar": "إحنا رايحين الساحل الشمالي. تيجي معانا؟"
 },
 "Sure! Where do we meet?": {
-"pt": "Claro! Onde a gente se encontra?"
+"pt": "Claro! Onde a gente se encontra?",
+"ar": "أكيد! هنتقابل فين؟"
 },
 "At the house at seven in the morning.": {
-"pt": "Na casa às sete da manhã."
+"pt": "Na casa às sete da manhã.",
+"ar": "في البيت الساعة سبعة الصبح."
 },
 "Seven?! Oh my God! Okay.": {
-"pt": "Sete?! Meu Deus! Beleza."
+"pt": "Sete?! Meu Deus! Beleza.",
+"ar": "سبعة؟! يا نهار أبيض! ماشي."
 },
 "what are you going to do?": {
-"pt": "o que você vai fazer?"
+"pt": "o que você vai fazer?",
+"ar": "هتعمل إيه؟"
 },
 "“Ha-” in front of a verb makes the future.": {
-"pt": "“Ha-” na frente de um verbo forma o futuro."
+"pt": "“Ha-” na frente de um verbo forma o futuro.",
+"ar": "الـ «حـ» قدام الفعل بتعمل المستقبل."
 },
 "nothing": {
-"pt": "nada"
+"pt": "nada",
+"ar": "ولا حاجة"
 },
 "wanna come with us?": {
-"pt": "quer vir com a gente?"
+"pt": "quer vir com a gente?",
+"ar": "تيجي معانا؟"
 },
 "sure! / of course!": {
-"pt": "claro! / com certeza!"
+"pt": "claro! / com certeza!",
+"ar": "أكيد! / طبعاً!"
 },
 "where do we meet?": {
-"pt": "onde a gente se encontra?"
+"pt": "onde a gente se encontra?",
+"ar": "هنتقابل فين؟"
 },
 "at seven o’clock": {
-"pt": "às sete"
+"pt": "às sete",
+"ar": "الساعة سبعة"
 },
 "oh my God! (lit. what a white day)": {
-"pt": "meu Deus! (lit. que dia branco)"
+"pt": "meu Deus! (lit. que dia branco)",
+"ar": "يا نهار أبيض! (حرفياً: يا له من يوم أبيض)"
 },
 "“Ya nahar eswed” (black day) is the bad version.": {
-"pt": "“Ya nahar eswed” (dia preto) é a versão ruim."
+"pt": "“Ya nahar eswed” (dia preto) é a versão ruim.",
+"ar": "«Ya nahar eswed» (يوم أسود) هي النسخة الوحشة."
 },
 "Chat with Lucy herself": {
-"pt": "Troque uma ideia com a própria Lucy"
+"pt": "Troque uma ideia com a própria Lucy",
+"ar": "دردش مع Lucy نفسها"
 },
 "Finally! Where’s my food, human?": {
-"pt": "Até que enfim! Cadê minha comida, humano?"
+"pt": "Até que enfim! Cadê minha comida, humano?",
+"ar": "أخيراً! فين أكلي يا إنسان؟"
 },
 "Liar. I’m dying of hunger. Look at this face.": {
-"pt": "Mentiroso. Tô morrendo de fome. Olha pra essa carinha."
+"pt": "Mentiroso. Tô morrendo de fome. Olha pra essa carinha.",
+"ar": "كذاب. أنا بموت من الجوع. بص على الوش ده."
 },
 "I know I’m gorgeous. Now get off the keyboard, it’s mine.": {
-"pt": "Eu sei que sou linda. Agora sai de cima do teclado, é meu."
+"pt": "Eu sei que sou linda. Agora sai de cima do teclado, é meu.",
+"ar": "عارف إني قمر. قوم بقى من على الكيبورد، ده بتاعي."
 },
 "Good night. I’m sleeping here. Don’t wake me.": {
-"pt": "Boa noite. Vou dormir aqui. Não me acorda."
+"pt": "Boa noite. Vou dormir aqui. Não me acorda.",
+"ar": "تصبح على خير. أنا هنام هنا. متصحينيش."
 },
 "Tea, backgammon & banter": {
-"pt": "Chá, gamão & zoeira"
+"pt": "Chá, gamão & zoeira",
+"ar": "شاي وطاولة وهزار"
 },
 "Finally, you son of a dog! I thought you’d died.": {
 "pt": "Finalmente, seu filho de uma cadela! Achei que tinha morrido."
 },
 "Yeah yeah. Tea or shisha, you loser?": {
-"pt": "É, é. Chá ou shisha, seu otário?"
+"pt": "É, é. Chá ou shisha, seu otário?",
+"ar": "أيوه أيوه. شاي ولا شيشة يا فاشل؟"
 },
 "Fine, then backgammon’s on you, donkey. Come on, play!": {
-"pt": "Beleza, então o gamão fica por sua conta, seu burro. Bora, joga!"
+"pt": "Beleza, então o gamão fica por sua conta, seu burro. Bora, joga!",
+"ar": "ماشي، يبقى الطاولة عليك يا حمار. اخلص العب!"
 },
 "Curse the ref with a fan": {
-"pt": "Xingar o juiz com um torcedor"
+"pt": "Xingar o juiz com um torcedor",
+"ar": "اشتم الحكم مع مشجع"
 },
 "The ref is a thief! Did you see, man?!": {
-"pt": "Esse juiz é um ladrão! Você viu isso, cara?!"
+"pt": "Esse juiz é um ladrão! Você viu isso, cara?!",
+"ar": "الحكم حرامي! شفت يا عم؟! "
 },
 "Clear penalty! This ref is a son of a shoe.": {
 "pt": "Pênalti claríssimo! Esse juiz é um filho de um sapato."
 },
 "And what is this keeper? He’s asleep, man!": {
-"pt": "E o que é esse goleiro? O cara tá dormindo, mano!"
+"pt": "E o que é esse goleiro? O cara tá dormindo, mano!",
+"ar": "وإيه الحارس ده؟ ده نايم يا عم!"
 },
 "Order tea & coffee": {
-"pt": "Pedir chá & café"
+"pt": "Pedir chá & café",
+"ar": "اطلب شاي وقهوة"
 },
 "How much sugar? Quick, the place is packed.": {
-"pt": "Quanto de açúcar? Rápido, isso aqui tá lotado."
+"pt": "Quanto de açúcar? Rápido, isso aqui tá lotado.",
+"ar": "كام معلقة سكر؟ انجز، المكان زحمة."
 },
 "With pleasure. Anything else?": {
-"pt": "Com prazer. Mais alguma coisa?"
+"pt": "Com prazer. Mais alguma coisa?",
+"ar": "من عينيا. أي حاجة تانية؟"
 },
 "Twenty-five pounds. You lit up the place!": {
-"pt": "Vinte e cinco libras. Você iluminou o lugar!"
+"pt": "Vinte e cinco libras. Você iluminou o lugar!",
+"ar": "خمسة وعشرين جنيه. نورت المكان!"
 },
 "Prices & haggling": {
-"pt": "Preços & pechincha"
+"pt": "Preços & pechincha",
+"ar": "الأسعار والفصال"
 },
 "Come closer! The mangoes are like honey! What do you want, dear?": {
-"pt": "Chega mais! As mangas tão doces que nem mel! Vai querer o que, querido?"
+"pt": "Chega mais! As mangas tão doces que nem mel! Vai querer o que, querido?",
+"ar": "قرب يا باشا! المانجو عسل! عايز إيه يا حبيبي؟"
 },
 "Fifty pounds a kilo!": {
-"pt": "Cinquenta libras o quilo!"
+"pt": "Cinquenta libras o quilo!",
+"ar": "خمسين جنيه الكيلو!"
 },
 "Have mercy, man… Forty-five, just for you.": {
-"pt": "Tenha dó, cara… Quarenta e cinco, só pra você."
+"pt": "Tenha dó, cara… Quarenta e cinco, só pra você.",
+"ar": "ارحم شوية يا عم... خمسة وأربعين عشان خاطرك انت بس."
 },
 "Here you go, dear. Come back again!": {
-"pt": "Aqui está, querido. Volte sempre!"
+"pt": "Aqui está, querido. Volte sempre!",
+"ar": "اتفضل يا باشا. تنورنا تاني!"
 },
 "Ride & football talk": {
-"pt": "Carona & papo sobre futebol"
+"pt": "Carona & papo sobre futebol",
+"ar": "توصيلة وكلام عن الكورة"
 },
 "Let’s go. Good grief, this traffic!": {
-"pt": "Bora. Nossa, olha esse trânsito!"
+"pt": "Bora. Nossa, olha esse trânsito!",
+"ar": "يلا بينا. يا ساتر على الزحمة دي!"
 },
 "Ahly?! Get out right here then. Kidding!": {
-"pt": "Ahly?! Então desce do carro agora. Brincadeira!"
+"pt": "Ahly?! Então desce do carro agora. Brincadeira!",
+"ar": "أهلي؟! انزل هنا بقى. بهزر!"
 },
 "Text a friend": {
-"pt": "Mandar mensagem pra um amigo"
+"pt": "Mandar mensagem pra um amigo",
+"ar": "ابعت رسالة لصاحبك"
 },
 "Hey traitor! Why have you vanished? haha": {
-"pt": "E aí, traíra! Por que sumiu? haha"
+"pt": "E aí, traíra! Por que sumiu? haha",
+"ar": "إيه يا خاين! اختفيت ليه؟ هههه"
 },
 "I’m dead tired today": {
-"pt": "Tô morto de cansado hoje"
+"pt": "Tô morto de cansado hoje",
+"ar": "أنا ميت من التعب النهاردة"
 },
 "Deal!! Don’t be late": {
-"pt": "Fechado!! Não vai se atrasar"
+"pt": "Fechado!! Não vai se atrasar",
+"ar": "اتفقنا!! متتأخرش"
 },
 "Go ahead, boss, what do you want?": {
-"pt": "Manda bala, chefe, o que vai ser?"
+"pt": "Manda bala, chefe, o que vai ser?",
+"ar": "اتفضل يا باشا، عايز إيه؟"
 },
 "The koshari here is the best in Cairo. If you don’t like it, that’s on you.": {
-"pt": "O koshari daqui é o melhor do Cairo. Se você não curtir, o problema é seu."
+"pt": "O koshari daqui é o melhor do Cairo. Se você não curtir, o problema é seu.",
+"ar": "الكشري هنا أحسن كشري في القاهرة. لو معجبكش، دي مشكلتك بقى."
 },
 "And to drink?": {
-"pt": "E pra beber?"
+"pt": "E pra beber?",
+"ar": "وتشرب إيه؟"
 },
 "Here you go. Enjoy. When you’re done, just shout.": {
-"pt": "Aqui ó. Aproveita. Quando terminar, é só dar um grito."
+"pt": "Aqui ó. Aproveita. Quando terminar, é só dar um grito.",
+"ar": "اتفضل، بالهنا والشفا. لما تخلص، انده عليا بس."
 },
 "Small talk at a wedding": {
-"pt": "Papo furado num casamento"
+"pt": "Papo furado num casamento",
+"ar": "دردشة في فرح"
 },
 "Hi! I don’t know you. I’m Salma!": {
-"pt": "Oi! Não te conheço. Sou a Salma!"
+"pt": "Oi! Não te conheço. Sou a Salma!",
+"ar": "هاي! أنا معرفكش. أنا سلمى!"
 },
 "Nice to meet you! Where are you from?": {
-"pt": "Prazer! De onde você é?"
+"pt": "Prazer! De onde você é?",
+"ar": "فرصة سعيدة! انت منين؟"
 },
 "Wow! Do you speak Arabic or are you faking it?": {
-"pt": "Caraca! Você fala árabe ou tá só fingindo?"
+"pt": "Caraca! Você fala árabe ou tá só fingindo?",
+"ar": "واو! انت بتتكلم عربي ولا بتشتغلنا؟"
 },
 "Haha, I like you! Come, I’ll introduce you to everyone!": {
-"pt": "Haha, gostei de você! Vem, vou te apresentar pra geral!"
+"pt": "Haha, gostei de você! Vem, vou te apresentar pra geral!",
+"ar": "ههههه حبيتك! تعال هعرفك على الناس كلها!"
 },
 "Ask for directions": {
-"pt": "Pedir direções"
+"pt": "Pedir direções",
+"ar": "تسأل عن السكة"
 },
 "Lost, foreigner?": {
-"pt": "Perdido, gringo?"
+"pt": "Perdido, gringo?",
+"ar": "تايه يا خواجة؟"
 },
 "The metro? Really close! Go straight and turn right.": {
-"pt": "O metrô? Pertinho! Segue reto e vira à direita."
+"pt": "O metrô? Pertinho! Segue reto e vira à direita.",
+"ar": "المترو؟ قريب أوي! امشي طوالي وادخل يمين."
 },
 "Five minutes. Even you can make it.": {
-"pt": "Cinco minutos. Até você consegue."
+"pt": "Cinco minutos. Até você consegue.",
+"ar": "خمس دقايق. حتى انت تقدر توصل."
 },
 "You’re welcome! Watch out for the tuk-tuks!": {
-"pt": "De nada! Cuidado com os tuk-tuks!"
+"pt": "De nada! Cuidado com os tuk-tuks!",
+"ar": "العفو! خلي بالك من التكاتك!"
 },
 "You son of a dog!": {
 "pt": "Seu filho de uma cadela!"
 },
 "Sorry, man!": {
-"pt": "Foi mal, cara!"
+"pt": "Foi mal, cara!",
+"ar": "معلش يا صاحبي!"
 },
 "You get me?": {
-"pt": "Sacou?"
+"pt": "Sacou?",
+"ar": "فاهم قصدي؟"
 },
 "Everything sucks.": {
-"pt": "Tá tudo um lixo."
+"pt": "Tá tudo um lixo.",
+"ar": "كل حاجة زي الزفت."
 },
 "How are you? How’s it going?": {
-"pt": "Como você tá? Como vão as coisas?"
+"pt": "Como você tá? Como vão as coisas?",
+"ar": "إزيك؟ الدنيا عاملة إيه؟"
 },
 "Good night.": {
-"pt": "Boa noite."
+"pt": "Boa noite.",
+"ar": "تصبح على خير."
 },
 "One mint tea.": {
-"pt": "Um chá de hortelã."
+"pt": "Um chá de hortelã.",
+"ar": "واحد شاي بالنعناع."
 },
 "A medium-sweet coffee, please.": {
-"pt": "Um café meio doce, por favor."
+"pt": "Um café meio doce, por favor.",
+"ar": "قهوة مظبوط، لو سمحت."
 },
 "How much is the bill?": {
-"pt": "Quanto deu a conta?"
+"pt": "Quanto deu a conta?",
+"ar": "الحساب كام؟"
 },
 "I want sugarcane juice. (ع, ص, ق)": {
-"pt": "Quero caldo de cana. (ع, ص, ق)"
+"pt": "Quero caldo de cana. (ع, ص, ق)",
+"ar": "عايز عصير قصب. (ع, ص, ق)"
 },
 "My darling is so sweet. (ح)": {
-"pt": "Meu amor é tão doce. (ح)"
+"pt": "Meu amor é tão doce. (ح)",
+"ar": "حبيبي زي العسل. (ح)"
 },
 "Fine, it’s on me. (خ, ع)": {
-"pt": "Beleza, é por minha conta. (خ, ع)"
+"pt": "Beleza, é por minha conta. (خ, ع)",
+"ar": "خلاص، عليا أنا. (خ, ع)"
 },
 "The cat is sleeping on the keyboard. (ق = 2)": {
-"pt": "O gato tá dormindo no teclado. (ق = 2)"
+"pt": "O gato tá dormindo no teclado. (ق = 2)",
+"ar": "القطة نايمة على الكيبورد. (ق = 2)"
 },
 "Also means “exactly!”.": {
-"pt": "Também quer dizer “exatamente!”."
+"pt": "Também quer dizer “exatamente!”.",
+"ar": "برضه معناها “exactly!”."
 },
 "the kilo": {
-"pt": "o quilo"
+"pt": "o quilo",
+"ar": "الكيلو"
 },
 "Where on earth are you, human? You’re an hour late!": {
-"pt": "Onde diabos você tá, criatura? Você tá uma hora atrasado!"
+"pt": "Onde diabos você tá, criatura? Você tá uma hora atrasado!",
+"ar": "إنت فين يا بني آدم؟ إنت متأخر ساعة!"
 },
 "you human! (exasperated)": {
-"pt": "ô criatura! (sem paciência)"
+"pt": "ô criatura! (sem paciência)",
+"ar": "يا بني آدم! (بزهق)"
 },
 "What you shout at someone who’s driving you crazy.": {
-"pt": "O que você grita pra alguém que tá te enlouquecendo."
+"pt": "O que você grita pra alguém que tá te enlouquecendo.",
+"ar": "اللي بتزعق بيه لحد جننك."
 },
 "sons of": {
-"pt": "filhos de"
+"pt": "filhos de",
+"ar": "ولاد"
 },
 "Adam (bani adam = human)": {
-"pt": "Adão (bani adam = ser humano)"
+"pt": "Adão (bani adam = ser humano)",
+"ar": "آدم (بني آدم = إنسان)"
 },
 "The go-to reaction to any disaster on the pitch.": {
-"pt": "A reação padrão pra qualquer desastre em campo."
+"pt": "A reação padrão pra qualquer desastre em campo.",
+"ar": "الرد الأساسي على أي مصيبة في الملعب."
 },
 "damn you (lit. God deal with you)": {
-"pt": "que Deus te castigue (lit. Deus que cuide de você)"
+"pt": "que Deus te castigue (lit. Deus que cuide de você)",
+"ar": "ربنا يتولاك"
 },
 "The classic Egyptian grumble at whoever wronged you.": {
-"pt": "A reclamação egípcia clássica contra quem te sacaneou."
+"pt": "A reclamação egípcia clássica contra quem te sacaneou.",
+"ar": "البرطمة المصرية الكلاسيكية على أي حد ظلمك."
 },
 "you smug jerk (lit. cold one)": {
-"pt": "seu metido sem graça (lit. frio)"
+"pt": "seu metido sem graça (lit. frio)",
+"ar": "يا بارد"
 },
 "For someone acting cool and getting on your nerves.": {
-"pt": "Pra quem se acha e tá te dando nos nervos."
+"pt": "Pra quem se acha e tá te dando nos nervos.",
+"ar": "لحد بيعمل فيها بارد وبينرفزك."
 },
 "black": {
-"pt": "preto"
+"pt": "preto",
+"ar": "أسود"
 },
 "Insults & comebacks": {
-"pt": "Insultos e respostas"
+"pt": "Insultos e respostas",
+"ar": "شتائم وردود"
 },
 "Finally, human! I thought you’d died.": {
-"pt": "Finalmente, criatura! Achei que você tinha morrido."
+"pt": "Finalmente, criatura! Achei que você tinha morrido.",
+"ar": "أخيراً يا إنسان! افتكرتك مت."
 },
 "Clear penalty! This ref is a blind thief.": {
-"pt": "Pênalti claro! Esse juiz é um ladrão cego."
+"pt": "Pênalti claro! Esse juiz é um ladrão cego.",
+"ar": "ضربة جزاء واضحة! الحكم ده أعمى وحرامي."
 },
 "Oh come on, human!": {
-"pt": "Ah, qual é, criatura!"
+"pt": "Ah, qual é, criatura!",
+"ar": "يا عم بقى، يا بني آدم!"
 },
 "Sorry man, the traffic was awful.": {
-"pt": "Foi mal, mano, o trânsito tava horrível."
+"pt": "Foi mal, mano, o trânsito tava horrível.",
+"ar": "معلش يا عم، الزحمة كانت زفت."
 },
 "awful / rubbish (lit. tar)": {
-"pt": "horrível / um lixo (lit. piche)"
+"pt": "horrível / um lixo (lit. piche)",
+"ar": "زفت / زبالة (حرفياً: زفت)"
 },
 "tar (= awful)": {
-"pt": "piche (= horrível)"
+"pt": "piche (= horrível)",
+"ar": "زفت (= زفت)"
 },
 "Street talk & teasing": {
 "pt": "Gírias e zoeira"
@@ -1380,30 +1820,39 @@
 "pt": "Zoeira e respostas"
 },
 "Oh no! (lit. what a black day)": {
-"pt": "Ai, que desgraça! (lit. que dia preto)"
+"pt": "Ai, que desgraça! (lit. que dia preto)",
+"ar": "يا نهار أسود! (lit. what a black day)"
 },
 "Oh no! This ref is blind!": {
-"pt": "Nossa! Esse juiz é cego!"
+"pt": "Nossa! Esse juiz é cego!",
+"ar": "يا نهار أسود! الحكم ده أعمى!"
 },
 "oh no! (lit. what a black day)": {
-"pt": "ai, que desgraça! (lit. que dia preto)"
+"pt": "ai, que desgraça! (lit. que dia preto)",
+"ar": "يا نهار أسود!"
 },
 "Oh no, tea is twenty pounds now! That’s robbery.": {
-"pt": "Nossa, o chá tá vinte libras agora! Isso é um roubo."
+"pt": "Nossa, o chá tá vinte libras agora! Isso é um roubo.",
+"ar": "يا لهوي، الشاي بقى بـ عشرين جنيه دلوقتي! دي سرقة."
 },
 "you animal": {
-"pt": "seu animal"
+"pt": "seu animal",
+"ar": "يا حيوان"
 },
 "you piece of trash": {
-"pt": "seu lixo"
+"pt": "seu lixo",
+"ar": "يا زبالة"
 },
 "get lost!": {
-"pt": "some daqui!"
+"pt": "some daqui!",
+"ar": "غور!"
 },
 "Ruder than “roo7”.": {
-"pt": "Mais grosso que “roo7”."
+"pt": "Mais grosso que “roo7”.",
+"ar": "أقل أدب من «roo7»."
 },
 "you idiot": {
-"pt": "seu idiota"
+"pt": "seu idiota",
+"ar": "يا غبي"
 }
 }
