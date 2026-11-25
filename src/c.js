@@ -291,7 +291,7 @@ VIEWS.call = () => {
   const tm = setInterval(() => { if (!alive || !el.isConnected) return clearInterval(tm); const s = (Date.now() - t0) / 1000 | 0; el.querySelector('#tm').textContent = `${String(s / 60 | 0).padStart(2, '0')}:${String(s % 60).padStart(2, '0')} · ${S.mission || sc.pt}`; }, 1000);
   const cap = (who, pt, en) => { el.querySelector('#cap').innerHTML = `<small>${esc(who)}</small><div class="pt">${esc(pt)}</div>${romHTML(pt)}<div class="en">${esc(en || '')}</div>`; };
   async function bot() { if (!alive) return; cap(sc.who.toUpperCase(), '…', '');
-    const r = await partnerReply(sc.id, hist, S.mission); if (!alive) return; hist.push({ who: 'bot', pt: r.pt, en: r.en }); lastSugg = r.sugg;
+    const r = await partnerReply(sc.id, hist, S.mission, 'call'); if (!alive) return; hist.push({ who: 'bot', pt: r.pt, en: r.en }); lastSugg = r.sugg;
     cap(sc.who.toUpperCase(), r.pt, r.en); el.querySelector('#ow').classList.add('talk'); el.querySelector('#wave').classList.add('on');
     await say(r.pt, slow, sc.who); if (!alive) return; el.querySelector('#ow').classList.remove('talk'); el.querySelector('#wave').classList.remove('on');
     el.querySelector('#talk').classList.add('ready'); }

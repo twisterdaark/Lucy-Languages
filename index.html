@@ -350,9 +350,10 @@ const PT_COURSE = {
   greet: (n, hr) => hr < 12 ? [`Bom dia, ${n}.`, `Good morning, ${n}.`] : hr < 18 ? ['Boa tarde. Cadê meu lanche?', 'Good afternoon. Where’s my snack?'] : [`Boa noite, ${n}. Bora estudar?`, `Good evening, ${n}. Shall we study?`],
   samples: { f: 'Oi, eu sou a Lucy. Cadê meu sachê?', m: 'E aí, mano! Bora pro boteco?', you: 'Meu nome é NAME. Prazer!' },
   people: { f: ['lucy', 'júlia', 'julia', 'bia', 'gabi', 'dona lúcia', 'ana', 'maria', 'camila', 'fernanda', 'carla', 'paula', 'beatriz', 'luana', 'mariana', 'rita', 'dona'], m: ['léo', 'leo', 'caio', 'tião', 'seu zé', 'rafa', 'lucas', 'pedro', 'joão', 'marcos', 'thiago', 'bruno', 'diego', 'seu'] },
-  ai: { name: v => v === 'pt-PT' ? 'European Portuguese (Portugal)' : 'Brazilian Portuguese', short: 'Portuguese', place: 'Brazil', native: 'Brazilian', learner: 'from Cairo, Egypt; owns a cat called Lucy',
+  ai: { fillers: 'tipo, né, olha, sabe, pô, nossa, kkkk', name: v => v === 'pt-PT' ? 'European Portuguese (Portugal)' : 'Brazilian Portuguese', short: 'Portuguese', place: 'Brazil', native: 'Brazilian', learner: 'from Cairo, Egypt; owns a cat called Lucy',
     vibe: 'like a close Brazilian friend. Tease the learner, crack jokes, react big, and talk the way Brazilians really talk on the street: slang (mano, cara, tá ligado, bora, véi, mó, de boa) and casual cussing used naturally (porra, caralho, puta merda, puta que pariu, foda-se, cacete, merda, corno, babaca, vai se foder as a joke)',
     slurs: 'macaco, crioulo, viado and similar', rom: false },
+  busy: ['Opa, a ligação falhou aqui. Fala de novo?', 'Oops, the line cut out here. Say that again?'],
   sounds: 'pt',
   units: [
   { id:'ola', level:'A1', pt:'E aí?', en:'Greetings', icon:'sun', scene:'party',
@@ -490,9 +491,10 @@ const AR_COURSE = {
   greet: (n, hr) => hr < 12 ? [`صباح الخير يا ${n}.`, `Good morning, ${n}.`, `saba7 el-kheir ya ${n}.`] : hr < 18 ? ['أهلاً. فين الأكل بتاعي؟', 'Hi. Where’s my food?', 'ahlan. fein el-akl beta3i?'] : [`مساء الخير يا ${n}. نذاكر؟`, `Good evening, ${n}. Shall we study?`, `masa2 el-kheir ya ${n}. nzaker?`],
   samples: { f: 'أهلاً، أنا لوسي. فين الأكل بتاعي؟', m: 'إزيك يا باشا! يلا على القهوة؟', you: 'اسمي NAME. فرصة سعيدة!' },
   people: { f: ['salma', 'nour', 'om hassan', 'om', 'mona', 'yasmin', 'dina', 'mai', 'nada', 'lucy'], m: ['mido', 'karim', 'hamada', 'am sayed', 'osta ashraf', 'osta reda', 'osta', 'am', 'ahmed', 'omar', 'hassan', 'sherif'] },
-  ai: { name: () => 'Egyptian Arabic (Cairo colloquial, never Modern Standard Arabic)', short: 'Egyptian Arabic', place: 'Cairo, Egypt', native: 'Egyptian', learner: 'a foreigner learning Egyptian Arabic; owns a cat called Lucy',
+  ai: { fillers: 'يعني، بص، ما هو، طب، والنبي، ههههه', name: () => 'Egyptian Arabic (Cairo colloquial, never Modern Standard Arabic)', short: 'Egyptian Arabic', place: 'Cairo, Egypt', native: 'Egyptian', learner: 'a foreigner learning Egyptian Arabic; owns a cat called Lucy',
     vibe: 'like a close friend from Cairo. Tease the learner, crack jokes, react big, and talk the way Cairenes really talk on the street: slang (ya basha, ya 3am, ya man, gamed, fashkh, tamam, khalas, yalla, ma3lesh, ya3ni, 7elw, 2eshta) and casual cussing used naturally (ya ibn el-kalb, ya 7omar, zeft, ya wesekh, ya ibn el-gazma, ya 3ars, kosomak only when really fired up)',
     slurs: 'khawal, ya 3abd and similar', rom: true },
+  busy: ['معلش، الخط قطع عندي. قول تاني؟', 'Sorry, the line cut out. Say that again?', 'ma3lesh, el-khat 2ata3 3andi. 2ool tani?'],
   sounds: 'ar',
   units: [
   { id:'ar-ezzayak', level:'A1', pt:'إزيك؟', en:'Greetings', icon:'sun', scene:'ar-party',
@@ -953,7 +955,7 @@ function vibeText(sc) {
     : 'Personality: warm, patient, a little playful. No swearing.';
   return base + ` Never use racial, homophobic or other slurs (${T.ai.slurs}) at anyone.`;
 }
-async function partnerReply(scene, history, mission) {
+async function partnerReply(scene, history, mission, mode = 'chat') {
   const sc = allScenes().find(s => s.id === scene);
   await Promise.race([P.ready, sleep(3000)]);
   if (P.sample) {
@@ -962,18 +964,25 @@ async function partnerReply(scene, history, mission) {
     const lvl = metrics().current.id;
     const prompt = `You are ${sc.who}, ${sc.role}. Role-play a realistic everyday conversation in ${variantName} with ${S.name}, a learner around CEFR ${lvl} (${T.ai.learner}). Stay in character the whole time.
 ${vibeText(sc)}
-Rules: reply as a local really talks, 1-2 short sentences, max 22 words, pitched just above the learner's level. Keep the scene moving with a question or a reaction they can answer. If they write English, answer in ${T.ai.short} anyway and tease them for it.${AR ? ' They may write Arabic script or Franco (Arabizi); understand both.' : ''}${mission ? `\nTheir mission in this scene: ${mission}` : ''}
+${mode === 'call' ? `This is a live phone call. Talk like a real person on the phone, not an assistant or a teacher: use spoken fillers and reactions (${T.ai.fillers}), laugh, interrupt yourself, have your own opinions, moods and little stories from your day, ask the learner about their life, follow a tangent they open and come back to the scene later. Don't push the script; let the chat go where they take it.` : 'This is a text chat. Write like a real friend texting: natural, reactive, with your own opinions, not like an assistant.'}
+Rules: reply as a local really talks, 1-3 short sentences, max ${mode === 'call' ? 35 : 28} words, pitched just above the learner's level. First react to exactly what the learner just said (answer their question, respond to their words), then keep the scene moving with a question or a reaction they can answer. Never repeat or reword a line you already said in this conversation. If they write English, answer in ${T.ai.short} anyway and tease them for it.${AR ? ' They may write Arabic script or Franco (Arabizi); understand both.' : ''}${mission ? `\nTheir mission in this scene: ${mission}` : ''}
 Conversation so far:
 ${convo || '(the learner just showed up; open the scene)'}
 
 ${AR ? 'Write every Arabic line in Arabic script with Egyptian spelling, and give its Franco-Arabic (Arabizi) transliteration with 2 3 5 7 for ء ع خ ح, word for word.\n' : ''}Reply with only JSON: {"reply": "your line in ${T.ai.short}",${AR ? ' "rom": "Franco of your line",' : ''} "translation": "natural ${UI_NAME()} translation of your line, keep the swearing", "correction": null or {"better": "a more natural or correct version of the learner's LAST message in ${T.ai.short}",${AR ? ' "rom": "its Franco",' : ''} "why": "one short ${UI_NAME()} sentence, in your voice"}, "suggestions": ["3 short ${T.ai.short} replies the learner could say next, in the same register"]${AR ? ', "sugg_rom": ["Franco of each suggestion, same order"]' : ''}}. Only correct real mistakes or clearly unnatural phrasing.`;
-    try { const r = await P.sample.json(prompt, { modelTier: 'quick', cache: false });
+    const said = new Set(history.filter(m => m.who === 'bot').map(m => norm(m.pt).join(' ')));
+    for (let attempt = 0; attempt < 2; attempt++) try { const r = await P.sample.json(attempt ? prompt + '\nYour last attempt repeated an earlier line. Say something new that answers the learner.' : prompt, { modelTier: 'quick', cache: false });
+      if (r && typeof r.reply === 'string' && said.has(norm(r.reply).join(' ')) && !attempt) continue;
       if (r && typeof r.reply === 'string') { if (r.rom) ROM[r.reply] = String(r.rom); if (r.correction?.better && r.correction.rom) ROM[r.correction.better] = String(r.correction.rom); (r.suggestions || []).forEach((x, i) => { if (r.sugg_rom?.[i]) ROM[x] = String(r.sugg_rom[i]); });
         return { pt: r.reply, en: String(r.translation || ''), fix: r.correction && r.correction.better ? r.correction : null, sugg: Array.isArray(r.suggestions) ? r.suggestions.slice(0, 3).map(String) : [], ai: true }; }
-    } catch (e) { if (e?.code === 'not_granted') P.sample = null; if (e?.code === 'rate_limited') toast(`${sc.who} needs a sec. Using the practice script.`); }
+    } catch (e) { if (e?.code === 'not_granted') { P.sample = null; break; } }
+    if (P.sample && !partnerReply.warned) { partnerReply.warned = true; toast(`${sc.who}’s AI is busy right now, so this line is from the practice script. Try again in a minute.`); }
   }
-  const step = Math.min(history.filter(m => m.who === 'bot').length, sc.script.length - 1);
-  const [pt, en, sugg] = sc.script[step];
+  // practice script: the next line not said yet; once they run out, ask the learner to say it again instead of looping
+  const said = new Set(history.filter(m => m.who === 'bot').map(m => m.pt));
+  const next = sc.script.find(l => !said.has(l[0]));
+  const busy = T.busy; if (busy[2]) ROM[busy[0]] = busy[2];
+  const [pt, en, sugg] = next || [busy[0], busy[1], sc.script[0][2]];
   const last = history.filter(m => m.who === 'me').pop();
   let fix = null;
   if (last && T.id === 'pt-BR' && /\beu quero\b/i.test(last.pt)) fix = { better: 'Me vê ' + last.pt.replace(/eu quero/i, '').trim(), why: 'Locals say “Me vê…?” more than “Eu quero”.' };
@@ -1127,27 +1136,30 @@ applyUI();
   const key = () => S.geminiKey || BUILT_IN;
 
   // --- Gemini as the AI partner (free key, kept on the device and in the user's own synced doc) ---
-  const MODELS = ['gemini-3.5-flash', 'gemini-flash-latest', 'gemini-3.8-flash', 'gemini-flash-lite-latest', 'gemini-3.1-flash-lite'];
+  const MODELS = ['gemini-3.5-flash', 'gemini-3.5-flash-lite', 'gemini-flash-latest', 'gemini-flash-lite-latest', 'gemini-3.1-flash-lite', 'gemini-3.8-flash'];
+  let goodModel = null;   // the last model that answered goes first next time
   async function gemini(prompt, json) {
     if (!key()) throw { code: 'not_granted' };
     const contents = Array.isArray(prompt) ? prompt.map(m => ({ role: m.role === 'assistant' ? 'model' : 'user', parts: [{ text: m.content }] })) : [{ role: 'user', parts: [{ text: prompt }] }];
     const safetySettings = ['HARASSMENT', 'HATE_SPEECH', 'SEXUALLY_EXPLICIT', 'DANGEROUS_CONTENT'].map(c => ({ category: 'HARM_CATEGORY_' + c, threshold: 'BLOCK_ONLY_HIGH' }));
     let last;
-    for (const m of MODELS) {
+    // each free model has its own per-minute limit, so a busy or rate-limited one hands over to the next; one more pass after a short pause
+    for (let pass = 0; pass < 2; pass++) { if (pass) await sleep(1500);
+    for (const m of goodModel ? [goodModel, ...MODELS.filter(x => x !== goodModel)] : MODELS) {
       const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${m}:generateContent`, { method: 'POST', headers: { 'content-type': 'application/json', 'x-goog-api-key': key() },
         body: JSON.stringify({ contents, safetySettings, generationConfig: json ? { responseMimeType: 'application/json', temperature: 1 } : { temperature: 1 } }) });
-      if (r.status === 404 || r.status >= 500) { last = { code: r.status === 404 ? 'model' : 'busy' }; continue; }   // retired model or busy: try the next one
-      if (r.status === 429) throw { code: 'rate_limited' };
+      if (r.status === 404 || r.status >= 500 || r.status === 429) { last = { code: r.status === 404 ? 'model' : r.status === 429 ? 'rate_limited' : 'busy' }; if (goodModel === m) goodModel = null; continue; }
       if (r.status === 400 || r.status === 403) throw { code: 'bad_key' };
       if (!r.ok) throw { code: 'error' };
       const d = await r.json(); const text = (d.candidates?.[0]?.content?.parts || []).map(p => p.text || '').join('');
       if (!text) throw { code: 'blocked' };
-      return text;
-    }
+      goodModel = m; return text;
+    } }
     throw last || { code: 'error' };
   }
   const shim = async (input) => ({ text: await gemini(input, false), truncated: false });
-  shim.json = async (input) => { const t = await gemini(input, true); return JSON.parse(t.replace(/^```json\s*|```$/g, '')); };
+  shim.json = async (input) => { for (let i = 0; ; i++) { const t = await gemini(input, true);
+    try { const j = t.slice(t.indexOf('{'), t.lastIndexOf('}') + 1); return JSON.parse(j); } catch (e) { if (i) throw { code: 'error' }; } } };
   const setAI = () => { P.sample = key() ? shim : null; };
   setAI();
 
@@ -1564,7 +1576,7 @@ VIEWS.call = () => {
   const tm = setInterval(() => { if (!alive || !el.isConnected) return clearInterval(tm); const s = (Date.now() - t0) / 1000 | 0; el.querySelector('#tm').textContent = `${String(s / 60 | 0).padStart(2, '0')}:${String(s % 60).padStart(2, '0')} · ${S.mission || sc.pt}`; }, 1000);
   const cap = (who, pt, en) => { el.querySelector('#cap').innerHTML = `<small>${esc(who)}</small><div class="pt">${esc(pt)}</div>${romHTML(pt)}<div class="en">${esc(en || '')}</div>`; };
   async function bot() { if (!alive) return; cap(sc.who.toUpperCase(), '…', '');
-    const r = await partnerReply(sc.id, hist, S.mission); if (!alive) return; hist.push({ who: 'bot', pt: r.pt, en: r.en }); lastSugg = r.sugg;
+    const r = await partnerReply(sc.id, hist, S.mission, 'call'); if (!alive) return; hist.push({ who: 'bot', pt: r.pt, en: r.en }); lastSugg = r.sugg;
     cap(sc.who.toUpperCase(), r.pt, r.en); el.querySelector('#ow').classList.add('talk'); el.querySelector('#wave').classList.add('on');
     await say(r.pt, slow, sc.who); if (!alive) return; el.querySelector('#ow').classList.remove('talk'); el.querySelector('#wave').classList.remove('on');
     el.querySelector('#talk').classList.add('ready'); }

@@ -16,9 +16,10 @@ const AR_COURSE = {
   greet: (n, hr) => hr < 12 ? [`صباح الخير يا ${n}.`, `Good morning, ${n}.`, `saba7 el-kheir ya ${n}.`] : hr < 18 ? ['أهلاً. فين الأكل بتاعي؟', 'Hi. Where’s my food?', 'ahlan. fein el-akl beta3i?'] : [`مساء الخير يا ${n}. نذاكر؟`, `Good evening, ${n}. Shall we study?`, `masa2 el-kheir ya ${n}. nzaker?`],
   samples: { f: 'أهلاً، أنا لوسي. فين الأكل بتاعي؟', m: 'إزيك يا باشا! يلا على القهوة؟', you: 'اسمي NAME. فرصة سعيدة!' },
   people: { f: ['salma', 'nour', 'om hassan', 'om', 'mona', 'yasmin', 'dina', 'mai', 'nada', 'lucy'], m: ['mido', 'karim', 'hamada', 'am sayed', 'osta ashraf', 'osta reda', 'osta', 'am', 'ahmed', 'omar', 'hassan', 'sherif'] },
-  ai: { name: () => 'Egyptian Arabic (Cairo colloquial, never Modern Standard Arabic)', short: 'Egyptian Arabic', place: 'Cairo, Egypt', native: 'Egyptian', learner: 'a foreigner learning Egyptian Arabic; owns a cat called Lucy',
+  ai: { fillers: 'يعني، بص، ما هو، طب، والنبي، ههههه', name: () => 'Egyptian Arabic (Cairo colloquial, never Modern Standard Arabic)', short: 'Egyptian Arabic', place: 'Cairo, Egypt', native: 'Egyptian', learner: 'a foreigner learning Egyptian Arabic; owns a cat called Lucy',
     vibe: 'like a close friend from Cairo. Tease the learner, crack jokes, react big, and talk the way Cairenes really talk on the street: slang (ya basha, ya 3am, ya man, gamed, fashkh, tamam, khalas, yalla, ma3lesh, ya3ni, 7elw, 2eshta) and casual cussing used naturally (ya ibn el-kalb, ya 7omar, zeft, ya wesekh, ya ibn el-gazma, ya 3ars, kosomak only when really fired up)',
     slurs: 'khawal, ya 3abd and similar', rom: true },
+  busy: ['معلش، الخط قطع عندي. قول تاني؟', 'Sorry, the line cut out. Say that again?', 'ma3lesh, el-khat 2ata3 3andi. 2ool tani?'],
   sounds: 'ar',
   units: [
   { id:'ar-ezzayak', level:'A1', pt:'إزيك؟', en:'Greetings', icon:'sun', scene:'ar-party',

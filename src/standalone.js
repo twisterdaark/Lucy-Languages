@@ -9,27 +9,30 @@
   const key = () => S.geminiKey || BUILT_IN;
 
   // --- Gemini as the AI partner (free key, kept on the device and in the user's own synced doc) ---
-  const MODELS = ['gemini-3.5-flash', 'gemini-flash-latest', 'gemini-3.8-flash', 'gemini-flash-lite-latest', 'gemini-3.1-flash-lite'];
+  const MODELS = ['gemini-3.5-flash', 'gemini-3.5-flash-lite', 'gemini-flash-latest', 'gemini-flash-lite-latest', 'gemini-3.1-flash-lite', 'gemini-3.8-flash'];
+  let goodModel = null;   // the last model that answered goes first next time
   async function gemini(prompt, json) {
     if (!key()) throw { code: 'not_granted' };
     const contents = Array.isArray(prompt) ? prompt.map(m => ({ role: m.role === 'assistant' ? 'model' : 'user', parts: [{ text: m.content }] })) : [{ role: 'user', parts: [{ text: prompt }] }];
     const safetySettings = ['HARASSMENT', 'HATE_SPEECH', 'SEXUALLY_EXPLICIT', 'DANGEROUS_CONTENT'].map(c => ({ category: 'HARM_CATEGORY_' + c, threshold: 'BLOCK_ONLY_HIGH' }));
     let last;
-    for (const m of MODELS) {
+    // each free model has its own per-minute limit, so a busy or rate-limited one hands over to the next; one more pass after a short pause
+    for (let pass = 0; pass < 2; pass++) { if (pass) await sleep(1500);
+    for (const m of goodModel ? [goodModel, ...MODELS.filter(x => x !== goodModel)] : MODELS) {
       const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${m}:generateContent`, { method: 'POST', headers: { 'content-type': 'application/json', 'x-goog-api-key': key() },
         body: JSON.stringify({ contents, safetySettings, generationConfig: json ? { responseMimeType: 'application/json', temperature: 1 } : { temperature: 1 } }) });
-      if (r.status === 404 || r.status >= 500) { last = { code: r.status === 404 ? 'model' : 'busy' }; continue; }   // retired model or busy: try the next one
-      if (r.status === 429) throw { code: 'rate_limited' };
+      if (r.status === 404 || r.status >= 500 || r.status === 429) { last = { code: r.status === 404 ? 'model' : r.status === 429 ? 'rate_limited' : 'busy' }; if (goodModel === m) goodModel = null; continue; }
       if (r.status === 400 || r.status === 403) throw { code: 'bad_key' };
       if (!r.ok) throw { code: 'error' };
       const d = await r.json(); const text = (d.candidates?.[0]?.content?.parts || []).map(p => p.text || '').join('');
       if (!text) throw { code: 'blocked' };
-      return text;
-    }
+      goodModel = m; return text;
+    } }
     throw last || { code: 'error' };
   }
   const shim = async (input) => ({ text: await gemini(input, false), truncated: false });
-  shim.json = async (input) => { const t = await gemini(input, true); return JSON.parse(t.replace(/^```json\s*|```$/g, '')); };
+  shim.json = async (input) => { for (let i = 0; ; i++) { const t = await gemini(input, true);
+    try { const j = t.slice(t.indexOf('{'), t.lastIndexOf('}') + 1); return JSON.parse(j); } catch (e) { if (i) throw { code: 'error' }; } } };
   const setAI = () => { P.sample = key() ? shim : null; };
   setAI();
 

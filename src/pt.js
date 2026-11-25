@@ -10,9 +10,10 @@ const PT_COURSE = {
   greet: (n, hr) => hr < 12 ? [`Bom dia, ${n}.`, `Good morning, ${n}.`] : hr < 18 ? ['Boa tarde. Cadê meu lanche?', 'Good afternoon. Where’s my snack?'] : [`Boa noite, ${n}. Bora estudar?`, `Good evening, ${n}. Shall we study?`],
   samples: { f: 'Oi, eu sou a Lucy. Cadê meu sachê?', m: 'E aí, mano! Bora pro boteco?', you: 'Meu nome é NAME. Prazer!' },
   people: { f: ['lucy', 'júlia', 'julia', 'bia', 'gabi', 'dona lúcia', 'ana', 'maria', 'camila', 'fernanda', 'carla', 'paula', 'beatriz', 'luana', 'mariana', 'rita', 'dona'], m: ['léo', 'leo', 'caio', 'tião', 'seu zé', 'rafa', 'lucas', 'pedro', 'joão', 'marcos', 'thiago', 'bruno', 'diego', 'seu'] },
-  ai: { name: v => v === 'pt-PT' ? 'European Portuguese (Portugal)' : 'Brazilian Portuguese', short: 'Portuguese', place: 'Brazil', native: 'Brazilian', learner: 'from Cairo, Egypt; owns a cat called Lucy',
+  ai: { fillers: 'tipo, né, olha, sabe, pô, nossa, kkkk', name: v => v === 'pt-PT' ? 'European Portuguese (Portugal)' : 'Brazilian Portuguese', short: 'Portuguese', place: 'Brazil', native: 'Brazilian', learner: 'from Cairo, Egypt; owns a cat called Lucy',
     vibe: 'like a close Brazilian friend. Tease the learner, crack jokes, react big, and talk the way Brazilians really talk on the street: slang (mano, cara, tá ligado, bora, véi, mó, de boa) and casual cussing used naturally (porra, caralho, puta merda, puta que pariu, foda-se, cacete, merda, corno, babaca, vai se foder as a joke)',
     slurs: 'macaco, crioulo, viado and similar', rom: false },
+  busy: ['Opa, a ligação falhou aqui. Fala de novo?', 'Oops, the line cut out here. Say that again?'],
   sounds: 'pt',
   units: [
   { id:'ola', level:'A1', pt:'E aí?', en:'Greetings', icon:'sun', scene:'party',
