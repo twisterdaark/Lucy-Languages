@@ -753,7 +753,7 @@
 "pt": "Nas mensagens: tmm. O Franco troca letras por números: 2 = ء, 3 = ع, 5 = خ, 7 = ح."
 },
 "Street talk & cusses": {
-"pt": "Gírias de rua e xingamentos"
+"pt": "Gírias e xingamentos"
 },
 "Banter with Mido at the ahwa: apologise for being late, insult him back and challenge him to backgammon.": {
 "pt": "Tirando onda com o Mido no ahwa: peça desculpas pelo atraso, xingue ele de volta e desafie pro gamão."
@@ -927,7 +927,7 @@
 "pt": "Sapatos são imundos, por isso estão em todo lugar nos xingamentos egípcios."
 },
 "you filthy scumbag": {
-"pt": "seu escroto imundo"
+"pt": "seu porco imundo"
 },
 "The heaviest everyday cuss. Never near family.": {
 "pt": "O xingamento mais pesado do dia a dia. Nunca use perto da família."
@@ -1390,5 +1390,20 @@
 },
 "Oh no, tea is twenty pounds now! That’s robbery.": {
 "pt": "Nossa, o chá tá vinte libras agora! Isso é um roubo."
+},
+"you animal": {
+"pt": "seu animal"
+},
+"you piece of trash": {
+"pt": "seu lixo"
+},
+"get lost!": {
+"pt": "some daqui!"
+},
+"Ruder than “roo7”.": {
+"pt": "Mais grosso que “roo7”."
+},
+"you idiot": {
+"pt": "seu idiota"
 }
 }

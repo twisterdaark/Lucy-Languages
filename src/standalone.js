@@ -9,29 +9,40 @@
   const key = () => S.geminiKey || BUILT_IN;
 
   // --- Gemini as the AI partner (free key, kept on the device and in the user's own synced doc) ---
-  const MODELS = ['gemini-3.5-flash', 'gemini-3.5-flash-lite', 'gemini-flash-latest', 'gemini-flash-lite-latest', 'gemini-3.1-flash-lite', 'gemini-3.8-flash'];
-  let goodModel = null;   // the last model that answered goes first next time
-  async function gemini(prompt, json) {
+  // quick (chat and call replies): the lite models answer in about a second; default (writing missions): the bigger ones first
+  const MODELS = { quick: ['gemini-3.5-flash-lite', 'gemini-flash-lite-latest', 'gemini-3.1-flash-lite', 'gemini-3.5-flash', 'gemini-flash-latest', 'gemini-3.8-flash'],
+    default: ['gemini-3.5-flash', 'gemini-3.5-flash-lite', 'gemini-flash-latest', 'gemini-flash-lite-latest', 'gemini-3.1-flash-lite', 'gemini-3.8-flash'] };
+  const goodModel = {};   // the last model that answered goes first next time
+  async function gemini(prompt, json, tier = 'default') {
     if (!key()) throw { code: 'not_granted' };
     const contents = Array.isArray(prompt) ? prompt.map(m => ({ role: m.role === 'assistant' ? 'model' : 'user', parts: [{ text: m.content }] })) : [{ role: 'user', parts: [{ text: prompt }] }];
     const safetySettings = ['HARASSMENT', 'HATE_SPEECH', 'SEXUALLY_EXPLICIT', 'DANGEROUS_CONTENT'].map(c => ({ category: 'HARM_CATEGORY_' + c, threshold: 'BLOCK_ONLY_HIGH' }));
-    let last;
-    // each free model has its own per-minute limit, so a busy or rate-limited one hands over to the next; one more pass after a short pause
-    for (let pass = 0; pass < 2; pass++) { if (pass) await sleep(1500);
-    for (const m of goodModel ? [goodModel, ...MODELS.filter(x => x !== goodModel)] : MODELS) {
-      const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${m}:generateContent`, { method: 'POST', headers: { 'content-type': 'application/json', 'x-goog-api-key': key() },
-        body: JSON.stringify({ contents, safetySettings, generationConfig: json ? { responseMimeType: 'application/json', temperature: 1 } : { temperature: 1 } }) });
-      if (r.status === 404 || r.status >= 500 || r.status === 429) { last = { code: r.status === 404 ? 'model' : r.status === 429 ? 'rate_limited' : 'busy' }; if (goodModel === m) goodModel = null; continue; }
-      if (r.status === 400 || r.status === 403) throw { code: 'bad_key' };
+    const body = JSON.stringify({ contents, safetySettings, generationConfig: { ...(json ? { responseMimeType: 'application/json' } : {}), temperature: 1, thinkingConfig: { thinkingLevel: 'minimal' } } });
+    const attempt = async m => {
+      const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${m}:generateContent`, { method: 'POST', headers: { 'content-type': 'application/json', 'x-goog-api-key': key() }, body }).catch(() => null);
+      if (!r || r.status === 404 || r.status >= 500 || r.status === 429) throw { code: r?.status === 429 ? 'rate_limited' : 'busy' };
+      if (r.status === 400 || r.status === 403) throw { code: 'bad_key', fatal: true };
       if (!r.ok) throw { code: 'error' };
       const d = await r.json(); const text = (d.candidates?.[0]?.content?.parts || []).map(p => p.text || '').join('');
-      if (!text) throw { code: 'blocked' };
-      goodModel = m; return text;
-    } }
-    throw last || { code: 'error' };
+      if (!text) throw { code: 'blocked' }; return text;
+    };
+    // Free models are often slow or rate-limited for a moment. Try them in order, and if one hasn't answered within
+    // a few seconds, start the next one alongside it and take whichever answers first.
+    const hedged = () => new Promise((resolve, reject) => {
+      const list = MODELS[tier] || MODELS.default, g = goodModel[tier], order = g ? [g, ...list.filter(x => x !== g)] : list;
+      let i = 0, pending = 0, done = false, last;
+      const launch = () => {
+        if (done) return; if (i >= order.length) { if (!pending) { done = true; reject(last || { code: 'error' }); } return; }
+        const m = order[i++]; pending++; const hedge = setTimeout(launch, tier === 'quick' ? 3000 : 6000);
+        attempt(m).then(t => { if (done) return; done = true; clearTimeout(hedge); goodModel[tier] = m; resolve(t); })
+          .catch(e => { clearTimeout(hedge); pending--; last = e; if (goodModel[tier] === m) goodModel[tier] = null; if (e.fatal) { done = true; reject(e); } else launch(); });
+      };
+      launch();
+    });
+    try { return await hedged(); } catch (e) { if (e.fatal) throw e; await sleep(1200); return hedged(); }
   }
-  const shim = async (input) => ({ text: await gemini(input, false), truncated: false });
-  shim.json = async (input) => { for (let i = 0; ; i++) { const t = await gemini(input, true);
+  const shim = async (input, o) => ({ text: await gemini(input, false, o?.modelTier), truncated: false });
+  shim.json = async (input, o) => { for (let i = 0; ; i++) { const t = await gemini(input, true, o?.modelTier);
     try { const j = t.slice(t.indexOf('{'), t.lastIndexOf('}') + 1); return JSON.parse(j); } catch (e) { if (i) throw { code: 'error' }; } } };
   const setAI = () => { P.sample = key() ? shim : null; };
   setAI();
@@ -41,6 +52,7 @@
   VOICE_SET = GV;
   const fixVoices = () => { const v = S.voices || {}; S.voices = { f: GV.f.includes(v.f) ? v.f : 'Leda', m: GV.m.includes(v.m) ? v.m : 'Puck', you: GV.you.includes(v.you) ? v.you : 'Achird' }; };
   fixVoices();
+  const ttsSpent = new Set();
   const TTS_MODELS = ['gemini-3.8-flash-tts', 'gemini-3.8-flash-lite-tts', 'gemini-2.5-flash-preview-tts'];
   const player = new Audio(); player.preload = 'auto'; let playing = null;
   // phones only let audio play after a tap: unlock the one player on the first touch
@@ -53,9 +65,10 @@
   async function voiceBlob(text, voice) {
     const k = new Request(`https://voice.lucy/${voice}/${encodeURIComponent(text)}`);
     const hit = await ttsCache?.match(k); if (hit) return hit.blob();
-    for (const m of TTS_MODELS) {
+    for (const m of TTS_MODELS.filter(x => !ttsSpent.has(x))) {
       const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${m}:generateContent`, { method: 'POST', headers: { 'content-type': 'application/json', 'x-goog-api-key': key() },
         body: JSON.stringify({ contents: [{ parts: [{ text }] }], generationConfig: { responseModalities: ['AUDIO'], speechConfig: { voiceConfig: { prebuiltVoiceConfig: { voiceName: voice } } } } }) }).catch(() => null);
+      if (r?.status === 429 || r?.status === 404) ttsSpent.add(m);   // out of today's free voice lines: skip it for the rest of the session
       if (!r || !r.ok) continue;                                   // busy, out of free quota or retired: try the next model
       const part = (await r.json()).candidates?.[0]?.content?.parts?.find(p => p.inlineData)?.inlineData; if (!part) continue;
       const bytes = Uint8Array.from(atob(part.data), c => c.charCodeAt(0));

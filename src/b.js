@@ -158,7 +158,7 @@ function allScenes() { return [...SCENES, ...S.custom.map(c => c.scene)]; }
 function allUnits() { return [...UNITS, ...S.custom.map(c => c.unit)]; }
 function vibeText(sc) {
   const base = S.vibe === 'spicy'
-    ? `Personality: hilarious, sarcastic and a bit of a troublemaker, ${T.ai.vibe}. Roast their mistakes playfully, never cruelly. ${/boteco|estadio/.test(sc.id) ? 'You swear in almost every line.' : 'Swear when it fits the moment.'}`
+    ? `Personality: hilarious, sarcastic and a bit of a troublemaker, ${T.ai.vibe}. Roast their mistakes playfully, never cruelly. ${/boteco|estadio|mido|match/.test(sc.id) ? 'You swear in almost every line.' : 'Swear when it fits the moment.'}`
     : 'Personality: warm, patient, a little playful. No swearing.';
   return base + ` Never use racial, homophobic or other slurs (${T.ai.slurs}) at anyone.`;
 }
@@ -176,7 +176,7 @@ Rules: reply as a local really talks, 1-3 short sentences, max ${mode === 'call'
 Conversation so far:
 ${convo || '(the learner just showed up; open the scene)'}
 
-${AR ? 'Write every Arabic line in Arabic script with Egyptian spelling, and give its Franco-Arabic (Arabizi) transliteration with 2 3 5 7 for ء ع خ ح, word for word.\n' : ''}Reply with only JSON: {"reply": "your line in ${T.ai.short}",${AR ? ' "rom": "Franco of your line",' : ''} "translation": "natural ${UI_NAME()} translation of your line, keep the swearing", "correction": null or {"better": "a more natural or correct version of the learner's LAST message in ${T.ai.short}",${AR ? ' "rom": "its Franco",' : ''} "why": "one short ${UI_NAME()} sentence, in your voice"}, "suggestions": ["3 short ${T.ai.short} replies the learner could say next, in the same register"]${AR ? ', "sugg_rom": ["Franco of each suggestion, same order"]' : ''}}. Only correct real mistakes or clearly unnatural phrasing.`;
+${AR ? 'Write every Arabic line in Arabic script with Egyptian spelling, and give its Franco-Arabic (Arabizi) transliteration with 2 3 5 7 for ء ع خ ح, word for word.\n' : ''}Reply with only JSON: {"reply": "your line in ${T.ai.short}",${AR ? ' "rom": "Franco of your line",' : ''} "translation": "natural ${UI_NAME()} translation of your line, keep the swearing", ${mode === 'call' ? '' : `"correction": null or {"better": "a more natural or correct version of the learner's LAST message in ${T.ai.short}",${AR ? ' "rom": "its Franco",' : ''} "why": "one short ${UI_NAME()} sentence, in your voice"}, `}"suggestions": ["3 short ${T.ai.short} replies the learner could say next, in the same register"]${AR && mode !== 'call' ? ', "sugg_rom": ["Franco of each suggestion, same order"]' : ''}}. Only correct real mistakes or clearly unnatural phrasing.`;
     const said = new Set(history.filter(m => m.who === 'bot').map(m => norm(m.pt).join(' ')));
     for (let attempt = 0; attempt < 2; attempt++) try { const r = await P.sample.json(attempt ? prompt + '\nYour last attempt repeated an earlier line. Say something new that answers the learner.' : prompt, { modelTier: 'quick', cache: false });
       if (r && typeof r.reply === 'string' && said.has(norm(r.reply).join(' ')) && !attempt) continue;
